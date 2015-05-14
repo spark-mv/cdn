@@ -17,7 +17,7 @@ Your results may be lower or higher, depending on the duration of your vidoes, c
 
 #### Static loading of client side module loader_cdn.js (preferred)
 ```html
-<script src="//hola.org/loader_cdn.js"></script>
+<script src="[coming soon]"></script>
 ```
 #### Dynamic loading of client side module loader_cdn.js
 ```js
