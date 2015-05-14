@@ -35,19 +35,21 @@ To test the client side mdoule quickly from the browser developer console, witho
 
 ## Features
 
-* manages player download so that only 30 seconds forward buffer is loaded, during play or on pause
+* Manages player download so that only 30 seconds forward buffer is loaded, during play or on pause
+* Enables seeking on implementations where seeking was previously not functional
+* Smooth transition betweeh SD and HD modes
 
 ## Requirements
 
 In order to allow the client side module to send byte-range requests, please enable CORS on your web server and verify response headers to MP4/FLV files include the following headers:
 
-Access-Control-Allow-Headers: Range
-Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-Access-Control-Allow-Origin: *
-Access-Control-Expose-Headers: Content-Range, Date, Etag
+* Access-Control-Allow-Headers: Range
+* Access-Control-Allow-Methods: HEAD, GET, OPTIONS
+* Access-Control-Allow-Origin: *
+* Access-Control-Expose-Headers: Content-Range, Date, Etag
 
 
-Supported players: JWPlaer V6+
+Supported players: JWPlayer V6+
 
 Supported browsers: Chrome, Firefox, IE 10,11
 
