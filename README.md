@@ -54,7 +54,7 @@ In order to allow the client side module to send byte-range requests, please ena
 
 Supported players: JWPlayer V5+. Other players coming soon.
 
-Supported browsers: Chrome, Firefox, IE 10,11
+Supported browsers: Chrome, Firefox, IE 10, 11
 
 # Server side CDN
 
