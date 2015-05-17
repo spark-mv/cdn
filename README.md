@@ -3,7 +3,7 @@
 Hola CDN is client side JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half.
 This module is completly free for both non-commercial and commercial use.
 
-This module also includes optional premium features to boost initial video load time (reduce start time), and reduce buffering events during video play, powered by the Hola CDN network. More info on these add-ons: http://hola.org/publishers
+This module also includes optional premium features to boost initial video load time (reduce start time), and reduce buffering events during video play, powered by the Hola CDN network. More info on these add-ons: http://hola.org/publishers#cdn
 
 ## Features
 
