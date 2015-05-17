@@ -56,7 +56,7 @@ Supported players: JWPlayer V5+. Other players coming soon.
 
 Supported browsers: Chrome, Firefox, IE 10,11
 
-# Server side CDN - (coming soon)
+# Server side CDN
 
 Hola Video CDN offers fast start times, minimal buffering and low cost.
 
