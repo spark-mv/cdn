@@ -44,8 +44,6 @@ In order to allow the client side module to send byte-range requests, please ena
 * Access-Control-Expose-Headers: Content-Range, Date, Etag
 * Access-Control-Max-Age: 600
 
-For instructions on how to configure CORS on different webservers and verify configuration was accurate, see <link>
-
 Supported players: JWPlayer V5+. Other players coming soon.
 
 Supported browsers: Chrome, Firefox, IE 10, 11
