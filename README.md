@@ -17,7 +17,7 @@ This module also includes optional premium features to boost initial video load 
 
 #### Static loading of client side module loader_cdn.js (preferred)
 ```html
-<script src="[coming soon]"></script>
+<script src="http://hola.org/player/loader_cdn.js"></script>
 ```
 #### Dynamic loading of client side module loader_cdn.js
 ```js
