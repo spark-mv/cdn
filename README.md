@@ -90,6 +90,12 @@ The Hola CDN requires the use of the client CDN module.
 
 
 
+
+
+
+
+
+
 ```
 window.hola_load_player = function(){ jwplayer().play() }
 ```
