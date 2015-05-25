@@ -44,15 +44,28 @@ You can test the client side mdoule quickly on your site, from the browser devel
 
 In order to allow the client side module to send byte-range requests, please enable CORS on your web server and verify response headers to MP4/FLV files include the following headers:
 
-* Access-Control-Allow-Headers: Range
-* Access-Control-Allow-Methods: HEAD, GET, OPTIONS
 * Access-Control-Allow-Origin: *
+* Access-Control-Allow-Methods: HEAD, GET, OPTIONS
 * Access-Control-Expose-Headers: Content-Range, Date, Etag
+* Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 * Access-Control-Max-Age: 600
 
 Supported players: JWPlayer V5+. Other players coming soon.
 
 Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
+
+### Testing server headers
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" <video link>```
+Verify response:
+```
+HTTP/1.1 200 OK
+Content-Length: 0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: HEAD, GET, OPTIONS
+Access-Control-Expose-Headers: Content-Range, Date, Etag
+Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
+Access-Control-Max-Age: 600
+```
 
 # Server side CDN
 
