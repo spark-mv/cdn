@@ -33,18 +33,6 @@ Note: only load loader_cdn.js once (either static or dynamic)
 ### How to test in under a minute
 You can test the client side mdoule quickly on your site, from the browser developer console, without enabling CORS on your web sever.
 * First, make sure you meet the [requirements] (https://github.com/hola/cdn#requirements)
-* 
-* 
-
-
-
-[Live demo](http://jsbin.com/faceyu/8/)
-```html
-<script src="//hola.org/play_page.js"></script>
-<div class="hola-embedded-player"
-  v="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4.torrent">
-</div> 
-```
 * Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security` (location of your chrome.exe might be different)
 * Go to your website's video page and launch the developer console (F12), then go to the actual console tab.
 * In console, enter `jQuery.getScript('http://hola.org/player/loader_cdn.js')` followed by `hola_cdn.init()`. Your player will reload. Click play to start the video.
