@@ -55,7 +55,7 @@ Supported players: JWPlayer V5+. Other players coming soon.
 Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
 
 ### Testing server headers
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" <video link>```
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" <video link>```  
 Verify response:
 ```
 HTTP/1.1 200 OK
