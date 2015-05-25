@@ -34,7 +34,7 @@ Note: only load loader_cdn.js once (either static or dynamic)
 You can test the client side mdoule quickly on your site, from the browser developer console, without enabling CORS on your web sever.
 * First, make sure you meet the [requirements] (https://github.com/hola/cdn#requirements)
 * Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security` (location of your chrome.exe might be different)
-* Go to your website's video page and launch the developer console (F12), then go to the actual console tab.
+* Go to your website's video page and launch the developer console (F12), then click the console tab.
 * In console, enter `jQuery.getScript('http://hola.org/player/loader_cdn.js')` followed by `hola_cdn.init()`. Your player will reload. Click play to start the video.
 * To verify that client module is working, pause the video and the progress buffer should stop after 30 seconds. You will also see the video never loads past 30 seconds from the viewing location. This saves significant bandwidth.
 * If you're curious, you can also switch to the 'network' tab and verify that the video requested from the server in chunks and not as a single, large file.
