@@ -72,3 +72,23 @@ Access-Control-Max-Age: 600
 Hola Video CDN offers fast start times, minimal buffering and low cost.
 
 The Hola CDN requires the use of the client CDN module.
+
+```
+window.hola_load_player = function(){ jwplayer().play() }
+```
+
+```
+jwplayer().getPlaylistItem().file
+```
+
+```
+jQuery.getScript('http://hola.org/player/loader_cdn.js')
+```
+
+```
+hola_cdn.init({jw: jwplayer(),  force_flash: true, cdns: [
+           {host: '37.187.161.44/admin/gen/zzz', cost: 1, owner: 'hola'},
+           {host: '45.55.232.91/admin/gen/zzz', cost: 1.1, owner: 'hola'},
+           {host: '76.73.18.98/admin/gen/zzz', cost: 1.2, owner: 'hola'},
+        ]})
+```
