@@ -50,7 +50,7 @@ In order to allow the client side module to send byte-range requests, please ena
 * Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 * Access-Control-Max-Age: 600
 
-For step by step instructions regarding hgow to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html).
+For step by step instructions regarding hgow to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
 
 Supported players: JWPlayer V5+. Other players coming soon.
 
