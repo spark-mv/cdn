@@ -50,6 +50,8 @@ In order to allow the client side module to send byte-range requests, please ena
 * Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 * Access-Control-Max-Age: 600
 
+For specific instructions regarding hgow to enable CORS on different web servers, see the [CORS] (https://github.com/hola/cdn/blob/master/CORS) section.
+
 Supported players: JWPlayer V5+. Other players coming soon.
 
 Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
