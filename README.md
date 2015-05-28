@@ -52,7 +52,7 @@ In order to allow the client side module to send byte-range requests, please ena
 
 For step by step instructions regarding hgow to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
 
-Supported players: JWPlayer V5+. Other players coming soon.
+Supported players: [Hola Player] (https://github.com/hola/player), JWPlayer V5+. Other players coming soon.
 
 Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
 
