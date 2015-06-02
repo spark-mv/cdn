@@ -42,6 +42,14 @@ You can test the client side mdoule quickly on your site, from the browser devel
 
 ## Requirements
 
+Supported video types: MP4, progressive download
+
+Supported players: [Hola Player] (https://github.com/hola/player), JWPlayer V6+, VideoJS HTML5 players. Other players coming soon.
+
+Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
+
+## Server side configuration
+
 In order to allow the client side module to send byte-range requests, please enable CORS on your web server and verify response headers to MP4/FLV files include the following headers:
 
 * Access-Control-Allow-Origin: *
@@ -51,10 +59,6 @@ In order to allow the client side module to send byte-range requests, please ena
 * Access-Control-Max-Age: 600
 
 For step by step instructions regarding hgow to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
-
-Supported players: [Hola Player] (https://github.com/hola/player), JWPlayer V5+. Other players coming soon.
-
-Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
 
 ### Testing server headers
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" <video link>```  
