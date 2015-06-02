@@ -42,7 +42,7 @@ You can test the client side mdoule quickly on your site, from the browser devel
 
 ## Requirements
 
-Supported video types: MP4, progressive download
+Supported video types: MP4, progressive download. FLV support coming soon.
 
 Supported players: [Hola Player] (https://github.com/hola/player), JWPlayer V6+, VideoJS HTML5 players. Other players coming soon.
 
