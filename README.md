@@ -1,15 +1,16 @@
 # Hola Video CDN
 
 Hola CDN is client side JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half.
-This module is completly free for both non-commercial and commercial use.
+
+**This module is completly free for both non-commercial and commercial use.**
 
 This module also includes optional premium features to boost initial video load time (reduce start time), and reduce buffering events during video play, powered by the Hola CDN network. More info on [the Hola website] (http://hola.org/publishers#cdn)
 
 ## Features
 
 * Saves over 52% bandwidth of video serving, using smart client side chunked streaming management.
-* Supports MP4 and FLV videos in progressive download mode.
-* Allows psuedo streaming and seekiung also for servers not supporting FLV and MP4 psuedo streaming.
+* Supports MP4 videos in progressive download mode.
+* Allows psuedo streaming and seekiung also for servers not supporting psuedo streaming.
 * Works with any existing CDN.
 * Free for both non-commercial and commercial use.
 
@@ -30,7 +31,7 @@ hola_cdn.init()
 
 Note: only load loader_cdn.js once (either static or dynamic)
 
-### How to test in under a minute
+### Test it in under a minute with Chrome
 You can test the client side mdoule quickly on your site, from the browser developer console, without enabling CORS on your web sever.
 * First, make sure you meet the [requirements] (https://github.com/hola/cdn#requirements)
 * Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security` (location of your chrome.exe might be different)
