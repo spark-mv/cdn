@@ -1,6 +1,6 @@
 # Hola Video CDN
 
-Hola CDN is client side JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half.
+Hola CDN is client side JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half. It's extremely easy to [test in under 5 minutes] (https://github.com/hola/cdn#test-it-in-under-a-minute-with-chrome).
 
 **_This module is completly free for both non-commercial and commercial use._**
 
@@ -43,7 +43,7 @@ hola_cdn.init()
 
 Note: only load loader_cdn.js once (either static or dynamic)
 
-### Test it in under a minute with Chrome
+### Test it in under 5 minutes with Chrome
 You can test the client side mdoule quickly on your site, from the browser developer console, without enabling CORS on your web sever.
 * First, make sure you meet the [requirements] (https://github.com/hola/cdn#requirements)
 * Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security`. Note that the location of your chrome.exe might be different. You can also edit the Chrome shortcut to include the parameter.
