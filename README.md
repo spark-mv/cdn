@@ -20,10 +20,22 @@ This module also includes optional premium features to boost initial video load 
 ```html
 <script src="http://hola.org/player/loader_cdn.js"></script>
 ```
-#### Dynamic loading of client side module loader_cdn.js
+#### Dynamic loading of client side module loader_cdn.js with jQuery
 ```js
 jQuery.getScript('http://hola.org/player/loader_cdn.js')
 ```
+followed by
+```js
+hola_cdn.init()
+```
+
+#### Dynamic loading of client side module loader_cdn.js without jQuery
+```js
+var script = document.createElement('script');
+ script.src = '//hola.org/player/loader_cdn.js';
+ script.type = 'text/javascript';
+ document.getElementsByTagName('head')[0].appendChild(script);
+ ```
 followed by
 ```js
 hola_cdn.init()
