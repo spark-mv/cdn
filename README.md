@@ -1,6 +1,6 @@
 # Hola Free Bandwidth Saver for Video 
 
-Hola Bandwidth Saver is JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half. It's free and extremely easy to [test in under 5 minutes] (https://github.com/hola/cdn#test-it-in-under-a-minute-with-chrome).
+Hola Bandwidth Saver is JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half. It's free and extremely easy to [test in under 5 minutes] (https://github.com/hola/cdn#test-it-in-under-a-minute-using-chrome).
 
 **_This module is completly free for both non-commercial and commercial use._**
 
