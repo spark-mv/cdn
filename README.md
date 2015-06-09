@@ -1,17 +1,17 @@
-# Hola Video CDN
+# Hola Free Bandwidth Saver for Video 
 
-Hola CDN is client side JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half. It's extremely easy to [test in under 5 minutes] (https://github.com/hola/cdn#test-it-in-under-a-minute-with-chrome).
+Hola Bandwidth Saver is JavaScript module that saves over 52% bandwidth, cutting your CDN costs by half. It's free and extremely easy to [test in under 5 minutes] (https://github.com/hola/cdn#test-it-in-under-a-minute-with-chrome).
 
 **_This module is completly free for both non-commercial and commercial use._**
 
-This module also includes optional premium features to boost initial video load time (reduce start time), and reduce buffering events during video play, powered by the Hola CDN network. More info on [the Hola website] (http://hola.org/publishers#cdn)
+In addition to the free functionality, the module includes optional features to boost initial video load time (reduce start time), and reduce buffering events during video play, powered by the Hola CDN network. More info on [the Hola website] (http://hola.org/publishers#cdn)
 
 ## Features
 
 * Saves over 52% bandwidth of video serving, using smart client side chunked streaming management.
 * Supports MP4 videos in progressive download mode.
 * Allows psuedo streaming and seekiung also for servers not supporting psuedo streaming.
-* Works with any existing CDN.
+* Works with any existing kind of video hosting, including CDNs.
 * Free for both non-commercial and commercial use.
 
 ## Usage
@@ -46,7 +46,7 @@ Note: only load loader_cdn.js once (either static or dynamic)
 ### Test it in under 5 minutes with Chrome
 You can test the client side mdoule quickly on your site, from the browser developer console, without enabling CORS on your web sever.
 * First, make sure you meet the [requirements] (https://github.com/hola/cdn#requirements)
-* Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security`. Note that the location of your chrome.exe might be different. You can also edit the Chrome shortcut to include the parameter.
+* Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security`. Note that the location of your chrome.exe might be different. You can also edit the Chrome shortcut to include the parameter. In Mac, launch Chrome from a terminal window.
 * Go to your website's video page and launch the developer console (F12), then click the console tab.
 * In console, enter `jQuery.getScript('http://hola.org/player/loader_cdn.js')` followed by `hola_cdn.init()`. Your player will reload. Click play to start the video.
 * To verify that client module is working, pause the video and the progress buffer should stop after 30 seconds. You will also see the video never loads past 30 seconds from the viewing location. This saves significant bandwidth.
@@ -86,7 +86,7 @@ Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
 ```
 
-# Server side CDN
+# Hola video CDN
 
 Hola Video CDN offers fast start times, minimal buffering and low cost.
 
