@@ -28,7 +28,6 @@ followed by
 ```js
 hola_cdn.init()
 ```
-
 #### Dynamic loading of client side module loader_cdn.js without jQuery
 ```js
 var script = document.createElement('script');
@@ -43,8 +42,8 @@ hola_cdn.init()
 
 Note: only load loader_cdn.js once (either static or dynamic)
 
-### Test it in under 5 minutes with Chrome
-You can test the client side mdoule quickly on your site, from the browser developer console, without enabling CORS on your web sever.
+### Test it in under 5 minutes using Chrome
+You can test the client side mdoule quickly on your site, from the browser developer console.
 * First, make sure you meet the [requirements] (https://github.com/hola/cdn#requirements)
 * Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security`. Note that the location of your chrome.exe might be different. You can also edit the Chrome shortcut to include the parameter. In Mac, launch Chrome from a terminal window.
 * Go to your website's video page and launch the developer console (F12), then click the console tab.
