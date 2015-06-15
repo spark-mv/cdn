@@ -62,7 +62,7 @@ Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
 
 ## Server side configuration
 
-In order to allow the client side module to send byte-range requests, please enable CORS on your web server and verify response headers to MP4/FLV files include the following headers:
+In order to allow the client side module to send byte-range requests, please enable CORS on the HTTP server(s) that is serving the video files and verify response headers to MP4/FLV files from this server(s) include the following headers:
 
 * Access-Control-Allow-Origin: *
 * Access-Control-Allow-Methods: HEAD, GET, OPTIONS
