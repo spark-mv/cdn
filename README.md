@@ -56,7 +56,7 @@ You can test the client side mdoule quickly on your site, from the browser devel
 
 Supported video types: MP4, progressive download. FLV support coming soon.
 
-Supported players: [Hola Player] (https://github.com/hola/player), JWPlayer V6+, VideoJS HTML5 players. Other players coming soon.
+Supported players: [Hola Player] (https://github.com/hola/player), JWPlayer , VideoJS HTML5 players. Other players coming soon. Have your own player? Email us at cdn [at] hola [dot] org and we'll support it.
 
 Supported browsers: Chrome (Win/Mac), IE 10, 11. Firefox support coming soong.
 
