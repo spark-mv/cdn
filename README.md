@@ -4,7 +4,7 @@ Hola Bandwidth Saver is JavaScript module that saves over 52% bandwidth, cutting
 
 **_This module is completly free for both non-commercial and commercial use._**
 
-In addition to the free functionality, the module includes optional features to boost initial video load time (reduce start time), and reduce buffering events during video play, powered by the Hola CDN network. More info on [the Hola website] (http://hola.org/publishers#cdn), also feel free to contact cdn [at] hola [dot] org.
+In addition to the free functionality, the module includes optional features to boost initial video load time (reduce start time), and reduce buffering events during video play, powered by the Hola CDN network. More info on [the Hola website] (http://hola.org/publishers#cdn), also feel free to email cdn [at] hola [dot] org.
 
 ## Features
 
