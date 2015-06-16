@@ -49,11 +49,11 @@ You can locally test the client side module quickly on your site, from the brows
 * Go to your website's video page and launch the developer console (F12), then click the console tab.
 * In console, enter `jQuery.getScript('http://hola.org/player/loader_cdn.js')` , which loads the JS.
 * Now it's time to initialize the JS - the init command varies according to the video player used:
-  * If you use JWplaer 6+, VideoJS or Hola player, please use  `hola_cdn.init()`. 
+  * If you use JWplayer 6+, VideoJS or Hola player, please use  `hola_cdn.init()`. 
+  * If you are using an old version of JWPlayer (V4,V5), please use 
+`hola_cdn.init({force_hola_cdn: true, autostart: true, jwplayer_version: 'auto'})`
   * If you are using Kernel player, please use 
 `hola_cdn.init({video_url: decodeURIComponent(flashvars.video_url), autostart: true})` 
-  * If you are using an old version of JWPlauer (V4,V5), please use 
-`hola_cdn.init({force_hola_cdn: true, autostart: true, jwplayer_version: 'auto'})`
 * After the relevant init command, the player will reload. Click play to start the video.
 * To verify that client module is working, pause the video and the progress buffer should stop after 30 seconds. You will also see the video never loads past 30 seconds from the viewing location. This saves significant bandwidth.
 * If you're curious, you can also switch to the 'network' tab and verify that the video requested from the server in chunks and not as a single, large file.
