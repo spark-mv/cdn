@@ -54,10 +54,12 @@ You can locally test the client side module quickly on your site, from the brows
 _Note: this is a simple demo, so it has some limitations. For example:_
 
 1. If you navigate to another video, you may need to reload the JS module.
-2. Support for special players If you are using Kernel player, please `use hola_cdn.init({video_url: decodeURIComponent(flashvars.video_url), autostart: true})` 
-3. If you are using an old version of JWPlauer (V4,V5), please use `hola_cdn.init({force_hola_cdn: true, autostart: true, jwplayer_version: 'auto'})`
+2. If you are using Kernel player, please use 
+`hola_cdn.init({video_url: decodeURIComponent(flashvars.video_url), autostart: true})` 
+3. If you are using an old version of JWPlauer (V4,V5), please use 
+`hola_cdn.init({force_hola_cdn: true, autostart: true, jwplayer_version: 'auto'})`
 
-When embedding the script into your page, none of these limitation exist.
+_When embedding the script into your page, none of these limitation exist._
 
 ## Requirements
 
