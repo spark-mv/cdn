@@ -40,7 +40,9 @@ followed by
 hola_cdn.init()
 ```
 
-Note: only load loader_cdn.js once (either static or dynamic)
+Notes:
+1. It is strongly recommended to NOT to host a local copy of the JS, as this will prevent any updates/bug fixes from reaching you.
+2. Only load loader_cdn.js once (either static or dynamic)
 
 ### Test it in under 5 minutes using Chrome
 You can locally test the client side module quickly on your site, from the browser developer console.
