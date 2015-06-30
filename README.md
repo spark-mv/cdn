@@ -53,7 +53,7 @@ You can locally test the client side module quickly on your site, from the brows
 * Now it's time to initialize the JS - the init command varies according to the video player used:
   * If you use JWplayer 6+, VideoJS or Hola player, please use  `hola_cdn.init()`. 
   * If you are using an old version of JWPlayer (V4,V5), please use 
-`hola_cdn.init({force_hola_cdn: true, autostart: true, jwplayer_version: 'auto'})`
+`hola_cdn.init({force_hola_cdn: false, autostart: true, jwplayer_version: 'auto'})`
   * If you are using Kernel player, please use 
 `hola_cdn.init({video_url: decodeURIComponent(flashvars.video_url), autostart: true})` 
 * After the relevant init command, the player will reload. Click play to start the video.
