@@ -99,8 +99,8 @@ Access-Control-Max-Age: 600
 
 # Hola video CDN
 
-Hola Video CDN offers fast start times, minimal buffering and low cost.
+Hola Video CDN offers fast start times, minimal buffering and low cost. It uses the free bandwidth saver to connect to Hola's CDN servers.
 
-The Hola CDN requires the use of the client CDN module.
+Supported streaming methods: Progressive download: MP4 (FLV support coming soon), HLS, HDS
 
 For any questions, please contact cdn [at] hola [dot] org.
