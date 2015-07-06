@@ -18,11 +18,11 @@ In addition to the free functionality, the module includes optional features to 
 
 #### Static loading of client side module loader_cdn.js (preferred)
 ```html
-<script src="http://hola.org/player/loader_cdn.js"></script>
+<script src="http://holacdn.com/player/loader_cdn.js"></script>
 ```
 #### Dynamic loading of client side module loader_cdn.js with jQuery
 ```js
-jQuery.getScript('http://hola.org/player/loader_cdn.js')
+jQuery.getScript('http://holacdn.com/player/loader_cdn.js')
 ```
 followed by
 ```js
@@ -31,7 +31,7 @@ hola_cdn.init()
 #### Dynamic loading of client side module loader_cdn.js without jQuery
 ```js
 var script = document.createElement('script');
- script.src = '//hola.org/player/loader_cdn.js';
+ script.src = '//holacdn.com/player/loader_cdn.js';
  script.type = 'text/javascript';
  document.getElementsByTagName('head')[0].appendChild(script);
  ```
@@ -49,7 +49,7 @@ You can locally test the client side module quickly on your site, from the brows
 * First, make sure you meet the [requirements] (https://github.com/hola/cdn#requirements)
 * Exit Chrome and make sure no Chrome processes are running. Then, temporarily launch Chrome with command line paremeter `--disable-web-security`. For example: `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security`. Note that the location of your chrome.exe might be different. You can also edit the Chrome shortcut to include the parameter. In Mac, launch Chrome from a terminal window.
 * Go to your website's video page and launch the developer console (F12), then click the console tab.
-* In console, enter `jQuery.getScript('http://hola.org/player/loader_cdn.js')` , which loads the JS.
+* In console, enter `jQuery.getScript('http://holacdn.com/player/loader_cdn.js')` , which loads the JS.
 * Now it's time to initialize the JS - the init command varies according to the video player used:
   * If you use JWplayer 6+, VideoJS or Hola player, please use  `hola_cdn.init()`. 
   * If you are using an old version of JWPlayer (V4,V5), please use 
