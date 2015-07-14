@@ -3,16 +3,16 @@
 **_This module is completly free for both non-commercial and commercial use._**
 
 ## Hola CDN solution includes
-* Free video analytics tool for your web-site 
+* Free video analytic tool for your web-site 
 * Free bandwidth saver solution for your player 
 * Free [Hola player] (https://github.com/hola/player) (optional)
 
 ## Table of contents
-* [Test Hola CDN in less than 5 minutes] (https://github.com/hola/cdn#Test Hola CDN in less than 5 minutes)
-* [Integrate free tool for your web-site] (https://github.com/hola/cdn#Integrate free tool for your web-site)
-* [Server side configuration] (https://github.com/hola/cdn#Server side configuration)
+* [Test Hola CDN in less than 5 minutes] (https://github.com/hola/cdn/blob/master/progressive_download.md#test-hola-cdn-in-less-than-5-minutes)
+* [Integrate free tool for your web-site] (https://github.com/hola/cdn/blob/master/progressive_download.md#integrate-free-tool-for-your-web-site)
+* [Server side configuration] (https://github.com/hola/cdn/blob/master/progressive_download.md#server-side-configuration)
 
-### Test Hola CDN in less than 5 minutes
+## Test Hola CDN in less than 5 minutes
 You can locally test the client side module quickly on your site, from the Chrome browser developer console.
 
 #### Prerequisites
@@ -55,7 +55,7 @@ CDN init command varies according to the video player used:
 
 Note: If you navigate to another video, you may need to reload the JS module. When embedding the script into your page, you will require to do so.
 
-### Integrate free tool for your web-site
+## Integrate free tool for your web-site
 
 #### Static loading of client side module loader_cdn.js (preferred)
 ```html
@@ -97,7 +97,7 @@ In order to allow the client side module to send byte-range requests, please ena
 
 For step by step instructions regarding hgow to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
 
-### Testing server headers
+#### Testing server headers
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" <video link>```  
 Verify response:
 ```
