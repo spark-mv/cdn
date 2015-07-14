@@ -9,9 +9,9 @@
 * Free [Hola player] (https://github.com/hola/player) (optional)
 
 ## Table of contents
-* [Test Hola CDN in less than 5 minutes] (https://github.com/hola/cdn#Test Hola CDN in less than 5 minutes)
-* [Integrate free tool for your web-site] (https://github.com/hola/cdn#Integrate free tool for your web-site)
-* [Server side configuration] (https://github.com/hola/cdn#Server side configuration)
+* [Test Hola CDN in less than 5 minutes] (https://github.com/hola/cdn/blob/master/hls.md#test-hola-cdn-in-less-than-5-minutes)
+* [Integrate free tool for your web-site] (https://github.com/hola/cdn/blob/master/hls.md#integrate-free-tool-for-your-web-site)
+* [Server side configuration] (https://github.com/hola/cdn/blob/master/hls.md#server-side-configuration)
 
 ### Test Hola CDN in less than 5 minutes
 You can locally test the client side module quickly on your site, from the Chrome browser developer console.
