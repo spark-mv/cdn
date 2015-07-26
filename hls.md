@@ -92,7 +92,7 @@ In order to allow the client side module to send byte-range requests, please ena
 
 * Access-Control-Allow-Origin: *
 * Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-* Access-Control-Expose-Headers: Content-Range, Date, Etag
+* Access-Control-Expose-Headers: Content-Range, Date, Etag, X-Cache
 * Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 * Access-Control-Max-Age: 600
 
