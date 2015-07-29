@@ -42,7 +42,7 @@ Notes:
 CDN init command varies according to the video player used:
   * For JWplayer 6+, VideoJS or Hola player, use `hola_cdn.init()`. 
   * For an old version of JWPlayer (V4,V5), use 
-`hola_cdn.init({force_hola_cdn: false, autostart: true, jwplayer_version: 'auto'})`
+`hola_cdn.init({autostart: true, jwplayer_version: 'auto'})`
   * For Kernel player, use 
 `hola_cdn.init({video_url: decodeURIComponent(flashvars.video_url), autostart: true})` 
 
