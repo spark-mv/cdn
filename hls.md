@@ -1,6 +1,4 @@
-# HLS/ FLV
-
-**_FLV is coming soon._**
+# HLS/ HDS
 
 **_This module is completly free for both non-commercial and commercial use._**
 
