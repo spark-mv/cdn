@@ -110,5 +110,5 @@ Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
 ```
 
-For any questions, please contact cdn [at] hola [dot] org.
+For any questions, please contact cdn-help [at] hola [dot] org.
 
