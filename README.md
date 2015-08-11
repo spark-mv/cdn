@@ -6,6 +6,6 @@ Your video is played using chunks downloaded from multiple CDN servers, at high 
 
 **_This module is completely free for both non-commercial and commercial use._**
 
-If you are using MP4/ FLV progressive download, please [press here] (https://github.com/hola/cdn/blob/master/progressive_download.md).
+If you are using MP4/FLV progressive download, please [press here] (https://github.com/hola/cdn/blob/master/progressive_download.md).
 
 If you are using HLS/ HDS, please [press here] (https://github.com/hola/cdn/blob/master/hls.md).
