@@ -94,6 +94,7 @@ In order to allow the client side module to send byte-range requests, please ena
 * Access-Control-Expose-Headers: Content-Range, Date, Etag, X-Cache
 * Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 * Access-Control-Max-Age: 600
+* Timing-Allow-Origin: *
 
 For step by step instructions regarding hgow to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
 
@@ -108,6 +109,7 @@ Access-Control-Allow-Methods: HEAD, GET, OPTIONS
 Access-Control-Expose-Headers: Content-Range, Date, Etag
 Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
+Timing-Allow-Origin: *
 ```
 
 For any questions, please contact cdn-help [at] hola [dot] org.
