@@ -111,5 +111,30 @@ Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
 ```
 
+#### Using Amazon S3 
+
+If you are using Amazon S3 to store videos, you should configure your bucket to allow cross-origin requests, you create a CORS configuration, an XML document with rules that identify the origins that you will allow to access your bucket, the operations (HTTP methods) will support for each origin, and other operation-specific information. You can add up to 100 rules to the configuration. You add the XML document as the cors subresource to the bucket.
+
+```
+<CORSConfiguration>
+ <CORSRule>
+  <AllowedOrigin>*</AllowedOrigin>
+
+  <AllowedMethod>HEAD</AllowedMethod>
+  <AllowedMethod>GET</AllowedMethod>
+  <AllowedMethod>OPTIONS</AllowedMethod>
+
+  <AllowedHeader>Content-Type</AllowedHeader>
+  <AllowedHeader>Origin</AllowedHeader>
+  <AllowedHeader>Accept</AllowedHeader>
+  <AllowedHeader>Range</AllowedHeader>
+  <AllowedHeader>Cache-Control</AllowedHeader>
+
+  <MaxAgeSeconds>600</MaxAgeSeconds>
+
+ </CORSRule>
+</CORSConfiguration>
+```
+
 For any questions, please contact cdn-help [at] hola [dot] org.
 
