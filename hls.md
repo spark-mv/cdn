@@ -122,7 +122,6 @@ If you are using Amazon S3 to store videos, you should configure your bucket to 
 
   <AllowedMethod>HEAD</AllowedMethod>
   <AllowedMethod>GET</AllowedMethod>
-  <AllowedMethod>OPTIONS</AllowedMethod>
 
   <AllowedHeader>Content-Type</AllowedHeader>
   <AllowedHeader>Origin</AllowedHeader>
