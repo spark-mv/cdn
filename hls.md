@@ -129,6 +129,10 @@ If you are using Amazon S3 to store videos, you should configure your bucket to 
   <AllowedHeader>Range</AllowedHeader>
   <AllowedHeader>Cache-Control</AllowedHeader>
 
+  <ExposeHeader>Content-Range</ExposeHeader>
+  <ExposeHeader>Date</ExposeHeader>
+  <ExposeHeader>Etag</ExposeHeader>
+
   <MaxAgeSeconds>600</MaxAgeSeconds>
 
  </CORSRule>
