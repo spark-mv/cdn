@@ -3,7 +3,7 @@
 **_This module is completly free for both non-commercial and commercial use._**
 
 ## Hola CDN solution includes
-* Free video analytic tool for your web-site 
+* Free video analytics tool for your web-site 
 * Free bandwidth saver solution for your player 
 * Free [Hola player] (https://github.com/hola/player) (optional)
 
