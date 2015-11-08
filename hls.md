@@ -95,7 +95,7 @@ In order to allow the client side module to send byte-range requests, please ena
 * Access-Control-Max-Age: 600
 * Timing-Allow-Origin: *
 
-For step by step instructions regarding hgow to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
+For step by step instructions regarding how to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
 
 #### Testing server headers
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" <video link>```  
