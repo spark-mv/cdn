@@ -13,18 +13,35 @@ Hola free bandwidth saver and CDN work by requesting your MP4/FLV files from the
 1. Test to see if your HTTP server is configured correctly by using:
 
 ```
-curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" < link to MP4/FLV file>
+
+curl -v -H "Origin: <site origin link>" -X OPTIONS -H
+
+ "Access-Control-Request-Headers: range" < link to MP4/FLV file>
+
 ```
 
 Desired response:
 
 HTTP/1.1 200 OK
+
+
 Content-Length: 0
+
+
 Access-Control-Allow-Origin: *
+
+
 Access-Control-Allow-Methods: HEAD, GET, OPTIONS
+
+
 Access-Control-Expose-Headers: Content-Range, Date, Etag
+
+
 Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
+
+
 Access-Control-Max-Age: 600
+
 Timing-Allow-Origin: *
 
 For example: 
@@ -67,7 +84,7 @@ The next steps is adding the Hola JS code into your web page.
 
 Note that you can safely add the JS code to your web page. Hola CDN will not be turned on at this stage - it is disabled by default on the server side. This is to protect from accidental mass deployment.
 
-After the code is on your web pages, you can enable Hola CDN gradually in order to ensure a smooth deployment
+After the code is on your web pages, you can enable Hola CDN gradually in order to ensure a smooth deployment:
 
 * First on your local machine
 
@@ -100,19 +117,15 @@ jwplayer("video-**_#####_**").onReady(**yourname**_hola_init);
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can easily enable it locally to test the live code locally on your machine. Simply run in the console
 
-```js
-
-hola_cdn.set_mode_cdn()
-
-```
+```hola_cdn.set_mode_cdn()```
 
 And reload the page. Hola CDN is now enabled on your browser. Note, this is a persistent setting. 
 
 To disable: ```hola_cdn.set_mode_disable()```
 
-To view the mode: ```js hola_cdn.mode ```
+To view the mode: ```hola_cdn.mode```
 
-To see all settings: hola_cdn.help()
+To see all settings:```hola_cdn.help()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
