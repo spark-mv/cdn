@@ -12,43 +12,28 @@ Hola free bandwidth saver and CDN work by requesting your MP4/FLV files from the
 
 1. Test to see if your HTTP server is configured correctly by using:
 
-```
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" < link to MP4/FLV file>```
 
-curl -v -H "Origin: <site origin link>" -X OPTIONS -H
-
- "Access-Control-Request-Headers: range" < link to MP4/FLV file>
+The desired response is:
 
 ```
-
-Desired response:
 
 HTTP/1.1 200 OK
-
-
 Content-Length: 0
-
-
 Access-Control-Allow-Origin: *
-
-
 Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-
-
 Access-Control-Expose-Headers: Content-Range, Date, Etag
-
-
 Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
-
-
 Access-Control-Max-Age: 600
-
 Timing-Allow-Origin: *
+
+```
 
 For example: 
 
 [check and give both CURL example and response for http://player.h-cdn.org/static/mp4/exteriores_hd_pinturas_2.mp4
 
-2. if the response is different from the desired response, you need to configure the missing headers. Please enable CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. 
+In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. 
 
 For step by step instructions regarding how to enable CORS on different web servers, see the [original CORS documentation](http://enable-cors.org/server.html). If you are using Amazon S3, please click [here](https://github.com/hola/cdn/blob/master/progressive_download.md#using-amazon-s3). Make sure you add all the required headers, not just '*' referenced in the instructions.
 
@@ -78,7 +63,7 @@ In case whitelisting IPs is not an option, ……..of the video URL includes enc
 
  
 
- Step 4: Add Hola JS to your website
+#  Step 4: Add Hola JS to your website
 
 The next steps is adding the Hola JS code into your web page.
 
