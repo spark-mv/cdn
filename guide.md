@@ -18,8 +18,6 @@ Test to see if your HTTP server is configured correctly by using:
 
 The desired response is:
 
-```
-
 ```HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
