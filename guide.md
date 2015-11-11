@@ -19,6 +19,7 @@ Test to see if your HTTP server is configured correctly by using:
 The desired response is:
 
 ```
+
 HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
@@ -27,6 +28,7 @@ Access-Control-Expose-Headers: Content-Range, Date, Etag
 Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
+
 ```
 
 Here is an example for the video used for the demo on Hola CDN website: 
@@ -52,10 +54,15 @@ There are a few ways of dealing with content protection.
 Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to operate. Add the following servers to your list of whitelisted IPs:  [CHECK!!!!]
 
 ```
+
 37.187.161.44
+
 76.73.18.98
+
 5.196.82.58
+
 204.45.27.2
+
 ```
 
 ## Allow Hola servers to access with predefined key
@@ -87,6 +94,7 @@ Hola will email you detailed integration Instructions for your site. Below you c
 2. After the call to setup the video pllayer, add the following script, where ##### is the video number ID:
 
 ```
+
 // SAMPLE CODE - DO NOT USE
 
 function **yourname**_hola_init(){
@@ -99,6 +107,7 @@ function **yourname**_hola_init(){
 jwplayer("video-**_#####_**").onReady(**yourname**_hola_init);
 
 // SAMPLE CODE - DO NOT USE
+
 ```
 
 # Step 5: Testing Hola CDN locally on your PC
