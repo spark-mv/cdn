@@ -12,10 +12,8 @@ Hola free bandwidth saver and CDN work by requesting your MP4/FLV files from the
 
 1. Test to see if your HTTP server is configured correctly by using:
 
-```js
-
+```
 curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" < link to MP4/FLV file>
-
 ```
 
 Desired response:
@@ -110,13 +108,7 @@ hola_cdn.set_mode_cdn()
 
 And reload the page. Hola CDN is now enabled on your browser. Note, this is a persistent setting. 
 
-To disable: 
-
-```js
-
-hola_cdn.set_mode_disable()
-
-```
+To disable: ```hola_cdn.set_mode_disable()```
 
 To view the mode: ```js hola_cdn.mode ```
 
