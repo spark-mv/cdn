@@ -18,14 +18,16 @@ Test to see if your HTTP server is configured correctly by using:
 
 The desired response is:
 
-```HTTP/1.1 200 OK
+```
+HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: HEAD, GET, OPTIONS
 Access-Control-Expose-Headers: Content-Range, Date, Etag
 Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
-Timing-Allow-Origin: *```
+Timing-Allow-Origin: *
+```
 
 Here is an example for the video used for the demo on Hola CDN website: 
 
