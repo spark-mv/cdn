@@ -1,10 +1,8 @@
-**Hola CDN Implementation steps **
-
 # Overview
 
 The objective of this document is to verify that your system is configured correctly for Hola CDN. Once settings are configured and verified, you can integrate Hola Javascript to your website and instantly enjoy Hola CDN benefits.
 
-Step 1: Create an account
+# Step 1: Create an account
 
 Create an account on [https://holacdn.com](https://holacdn.com/). Hola will activate your account and analyze your site, in order to prepare JavaScript code for integration which will happen after the following steps are completed. You can continue to the next step, no need to wait.
 
@@ -14,7 +12,11 @@ Hola free bandwidth saver and CDN work by requesting your MP4/FLV files from the
 
 1. Test to see if your HTTP server is configured correctly by using:
 
+```js
+
 curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" < link to MP4/FLV file>
+
+```
 
 Desired response:
 
@@ -100,13 +102,23 @@ jwplayer("video-**_#####_**").onReady(**yourname**_hola_init);
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can easily enable it locally to test the live code locally on your machine. Simply run in the console
 
+```js
+
 hola_cdn.set_mode_cdn()
+
+```
 
 And reload the page. Hola CDN is now enabled on your browser. Note, this is a persistent setting. 
 
-To disable: hola_cdn.set_mode_disable()
+To disable: 
 
-To view the mode: hola_cdn.mode
+```js
+
+hola_cdn.set_mode_disable()
+
+```
+
+To view the mode: ```js hola_cdn.mode ```
 
 To see all settings: hola_cdn.help()
 
