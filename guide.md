@@ -10,7 +10,9 @@ Create an account on [https://holacdn.com](https://holacdn.com/). Hola will acti
 
 Hola free bandwidth saver and CDN work by requesting your MP4/FLV files from the video server in chunks.
 
-1. Test to see if your HTTP server is configured correctly by using:
+## How to verify existing CORS header configuration
+
+Test to see if your HTTP server is configured correctly by using:
 
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" < link to MP4/FLV file>```
 
@@ -18,28 +20,28 @@ The desired response is:
 
 ```
 
-HTTP/1.1 200 OK
+```HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: HEAD, GET, OPTIONS
 Access-Control-Expose-Headers: Content-Range, Date, Etag
 Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
-Timing-Allow-Origin: *
+Timing-Allow-Origin: *```
 
-```
-
-For example: 
+Here is an example for the video used for the demo on Hola CDN website: 
 
 [check and give both CURL example and response for http://player.h-cdn.org/static/mp4/exteriores_hd_pinturas_2.mp4
 
 In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. 
 
+## So, how do I configure CORS headers?
+
 For step by step instructions regarding how to enable CORS on different web servers, see the [original CORS documentation](http://enable-cors.org/server.html). If you are using Amazon S3, please click [here](https://github.com/hola/cdn/blob/master/progressive_download.md#using-amazon-s3). Make sure you add all the required headers, not just '*' referenced in the instructions.
 
-After committing the configuration changes, verify response headers to MP4/FLV files from this server(s) include required headers.
+After committing the configuration changes, verify response headers to MP4/FLV files from this server(s) include required headers, as described above.
 
-# Step 3: Content protection 
+# Step 3: Content protection
 
 In case your video URLs have some sort of content protection scheme, additional settings are required. This is because Hola’s CDN servers will initially attempt to download a copy of the video from your infrastructure to serve to future users. If content protection is used and no steps are taken, Hola servers will not be able to download videos.
 
@@ -63,7 +65,7 @@ In case whitelisting IPs is not an option, ……..of the video URL includes enc
 
  
 
-#  Step 4: Add Hola JS to your website
+# Step 4: Add Hola JS to your website
 
 The next steps is adding the Hola JS code into your web page.
 
@@ -81,11 +83,11 @@ Hola will email you detailed integration Instructions for your site. Below you c
 
 1. Add the following line to the <head> tag of the video page
 
-<script async src="http://player.h-cdn.com/loader_**yourname**.js"></script>
+```<script async src="http://player.h-cdn.com/loader_**yourname**.js"></script>```
 
 2. After the call to setup the video pllayer, add the following script, where ##### is the video number ID:
 
-// SAMPLE CODE - DO NOT USE
+```// SAMPLE CODE - DO NOT USE
 
 function **yourname**_hola_init(){
     if (window.hola_cdn && window.hola_cdn.init_**yourname**_hola_init)
@@ -96,7 +98,7 @@ function **yourname**_hola_init(){
 
 jwplayer("video-**_#####_**").onReady(**yourname**_hola_init);
 
-// SAMPLE CODE - DO NOT USE
+// SAMPLE CODE - DO NOT USE```
 
 # Step 5: Testing Hola CDN locally on your PC
 
@@ -116,7 +118,7 @@ Note: If your site includes frames, don’t forget to enter the console commands
 
 # Step 6: Deployment to production
 
-**Enabling Hola in production**
+## Enabling Hola in production
 
 When you are satisfied with local testing, you can gradually enable the service. This can can be done using any of the following ways:
 
@@ -128,7 +130,7 @@ When you are satisfied with local testing, you can gradually enable the service.
 
 You will soon be able to control #2,#3 from your portal account. Until that time, Hola support will work with you to enable a given percentage of users on specific platforms/browsers.
 
-**Disabling Hola in production**
+## Disabling Hola in production
 
 You can disable Hola by logging into your portal page on [http://holacdn.com/](http://holacdn.com/) and clicking the "Disable" button.
 
