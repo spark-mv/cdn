@@ -87,7 +87,8 @@ Hola will email you detailed integration Instructions for your site. Below you c
 
 2. After the call to setup the video pllayer, add the following script, where ##### is the video number ID:
 
-```// SAMPLE CODE - DO NOT USE
+```
+// SAMPLE CODE - DO NOT USE
 
 function **yourname**_hola_init(){
     if (window.hola_cdn && window.hola_cdn.init_**yourname**_hola_init)
@@ -98,7 +99,8 @@ function **yourname**_hola_init(){
 
 jwplayer("video-**_#####_**").onReady(**yourname**_hola_init);
 
-// SAMPLE CODE - DO NOT USE```
+// SAMPLE CODE - DO NOT USE
+```
 
 # Step 5: Testing Hola CDN locally on your PC
 
