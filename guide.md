@@ -51,13 +51,12 @@ There are a few ways of dealing with content protection.
 
 Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to operate. Add the following servers to your list of whitelisted IPs:  [CHECK!!!!]
 
+```
 37.187.161.44
-
 76.73.18.98
-
 5.196.82.58
-
 204.45.27.2
+```
 
 ## Allow Hola servers to access with predefined key
 
