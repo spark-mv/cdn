@@ -138,7 +138,7 @@ There are a few ways:
 
 Please contact Hola in order to determine the best way to address this issue.
 
-4. Add Hola JS to your website
+# 4. Add Hola JS to your website
 
 Hola will provide you with JS to add to your website. If you did not receive code, please email .
 
