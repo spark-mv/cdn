@@ -49,7 +49,7 @@ Hola CDN works with modern, chunked video protocols by requesting video segments
 
 Test to see if your HTTP server is configured correctly by using:
 
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to manifest file>```
+```curl -v -H "Origin: <site origin link>" -X OPTIONS <link to manifest file>```
 
 The desired response is:
 
@@ -59,8 +59,7 @@ HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-Access-Control-Expose-Headers: Content-Range, Date, Etag
-Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
+Access-Control-Expose-Headers: Date, Etag
 Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
 
@@ -68,7 +67,15 @@ Timing-Allow-Origin: *
 
 In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
 
-## 2.3 Configuring CORS headers
+## 2.3 Handling redirects
+
+In some cases, the first video URL is redirected to another URL. In this case, make sure that:
+
+- Any video data links that redirect also respond to OPTIONS with CORS headers as detailed above.
+
+- The response headers must respond to OPTIONS with 200/204 status, and not with 302.
+
+## 2.4 Configuring CORS headers
 
 For step by step instructions regarding how to enable CORS on different web servers, see the [original CORS documentation](http://enable-cors.org/server.html). If you are using Amazon S3, please click [here](https://github.com/hola/cdn/blob/master/progressive_download.md#using-amazon-s3). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
 
