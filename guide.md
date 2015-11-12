@@ -4,7 +4,13 @@ This is a step-by-step guide to adding HolaCDN to your website.
 
 # 1. Create an account
 
-Create an account on [https://holacdn.com](https://holacdn.com/). Hola will activate your account and analyze your site, in order to prepare JavaScript code for integration which will happen after the following steps are completed. You can continue to the next step, no need to wait.
+On the HolaCDN customer portal, you will be able to view user experience statistics such as video start time, buffering, video quality and other settings. You will also be able to configure your HolaCDN system.
+
+ 
+
+Create an account on [https://holacdn.com](https://holacdn.com/). Hola will activate your account and analyze your site, in order to prepare JavaScript code for it.
+
+After creating the account, continue to the steps 2-3; no need to wait.
 
 # 2. Server-side settings 
 
@@ -70,7 +76,7 @@ In case the response is different from the desired response, you need to configu
 
 Test to see if your HTTP server is configured correctly by using:
 
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to manifest file>```
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV file>```
 
 The desired response is:
 
@@ -110,6 +116,7 @@ Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to opera
 50.7.1.2
 46.105.109.214
 185.18.206.193
+
 85.17.24.129
 37.187.161.44
 76.73.18.98
@@ -193,11 +200,11 @@ Note: If your site includes frames, don’t forget to enter the console commands
 
 When you are satisfied with local testing, you can gradually enable the service. This can can be done using any of the following ways:
 
-1.     Add the JS code only to a specific area/category of the site
+- Add the JS code only to a specific area/category of the site
 
-2.     Enabling the service on a percentage of the traffic
+- Enabling the service on a percentage of the traffic
 
-3.     Enabling the JS only on specific platforms/browsers
+- Enabling the JS only on specific platforms/browsers
 
 You will soon be able to control #2,#3 from your portal account. Until that time, Hola support will work with you to enable a given percentage of users on specific platforms/browsers.
 
