@@ -8,7 +8,7 @@ Create an account on [https://holacdn.com](https://holacdn.com/). Hola will acti
 
 # 2. Server-side settings 
 
-## To ensure optimal operation of Hola CDN, certain HTTP headers need to be enabled on the video streaming servers. The following section described how to verify and if needed, enable these headers.
+To ensure optimal operation of Hola CDN, certain HTTP headers need to be enabled on the video streaming servers. The following section described how to verify and if needed, enable these headers.
 
 Different headers are needed for MP4/FLV progressive video and for HLS/HDS/MPEG-DASH protocols. Please select the relevant section.
 
@@ -37,7 +37,7 @@ Timing-Allow-Origin: *
 
 ```
 
-In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the [below](#heading=h.oaa55bvrz6w6) for instructions.
+In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘How do I configure CORS’ section for instructions.
 
 ## Settings for HLS/HDS/MPEG-DASH
 
@@ -87,7 +87,7 @@ Timing-Allow-Origin: *
 
 ```
 
-In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the [below](#heading=h.oaa55bvrz6w6) for instructions.
+In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘How do I configure CORS’ section for instructions.
 
 ## So, how do I configure CORS headers?
 
