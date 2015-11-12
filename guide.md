@@ -39,7 +39,7 @@ Timing-Allow-Origin: *
 
 In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘How do I configure CORS’ section for instructions.
 
-## Settings for HLS/HDS/MPEG-DASH
+## 2.2 Settings for HLS/HDS/MPEG-DASH
 
 Hola CDN works by requesting video segments from multiple servers. For this to work, certain HTTP headers need to be enabled.
 
@@ -89,19 +89,19 @@ Timing-Allow-Origin: *
 
 In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘How do I configure CORS’ section for instructions.
 
-## So, how do I configure CORS headers?
+## 2.3 So, how do I configure CORS headers?
 
 For step by step instructions regarding how to enable CORS on different web servers, see the [original CORS documentation](http://enable-cors.org/server.html). If you are using Amazon S3, please click [here](https://github.com/hola/cdn/blob/master/progressive_download.md#using-amazon-s3). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
 
 After committing the configuration changes, verify response headers to MP4/FLV files from this server(s) include required headers, as described above.
 
-# Step 3: Content protection
+# 3. Handling content protection
 
 Hola’s CDN servers will initially attempt to download a copy of the video from your infrastructure to serve to future users. In case your video URLs have some sort of content protection scheme, additional settings are required. If content protection is used and no steps are taken, Hola servers will not be able to download videos, and Hola CDN will not be able to function.
 
 There are a few ways of dealing with content protection.
 
-## Whitelisting Hola CDN servers
+## 3.1 Whitelisting Hola CDN servers
 
 Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to operate. Add the following servers to your list of whitelisted IPs:
 
@@ -124,7 +124,7 @@ Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to opera
 
 ```
 
-## Allow Hola servers to access your videos using other methods 
+## 3.2 Allow Hola servers to access your videos using other methods 
 
 In case whitelisting IPs is not an option, you will need to work with Hola to define alternative ways to allow the Hola servers to download video files. 
 
@@ -138,7 +138,7 @@ There are a few ways:
 
 Please contact Hola in order to determine the best way to address this issue.
 
-Step 4: Add Hola JS to your website
+4. Add Hola JS to your website
 
 Hola will provide you with JS to add to your website. If you did not receive code, please email .
 
@@ -177,27 +177,25 @@ jwplayer("video-**_#####_**").onReady(**yourname**_hola_init);
 
 ```
 
-# Step 5: Testing Hola CDN locally on your PC
+# 5. Testing Hola CDN locally on your PC
 
-Once the code is live on the webpage, remember it is still disabled by default on the server side. You can easily enable it locally to test the live code locally on your machine. Simply run in the console
+Once the code is live on the webpage, remember it is still disabled by default on the server side. You can easily enable/disable it locally to test the live code locally on your machine. In the browser developer console, enter one of the following commands:
 
-```hola_cdn.set_mode_cdn()```
+To enable: 		```hola_cdn.set_mode_cdn()```
 
-And reload the page. Hola CDN is now enabled on your browser. Note, this is a persistent setting. 
+To disable:		```hola_cdn.set_mode_disable()```
 
-To disable: ```hola_cdn.set_mode_disable()```
+To view the mode: 	```hola_cdn.mode```
 
-To view the mode: ```hola_cdn.mode```
+To see statistics: 	```hola_cdn.get_stats()```
 
-To see statistics: ```hola_cdn.get_stats()```
-
-To see all settings:```hola_cdn.help()```
+To see all settings:	```hola_cdn.help()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
-# Step 6: Deployment to production
+# 6. Deployment to production
 
-## Enabling Hola in production
+## 6.1 Enabling Hola in production
 
 When you are satisfied with local testing, you can gradually enable the service. This can can be done using any of the following ways:
 
@@ -209,9 +207,7 @@ When you are satisfied with local testing, you can gradually enable the service.
 
 You will soon be able to control #2,#3 from your portal account. Until that time, Hola support will work with you to enable a given percentage of users on specific platforms/browsers.
 
-## Disabling Hola in production
+## 6.2 Disabling Hola in production
 
-You can disable Hola by logging into your portal page on [http://holacdn.com/](http://holacdn.com/) and clicking the "Disable" button.
-
-You can also re-enable Hola by clicking the same button to the same combination of users.
+You can disable Hola by logging into your portal page on [http://holacdn.com/](http://holacdn.com/) and clicking the "Disable" button. You can also re-enable Hola by clicking the same button to the same combination of users.
 
