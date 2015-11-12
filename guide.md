@@ -1,6 +1,6 @@
 # Overview
 
-The objective of this document is to verify that your system is configured correctly for Hola CDN. Once settings are configured and verified, you can integrate Hola Javascript to your website and instantly enjoy Hola CDN benefits.
+This is a step-by-step guide to adding HolaCDN to your website.
 
 # 1. Create an account
 
