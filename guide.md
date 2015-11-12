@@ -70,7 +70,7 @@ In case the response is different from the desired response, you need to configu
 
 Test to see if your HTTP server is configured correctly by using:
 
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV file>```
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to manifest file>```
 
 The desired response is:
 
