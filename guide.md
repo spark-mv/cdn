@@ -18,11 +18,9 @@ To ensure optimal operation of Hola CDN, certain HTTP headers need to be enabled
 
 Different headers are needed for MP4/FLV progressive video and for HLS/HDS/MPEG-DASH protocols. Please select the relevant section.
 
-## 2.1 Settings for MP4/FLV progressive video
+## 2.1 CORS settings for MP4/FLV progressive video
 
 Hola free bandwidth saver and CDN work by requesting your MP4/FLV files from the video server in chunks. For this to work, certain HTTP headers need to be enabled.
-
-### How to verify existing CORS header configuration
 
 Test to see if your HTTP server is configured correctly by using:
 
@@ -43,13 +41,11 @@ Timing-Allow-Origin: *
 
 ```
 
-In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘How do I configure CORS’ section for instructions.
+In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
 
-## 2.2 Settings for HLS/HDS/MPEG-DASH
+## 2.2 CORS settings for HLS/HDS/MPEG-DASH
 
-Hola CDN works by requesting video segments from multiple servers. For this to work, certain HTTP headers need to be enabled.
-
-### How to verify existing CORS header configuration
+Hola CDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. For this to work, certain HTTP headers need to be enabled.
 
 Test to see if your HTTP server is configured correctly by using:
 
@@ -70,36 +66,13 @@ Timing-Allow-Origin: *
 
 ```
 
-In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. 
+In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
 
-### How to verify existing CORS header configuration
-
-Test to see if your HTTP server is configured correctly by using:
-
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV file>```
-
-The desired response is:
-
-```
-
-HTTP/1.1 200 OK
-Content-Length: 0
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-Access-Control-Expose-Headers: Content-Range, Date, Etag
-Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
-Access-Control-Max-Age: 600
-Timing-Allow-Origin: *
-
-```
-
-In case the response is different from the desired response, you need to configure the missing headers by enabling CORS on the web server(s) that is serving the video files. We suggest to go line by line to ensure all headers are configured correctly. Please see the ‘How do I configure CORS’ section for instructions.
-
-## 2.3 So, how do I configure CORS headers?
+## 2.3 Configuring CORS headers
 
 For step by step instructions regarding how to enable CORS on different web servers, see the [original CORS documentation](http://enable-cors.org/server.html). If you are using Amazon S3, please click [here](https://github.com/hola/cdn/blob/master/progressive_download.md#using-amazon-s3). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
 
-After committing the configuration changes, verify response headers to MP4/FLV files from this server(s) include required headers, as described above.
+After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
 
 # 3. Handling content protection
 
