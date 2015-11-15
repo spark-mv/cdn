@@ -136,7 +136,7 @@ Hola will email you detailed integration Instructions for your site. Below you c
 
 1. Add the following line to the <head> tag of the video page
 
-```<script async src="http://player.h-cdn.com/loader_**yourname**.js"></script>```
+```<script async src="http://player.h-cdn.com/loader_**customer_name**.js"></script>```
 
 2. After the call to setup the video player, add the following script, where ##### is the video number ID:
 
@@ -144,14 +144,14 @@ Hola will email you detailed integration Instructions for your site. Below you c
 
 // SAMPLE CODE - DO NOT USE
 
-function **yourname**_hola_init(){
-    if (window.hola_cdn && window.hola_cdn.init_**yourname**_hola_init)
-	window.hola_cdn.init_**yourname**_hola_init()
+function **customer_name**_hola_init(){
+    if (window.hola_cdn && window.hola_cdn.init_**customer_name**_hola_init)
+	window.hola_cdn.init_**customer_name**_hola_init()
     else
 	window.hola_cdn_on_load = true;
 }
 
-videoplayer("video-**_#####_**").onReady(**yourname**_hola_init);
+videoplayer("video-**_#####_**").onReady(**customer_name**_hola_init);
 
 // SAMPLE CODE - DO NOT USE
 
