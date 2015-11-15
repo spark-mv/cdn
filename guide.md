@@ -151,7 +151,7 @@ function **yourname**_hola_init(){
 	window.hola_cdn_on_load = true;
 }
 
-jwplayer("video-**_#####_**").onReady(**yourname**_hola_init);
+videoplayer("video-**_#####_**").onReady(**yourname**_hola_init);
 
 // SAMPLE CODE - DO NOT USE
 
