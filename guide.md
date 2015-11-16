@@ -136,7 +136,7 @@ Hola will email you detailed integration Instructions for your site. Below you c
 
 1. Add the following line to the <head> tag of the video page
 
-```<script async src="http://player.h-cdn.com/loader_**customer_name**.js"></script>```
+```<script async src="http://player.h-cdn.com/loader_**yourname**.js"></script>```
 
 2. After the call to setup the video player, add the following script, where ##### is the video number ID:
 
@@ -159,7 +159,23 @@ videoplayer("video-**_#####_**").onReady(**customer_name**_hola_init);
 
 # 5. Testing Hola CDN locally on your PC
 
-Once the code is live on the webpage, remember it is still disabled by default on the server side. You can easily enable/disable it locally to test the live code locally on your machine. In the browser developer console, enter one of the following commands:
+Once the code is live on the webpage, remember it is still disabled by default on the server side. You can easily enable/disable it locally to test the live code locally. This is possible by either appending a command to your URL, or by entering commands in the browser developer console. 
+
+## Configuring via address bar
+
+To control HolaCDN via the address bar, simply append ```‘?hola_mode=xxx’``` to your URL.
+
+To enable CDN mode:	append ```?hola_mode=cdn```
+
+To enable stats mode: 	append ```?hola_mode=stats```
+
+To disable HolaCDN:	append ```?hola_mode=disabled```
+
+Note that in order to check mode or see statistics, you will need to use the console, see below. 
+
+## Configuring via browser console
+
+In the browser developer console, enter one of the following commands:
 
 To enable: 		```hola_cdn.set_mode_cdn()```
 
