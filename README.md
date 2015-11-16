@@ -18,7 +18,8 @@ Progressive MP4/FLV is an easy way to deliver online video, but also wastes band
 
 Hola CDN free bandwidth saver will instantly reduce your bandwidth bill by 40%. Simply add the JavaScript to your video pages. It's free and extremely easy to [test in under 5 minutes using Chrome] (https://github.com/hola/cdn/blob/master/progressive_download.md#test-hola-cdn-in-less-than-5-minutes). To implement, Follow the step-by-step instructions in [the guide] (https://github.com/hola/cdn/blob/master/BWsaver_install.md)
 
-##Hola video CDN
+##Hola video CDN (1TB FREE per month)
+
 Hola also offers a commercial CDN service, specifically designed for video delivery. 
 
 Hola client side code “auctions” each chunk of the video between the existing CDN and  multiple Hola CDN servers worldwide. First chunks are downloaded from the fastest servers and later chunks are downloaded from the lowest cost servers.  
