@@ -163,7 +163,7 @@ Once the code is live on the webpage, remember it is still disabled by default o
 
 ## Configuring via address bar
 
-To control HolaCDN via the address bar, simply append ```‘?hola_mode=xxx’``` to your URL.
+To control HolaCDN via the address bar, simply append ```?hola_mode=xxx``` to your URL.
 
 To enable CDN mode:	append ```?hola_mode=cdn```
 
