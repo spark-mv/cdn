@@ -2,7 +2,7 @@
 
 **_These modules are completely free for both non-commercial and commercial use._**
 
-## Detailed video analytics (FREE)
+## [Detailed video analytics (FREE)] (https://github.com/hola/cdn/blob/master/stats_install.md)
 
 * Do you know what is the video start time for your users in London?
 * Is there video buffering for Indian users during peak times?
