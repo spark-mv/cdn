@@ -8,8 +8,6 @@
 * Is there video buffering for Indian users during peak times?
 * What percentage of your users click play, but never see a video and move on to another site?
 
-All browsers and platforms are supported. 
-
 Find out using Hola CDN video analytics. Follow the step-by-step instructions in [the guide] (https://github.com/hola/cdn/blob/master/stats_install.md), and access realtime statistics on the portal.
 
 ## [Bandwidth saver for progressive video downloads (FREE)](https://github.com/hola/cdn/blob/master/BWsaver_install.md) 
