@@ -120,7 +120,7 @@ Please contact Hola in order to determine the best way to address this issue.
 
 # 4. Add Hola JS to your website
 
-Hola will provide you with JS to add to your website. If you did not receive code, please email .
+Hola will provide you with JS to add to your website. If you did not receive code, please email cdn-help at  hola.org.
 
 Note that you can safely add the JS code to your web page, it will not affect users in the field. Although the script will be loaded, it is disabled by default on the server side. This is to protect from accidental mass deployment.
 
