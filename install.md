@@ -120,7 +120,7 @@ Please contact Hola in order to determine the best way to address this issue.
 
 # 4. Add Hola JS to your website
 
-Hola will provide you with JS to add to your website. If you did not receive code, please email cdn-help at  hola.org.
+Hola will provide you with JS to add to your website. If you did not receive code, please email cdn-help [at] hola [dot] org.
 
 Note that you can safely add the JS code to your web page, it will not affect users in the field. Although the script will be loaded, it is disabled by default on the server side. This is to protect from accidental mass deployment.
 
@@ -189,21 +189,20 @@ To see all settings:	```hola_cdn.help()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
+## Checking statistics on the portal
+
+Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to your account. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
+
 # 6. Deployment to production
 
-## 6.1 Enabling Hola in production
+When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account and go to the configuration section. Use the granular control to enable Hola gradually on different platforms/browsers
 
-When you are satisfied with local testing, you can gradually enable the service. This can can be done using any of the following ways:
+For example:
 
-- Add the JS code only to a specific area/category of the site
+* Start by enabling Hola CDN for 10% of Chrome/Win users, and 90% only for statistics collection.
 
-- Enabling the service on a percentage of the traffic
+* Increase Hola CDN to 90% of Chrome/Win users, and leave 10% for statistics.
 
-- Enabling the JS only on specific platforms/browsers
+* Add more/browsers/platforms.
 
-You will soon be able to control #2,#3 from your portal account. Until that time, Hola support will work with you to enable a given percentage of users on specific platforms/browsers.
-
-## 6.2 Disabling Hola in production
-
-You can disable Hola by logging into your portal page on [http://holacdn.com/](http://holacdn.com/) and clicking the "Disable" button. You can also re-enable Hola by clicking the same button to the same combination of users.
-
+Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
