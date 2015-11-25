@@ -68,18 +68,16 @@ Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify th
 
 # Deployment to production
 
-## Enabling Hola in production
+# 6. Deployment to production
 
-When you are satisfied with local testing, you can gradually enable the service. This can can be done using any of the following ways:
+When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account and go to the configuration section. Use the granular control to enable Hola gradually on different platforms/browsers
 
-- Add the JS code only to a specific area/category of the site
+For example:
 
-- Enabling the service on a percentage of the traffic
+* Start by enabling Hola CDN in statistics mode for 10% of Chrome/Win users, and 90% without.
 
-- Enabling the JS only on specific platforms/browsers
+* Increase to 100% of Chrome/Win users.
 
-You will soon be able to control #2,#3 from your portal account. Until that time, Hola support will work with you to enable a given percentage of users on specific platforms/browsers.
+* Add more/browsers/platforms.
 
-## Disabling Hola in production
-
-You can disable Hola by logging into your portal page on [http://holacdn.com/](http://holacdn.com/) and clicking the "Disable" button. You can also re-enable Hola by clicking the same button to the same combination of users.
+Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
