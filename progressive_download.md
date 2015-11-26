@@ -119,7 +119,7 @@ If you are using Amazon S3 to store videos, you should configure your bucket to 
 <CORSConfiguration>
  <CORSRule>
   <AllowedOrigin>*</AllowedOrigin>
-
+  <AllowedMethod>OPTIONS</AllowedMethod>
   <AllowedMethod>HEAD</AllowedMethod>
   <AllowedMethod>GET</AllowedMethod>
 
