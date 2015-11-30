@@ -26,6 +26,10 @@ Test to see if your HTTP server is configured correctly by using:
 
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV file>```
 
+Note: If you are using Amazon S3, use:
+
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" -H "Access-Control-Request-Method: GET" <link to MP4/FLV file>```
+
 The desired response is:
 
 ```
