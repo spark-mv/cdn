@@ -1,4 +1,4 @@
-# Hola Free Bandwidth Saver
+# Overview
 
 This is a step-by-step guide to adding Hola Free Bandwidth Saver to your website.
 
@@ -25,6 +25,10 @@ Hola free bandwidth saver and CDN work by requesting your MP4/FLV files from the
 Test to see if your HTTP server is configured correctly by using:
 
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV file>```
+
+Note: If you are using Amazon S3, use:
+
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" -H "Access-Control-Request-Method: GET" <link to MP4/FLV file>```
 
 The desired response is:
 
@@ -59,7 +63,7 @@ After committing the configuration changes, verify response that headers to from
 
 # 3. Add Hola JS to your website
 
-Hola will provide you with JS to add to your website. If you did not receive code, please email .
+Hola will provide you with JS to add to your website. If you did not receive code, please email cdn-help [at] hola [dot] org.
 
 Note that you can safely add the JS code to your web page, it will not affect users in the field. Although the script will be loaded, it is disabled by default on the server side. This is to protect from accidental mass deployment.
 
@@ -134,19 +138,14 @@ Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify th
 
 # 5. Deployment to production
 
-## 5.1 Enabling Hola in production
+When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account and go to the configuration section. Use the granular control to enable Hola gradually on different platforms/browsers
 
-When you are satisfied with local testing, you can gradually enable the service. This can can be done using any of the following ways:
+For example:
 
-- Add the JS code only to a specific area/category of the site
+* Start by enabling Hola CDN for 10% of Chrome/Win users, and 90% only for statistics collection.
 
-- Enabling the service on a percentage of the traffic
+* Increase Hola CDN to 90% of Chrome/Win users, and leave 10% for statistics.
 
-- Enabling the JS only on specific platforms/browsers
+* Add more/browsers/platforms.
 
-You will soon be able to control #2,#3 from your portal account. Until that time, Hola support will work with you to enable a given percentage of users on specific platforms/browsers.
-
-## 5.2 Disabling Hola in production
-
-You can disable Hola by logging into your portal page on [http://holacdn.com/](http://holacdn.com/) and clicking the "Disable" button. You can also re-enable Hola by clicking the same button to the same combination of users.
-
+Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
