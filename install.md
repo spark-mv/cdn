@@ -93,7 +93,7 @@ For example, if the URL to your video file looks like
 
 [http://video.example.org/content/sample_video.mp4](http://video.example.org/content/sample_video.mp4)
 , or
-[http://video.example.org/content/sample_video.](http://video.example.org/content/sample_video.m3u8)
+[http://video.example.org/content/sample_video.m3u8](http://video.example.org/content/sample_video.m3u8)
 
 simply send ‘video.example.org’ with your customerID to HolaCDN. 
 
