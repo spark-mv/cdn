@@ -39,8 +39,6 @@ If you didn’t do so already, create an account on [https://holacdn.com](https:
 
 On the HolaCDN customer portal, you will be able to view user experience statistics such as video start time, buffering, video quality and other settings. You will also be able to configure your HolaCDN system. To see a live portal account, login to the [demo account] (http://bit.ly/HolaCDNPortalDemo) with user: portal_demo@hola.org, password: holacdn.
 
-Note that some of the instructions below are relevant to progressive download, and some to adaptive protocols.
-
 # 2. Add Hola JS to your website
 
 You can enable Hola CDN on your existing player, or use the Hola VideoJS-based player. The implementation varies slightly based on the video player used - see below.
@@ -193,6 +191,8 @@ Changes take effect immediately, and you will receive a confirmation email every
 # Enabling Hola CDN
 
 The following steps will enable the complete Hola CDN system, which will result in performance increases and cost reductions by using both the cliet-side Javascript and Hola CDN servers around the world.
+
+Note that some of the instructions below are relevant to progressive download, and some to adaptive protocols.
 
 # 5. Video server configuration 
 
