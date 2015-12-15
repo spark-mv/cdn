@@ -134,9 +134,9 @@ Please contact Hola in order to determine the best way to address this issue.
 
 # 4. Add Hola JS to your website
 
-## The implementation varies slightly based on the video player used - see below.
+The implementation varies slightly based on the video player used - see below.
 
-## Note that you can safely add the JS code to your web page, it is disabled by default on the server side in order to protect from accidental mass deployment. After the code is on your web pages, you can enable Hola CDN gradually in order to ensure a smooth deployment:
+Note that you can safely add the JS code to your web page, it is disabled by default on the server side in order to protect from accidental mass deployment. After the code is on your web pages, you can enable Hola CDN gradually in order to ensure a smooth deployment:
 
 * First on your local machine (step 4)
 
