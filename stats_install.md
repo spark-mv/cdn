@@ -6,8 +6,7 @@ Hola video analytics provide you with detailded statistics regarding what really
 - What are video start times?
 - Do users experience buffering? When? Where?
 - Is seeking smooth and reliable?
-- And many other metrics
-- 
+- And many other metrics...
 
 Curious? Login to the demo account:
 
