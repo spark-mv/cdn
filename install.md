@@ -147,16 +147,17 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 Add the script to your page as follows:
 
 ```
+<html>
 video src="http://example.com/uploads/myVideo.mp4" controls
-...
 <script async src="//player.h-cdn.com/loader.js?customer=HC_XXXXXX"></script>
-...
-/body
-/html```
+<html>
+```
 
 ### Live examples:
 
-http://js.do/gilad/html5_video
+Baseline:
+
+[With HolaCDN] (http://js.do/gilad/html5_video)
 
 ## 4.2 Using Hola VideoJS player
 
