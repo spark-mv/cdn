@@ -22,16 +22,15 @@ Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files fro
 
 Test to see if your HTTP server is configured correctly by using:
 
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV file>```
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV/WEBM file>```
 
 Note: If you are using Amazon S3, use:
 
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" -H "Access-Control-Request-Method: GET" <link to MP4/FLV file>```
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" -H "Access-Control-Request-Method: GET" <link to MP4/FLV/WEBM file>```
 
 The desired response is:
 
 ```
-
 HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
@@ -40,16 +39,15 @@ Access-Control-Expose-Headers: Content-Range, Date, Etag
 Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
-
 ```
 
 If the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. See the ‘Configuring CORS headers’ section for instructions.
 
-## 2.2 Optional: CORS settings for HLS/HDS/MPEG-DASH
+## 2.2 Optional: CORS settings for HLS/HDS
 
 Hola CDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. Basic operation does not require any changes to CORS settings.
 
-For optimal performance, Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance. These changes are optional, and can be enabled at any time.
+Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. These changes are optional, and can be enabled at any time.
 
 Test to see if your HTTP server is configured correctly by using:
 
@@ -58,7 +56,6 @@ Test to see if your HTTP server is configured correctly by using:
 The desired response is:
 
 ```
-
 HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
@@ -66,7 +63,6 @@ Access-Control-Allow-Methods: HEAD, GET, OPTIONS
 Access-Control-Expose-Headers: Date, Etag
 Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
-
 ```
 
 In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
@@ -95,9 +91,11 @@ Hola’s CDN needs to know where to download a copy of the video from your infra
 
 For example, if the URL to your video file looks like
 
-```[http://video.example.org/content/sample_video.mp4](http://video.example.org/content/sample_video.mp4)```, or
-
-```[http://video.example.org/content/sample_video.](http://video.example.org/content/sample_video.mp4)m3u8```
+```[http://video.example.org/content/sample_video.mp4](http://video.example.org/content/sample_video.mp4)
+```
+, or
+```[http://video.example.org/content/sample_video.](http://video.example.org/content/sample_video.m3u8)
+```
 
 simply send ‘video.example.org’ with your customerID to HolaCDN. 
 
@@ -112,7 +110,6 @@ In case your video URLs use content protection scheme, Hola servers will not be 
 Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to operate. Add the following servers to your list of whitelisted IPs:
 
 ```
-
 50.7.1.2
 46.105.109.214
 185.18.206.193
@@ -121,7 +118,6 @@ Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to opera
 76.73.18.98
 5.196.82.58
 204.45.27.2
-
 ```
 
 ### 3.2.2 Allow Hola servers to access your videos using other methods 
