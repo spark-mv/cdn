@@ -176,7 +176,7 @@ Note: If your site includes frames, don’t forget to enter the console commands
 
 ## Checking statistics on the portal
 
-Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to your account. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
+Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to your account. Note that you will only see statistics in the 'disabled' column, since Hola CDN is only operating in statistics mode at this point. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
 
 # 4. Deployment to production
 
@@ -184,17 +184,17 @@ When you are satisfied with local testing, you can gradually enable the service 
 
 For example:
 
-* Start by enabling Hola CDN for 10% of Chrome/Win users, and 90% only for statistics collection.
-
-* Increase Hola CDN to 90% of Chrome/Win users, and leave 10% for statistics.
-
+* Start by enabling Hola CDN in statistics mdoe for 10% of Chrome/Win users.
+* Increase Hola CDN statistics collection to 100% of Chrome/Win users.
 * Add more/browsers/platforms.
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
 # Enabling Hola CDN
 
-# 5. Server-side settings 
+The following steps will enable the complete Hola CDN system, which will result in performance increases and cost reductions by using both the cliet-side Javascript and Hola CDN servers around the world.
+
+# 5. Video server configuration 
 
 To ensure optimal operation of Hola CDN, certain HTTP headers need to be enabled on the servers serving video files. The following section describes how to verify and if needed, enable these headers.
 
@@ -307,9 +307,7 @@ In case whitelisting IPs is not an option, you will need to work with Hola to de
 There are a few ways: 
 
 * Share the key generation algorithms with Hola, so that Hola servers will generate valid requests
-
 * Set up a direct/hidden URL
-
 * Set-up a special key which will identify Hola servers.
 
 Please contact Hola in order to determine the best way to address this issue.
@@ -332,6 +330,7 @@ Note that in order to check mode or see statistics, you will need to use the con
 In the browser developer console, enter one of the following commands:
 
 To enable: 		```hola_cdn.set_mode_cdn()```
+To enable: 		```hola_cdn.set_mode_stats()```
 To disable:		```hola_cdn.set_mode_disable()```
 To view the mode: 	```hola_cdn.mode```
 To see statistics: 	```hola_cdn.get_stats()```
@@ -341,7 +340,7 @@ Note: If your site includes frames, don’t forget to enter the console commands
 
 ## Checking statistics on the portal
 
-Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to your account. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
+Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics begin to appear in the "enabled" column. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
 
 # 8. Deployment to production
 
@@ -350,9 +349,7 @@ When you are satisfied with local testing, you can gradually enable the service 
 For example:
 
 * Start by enabling Hola CDN for 10% of Chrome/Win users, and 90% only for statistics collection.
-
 * Increase Hola CDN to 90% of Chrome/Win users, and leave 10% for statistics.
-
 * Add more/browsers/platforms.
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
