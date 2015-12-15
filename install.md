@@ -148,20 +148,22 @@ Add the script to your page as follows:
 
 ```
 <html>
+...
 video src="http://example.com/uploads/myVideo.mp4" controls
 <script async src="//player.h-cdn.com/loader.js?customer=HC_XXXXXX"></script>
+...
 <html>
 ```
 
 ### Live examples:
 
-Baseline:
+[Without Hola CDN] (http://js.do/gilad/html5_video)
 
 [With HolaCDN] (http://js.do/gilad/html5_video)
 
 ## 4.2 Using Hola VideoJS player
 
-http://js.do/gilad/html5_hola_player
+[With HolaCDN] (http://js.do/gilad/html5_hola_player)
 
 ## 4.3 Flash based video players
 
@@ -169,21 +171,21 @@ http://js.do/gilad/html5_hola_player
 
 If your site uses JW Player with flash technology, follow these steps:
 
-1. Add Hola loader to the <head> element of the video HTML page:
+1. Add Hola loader to the <head> element of the video HTML page, along with your customerID:
 ```
 <head>
-….
-  **<script type="text/javascript” async src=”//player.h-cdn.com/loader.js?customer=XXXXXX”></script>
-**….
+...
+<script type="text/javascript” async src=”//player.h-cdn.com/loader.js?customer=XXXXXX”></script>
+...
 </head>
 ```
 
-2. Replace your JW player SWF with the Hola-enabled version. This is done by configuring {flashplayer: <url>} option in jwplayer(‘video-container’).setup(opt) call:
+2. Replace your JW player SWF with the Hola-enabled version. This is done by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
 jwplayer(‘video-container’).setup({
     file: ‘//cdn.example.com/popular_videos/example.mp4’,
-    **flashplayer: ‘//example.com/static/<new-version-flashplayer>.swf’,
-**    primary: ‘flash’,
+    flashplayer: ‘//example.com/static/<new-version-flashplayer>.swf’,
+    primary: ‘flash’,
     width: 640,
     height: 360
 });
@@ -194,9 +196,7 @@ Download the Hola-enabled version and place it on your own server. Get it from:
 
 * JWPlayer7: [https://player.h-cdn.com/jwplayer.flash.7_1_0.swf](https://player.h-cdn.com/jwplayer.flash.7_1_0.swf)
 
-.
-
-3. Initialize Hola CDN loader right after the call to ```jwplayer(‘video-container’).setup(opt)```. call:
+3. Initialize Hola CDN loader right after the call to ```jwplayer(‘video-container’).setup(opt)```.
 ```
 jwplayer(‘video-container’).setup({
     file: ‘//cdn.example.com/popular_videos/example.mp4’,
@@ -205,7 +205,7 @@ jwplayer(‘video-container’).setup({
     width: 640,
     height: 360
 });
-**if (window.hola_cdn)
+if (window.hola_cdn)
     window.hola_cdn.init(CustomerID=XXXXX);  
 else
     window.hola_cdn_on_load = true;**
@@ -214,28 +214,27 @@ else
 Note: In case you load the player and its init code in a separate script which you can not modify, enable Hola as follows. Make sure that Hola init code is executed after ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
 <script type="text/javascript” src=”https://content.jwplatform.com/players/<player_script>.js”></script>
-**<script>**
-**if (window.hola_cdn)
+<script>
+if (window.hola_cdn)
     window.hola_cdn.init(CustomerID=HC_XXXXXXXX);
 else
     window.hola_cdn_on_load = true;
-</script>**
+</script>
 ```
 
 ### Live examples:
 
-JWPlayer/Flash/MP4: [http://js.do/hola/jwplayer6_flash](http://js.do/hola/jwplayer6_flash)
-JWPlayer/Flash/MP4 with Hola CDN: [http://js.do/hola/jwplayer6_flash_with_hola_cdn](http://js.do/hola/jwplayer6_flash_with_hola_cdn)
+[JWPlayer/Flash/MP4 without Hola CDN](http://js.do/hola/jwplayer6_flash)
+[JWPlayer/Flash/MP4 with Hola CDN] (http://js.do/hola/jwplayer6_flash_with_hola_cdn)
 
 ### 4.3.2 VideoJS
 
-http://js.do/gilad/html5_vjs
+
 
 ### Live Example
 
-<link to JS.DO example playing demo video without CDN>
+[With Hola CDN] (http://js.do/gilad/html5_vjs)
 
-<link to JS.DO example playing demo video with CDN>
 
 # 5. Testing Hola CDN locally on your PC
 
