@@ -150,14 +150,13 @@ If your site uses a videoJS based player with flash technology, follow these ste
 [With Hola CDN] (http://js.do/gilad/html5_vjs)
 
 
-# 3. Testing Hola CDN locally on your PC
+# 3. Testing Hola CDN statistics locally
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by either appending a command to your URL, or by entering commands in the browser developer console. 
 
 ## Configuring via address bar
 
 To control HolaCDN via the address bar, append ```?hola_mode=xxx``` to the URL.
-To enable CDN mode:	append ```?hola_mode=cdn```
 To enable stats mode: 	append ```?hola_mode=stats```
 To disable HolaCDN:	append ```?hola_mode=disabled```
 
@@ -167,7 +166,7 @@ Note that in order to check mode or see statistics, you will need to use the con
 
 In the browser developer console, enter one of the following commands:
 
-To enable: 		```hola_cdn.set_mode_cdn()```
+To enable: 		```hola_cdn.set_mode_stats()```
 To disable:		```hola_cdn.set_mode_disable()```
 To view the mode: 	```hola_cdn.mode```
 To see statistics: 	```hola_cdn.get_stats()```
