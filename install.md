@@ -173,7 +173,7 @@ video src="http://example.com/uploads/myVideo.mp4" controls
 
 If your site uses JW Player with flash technology, follow these steps:
 
-1. Add Hola loader to the <head> element of the video HTML page, along with your customerID:
+1) Add Hola loader to the <head> element of the video HTML page, along with your customerID:
 ```
 <head>
 ...
@@ -182,7 +182,7 @@ If your site uses JW Player with flash technology, follow these steps:
 </head>
 ```
 
-2. Replace your JW player SWF with the Hola-enabled version. This is done by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
+2) Replace your JW player SWF with the Hola-enabled version. This is done by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
 jwplayer(‘video-container’).setup({
     file: ‘//cdn.example.com/popular_videos/example.mp4’,
@@ -198,7 +198,7 @@ Download the Hola-enabled version and place it on your own server. Get it from:
 
 * JWPlayer7: [https://player.h-cdn.com/jwplayer.flash.7_1_0.swf](https://player.h-cdn.com/jwplayer.flash.7_1_0.swf)
 
-3. Initialize Hola CDN loader right after the call to ```jwplayer(‘video-container’).setup(opt)```.
+3) Initialize Hola CDN loader right after the call to ```jwplayer(‘video-container’).setup(opt)```.
 ```
 jwplayer(‘video-container’).setup({
     file: ‘//cdn.example.com/popular_videos/example.mp4’,
