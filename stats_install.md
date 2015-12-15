@@ -1,6 +1,6 @@
-# Free video user experience statistics
+# Free video analytics
 
-Hola video analytics provide you with the most granular and detailded statistics to what should matter the most:
+Hola video analytics provide you with the most granular and detailded statistics to what really matters - your end user's experience:
 
 - What percent of my users click play, but never see a video?
 - What are video start times?
