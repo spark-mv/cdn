@@ -134,13 +134,19 @@ Please contact Hola in order to determine the best way to address this issue.
 
 # 4. Add Hola JS to your website
 
-The implementation varies slightly based on the video player used - see below.
+You can enable Hola CDN on your existing player, or use the Hola VideoJS-based player. The implementation varies slightly based on the video player used - see below.
 
 Note that you can safely add the JS code to your web page, it is disabled by default on the server side in order to protect from accidental mass deployment. 
 
 After the code is on your web pages, you can enable Hola CDN gradually in order to ensure a smooth deployment, first on your local machine (step 4) and then to a subset of users, then to all users (step 5)
 
-## 4.1 HTML5 video players
+## 4.1 Using Hola VideoJS player
+
+Hola player is a VideoJS based video player with [additional features] (https://github.com/hola/video.js#features). It is completely free to use and offers best performance and compatibility with Hola CDN.
+
+[With HolaCDN] (http://js.do/gilad/html5_hola_player)
+
+## 4.2 HTML5 video players
 
 When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag. A video tag can be embedded in the raw HTML itself, or it can be dynamically created by your video player (e.g. VideoJS)
 
@@ -155,15 +161,11 @@ video src="http://example.com/uploads/myVideo.mp4" controls
 <html>
 ```
 
-### Live examples:
+#### Live examples:
 
 [Without Hola CDN] (http://js.do/gilad/html5_video)
 
 [With HolaCDN] (http://js.do/hola/html5_video_with_hola_cdn)
-
-## 4.2 Using Hola VideoJS player
-
-[With HolaCDN] (http://js.do/gilad/html5_hola_player)
 
 ## 4.3 Flash based video players
 
@@ -222,7 +224,7 @@ else
 </script>
 ```
 
-### Live examples:
+#### Live examples:
 
 [JWPlayer/Flash/MP4 without Hola CDN](http://js.do/hola/jwplayer6_flash)
 
@@ -230,9 +232,9 @@ else
 
 ### 4.3.2 VideoJS
 
+If your site uses a videoJS based player with flash technology, follow these steps:
 
-
-### Live Example
+#### Live Example
 
 [With Hola CDN] (http://js.do/gilad/html5_vjs)
 
