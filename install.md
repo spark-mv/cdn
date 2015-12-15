@@ -159,7 +159,7 @@ video src="http://example.com/uploads/myVideo.mp4" controls
 
 [Without Hola CDN] (http://js.do/gilad/html5_video)
 
-[With HolaCDN] (http://js.do/gilad/html5_video)
+[With HolaCDN] (http://js.do/hola/html5_video_with_hola_cdn)
 
 ## 4.2 Using Hola VideoJS player
 
