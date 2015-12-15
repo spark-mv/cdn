@@ -5,7 +5,7 @@ Adding the free HolaCDN video statistics to your website is free and easy.
 Curious? Login to the demo account:
 
 ```
-[demo account] (http://bit.ly/HolaCDNPortalDemo) 
+http://bit.ly/HolaCDNPortalDemo 
 user: portal_demo@hola.org
 password: holacdn
 ```
