@@ -1,6 +1,13 @@
 # Free video user experience statistics
 
-Adding the free HolaCDN video statistics to your website is free and easy.
+Hola video analytics provide you with the most granular and detailded statistics to what should matter the most:
+
+- What percent of my users click play, but never see a video?
+- What are video start times?
+- Do users experience buffering? When? Where?
+- Is seeking smooth and reliable?
+- And many other metrics
+- 
 
 Curious? Login to the demo account:
 
