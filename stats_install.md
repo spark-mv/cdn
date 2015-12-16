@@ -65,7 +65,7 @@ Add the script to your page as follows:
 <html>
 ...
 video src="http://example.com/uploads/myVideo.mp4" controls
-<script async src="//player.h-cdn.com/loader.js?customer=HC_XXXXXX"></script>
+<script async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 ...
 <html>
 ```
@@ -117,7 +117,7 @@ jwplayer(‘video-container’).setup({
     height: 360
 });
 if (window.hola_cdn)
-    window.hola_cdn.init(CustomerID=XXXXX);  
+    window.hola_cdn.init();  
 else
     window.hola_cdn_on_load = true;**
 ```
@@ -127,7 +127,7 @@ Note: In case you load the player and its init code in a separate script which y
 <script type="text/javascript” src=”https://content.jwplatform.com/players/<player_script>.js”></script>
 <script>
 if (window.hola_cdn)
-    window.hola_cdn.init(CustomerID=HC_XXXXXXXX);
+    window.hola_cdn.init();
 else
     window.hola_cdn_on_load = true;
 </script>
