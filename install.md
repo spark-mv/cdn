@@ -158,7 +158,7 @@ Add the script to your page as follows:
 <html>
 ...
 video src="http://example.com/uploads/myVideo.mp4" controls
-<script async src="//player.h-cdn.com/loader.js?customer=HC_XXXXXX"></script>
+<script async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 ...
 <html>
 ```
