@@ -210,7 +210,7 @@ jwplayer(‘video-container’).setup({
     height: 360
 });
 if (window.hola_cdn)
-    window.hola_cdn.init(CustomerID=XXXXX);  
+    window.hola_cdn.init();  
 else
     window.hola_cdn_on_load = true;**
 ```
@@ -220,7 +220,7 @@ Note: In case you load the player and its init code in a separate script which y
 <script type="text/javascript” src=”https://content.jwplatform.com/players/<player_script>.js”></script>
 <script>
 if (window.hola_cdn)
-    window.hola_cdn.init(CustomerID=HC_XXXXXXXX);
+    window.hola_cdn.init();
 else
     window.hola_cdn_on_load = true;
 </script>
