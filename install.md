@@ -110,12 +110,15 @@ Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to opera
 ```
 50.7.1.2
 46.105.109.214
-185.18.206.193
+212.150.236.132
+83.149.70.164
+192.240.106.66
 85.17.24.129
-37.187.161.44
-76.73.18.98
 5.196.82.58
 204.45.27.2
+37.187.161.44
+76.73.18.98
+66.90.111.2
 ```
 
 ### 3.2.2 Allow Hola servers to access your videos using other methods 
