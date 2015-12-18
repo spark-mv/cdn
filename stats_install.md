@@ -103,9 +103,9 @@ jwplayer(‘video-container’).setup({
 ```
 Download the Hola-enabled version and place it on your own server. Get it from:
 
-* JWPlayer6: [https://player.h-cdn.com/jwplayer.flash.hls.swf](https://player.h-cdn.com/jwplayer.flash.hls.swf)
+* JWPlayer 6.12.4956: [https://player.h-cdn.com/jwplayer.flash.hls.swf](https://player.h-cdn.com/jwplayer.flash.hls.swf)
 
-* JWPlayer7: [https://player.h-cdn.com/jwplayer.flash.7_1_0.swf](https://player.h-cdn.com/jwplayer.flash.7_1_0.swf)
+* JWPlayer 7.1.0: [https://player.h-cdn.com/jwplayer.flash.7_1_0.swf](https://player.h-cdn.com/jwplayer.flash.7_1_0.swf)
 
 3) Initialize Hola CDN loader right after the call to ```jwplayer(‘video-container’).setup(opt)```.
 ```
