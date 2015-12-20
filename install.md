@@ -48,9 +48,9 @@ video src="http://example.com/uploads/myVideo.mp4" controls
 
 #### Live examples:
 
-[Without Hola CDN] (http://js.do/gilad/html5_video)
+[Without Hola CDN] (http://hola.github.io/examples/cdn/#html5)
 
-[With HolaCDN] (http://js.do/hola/html5_video_with_hola_cdn)
+[With HolaCDN] (http://hola.github.io/examples/cdn/#html5_cdn)
 
 ## 2.3 Flash based video players
 
@@ -111,17 +111,28 @@ else
 
 #### Live examples:
 
-[JWPlayer/Flash/MP4 without Hola CDN](http://js.do/hola/jwplayer6_flash)
+[JWPlayer/Flash/MP4 without Hola CDN] (http://hola.github.io/examples/cdn/#jwplayer6)
 
-[JWPlayer/Flash/MP4 with Hola CDN] (http://js.do/hola/jwplayer6_flash_with_hola_cdn)
+[JWPlayer/Flash/MP4 with Hola CDN] (http://hola.github.io/examples/cdn/#jwplayer6_cdn)
 
 ### 2.3.2 VideoJS
 
 If your site uses a videoJS based player with flash technology, follow these steps:
 
+1) Add Hola loader to the <head> element of the video HTML page, along with your customerID:
+```
+<head>
+...
+<script type="text/javascript” async src=”//player.h-cdn.com/loader.js?customer=XXXXXX”></script>
+...
+</head>
+```
+
 #### Live Example
 
-[With Hola CDN] (http://js.do/gilad/html5_vjs)
+[VJS5 without Hola CDN] (http://hola.github.io/examples/cdn/#vjs5)
+
+[VJS with Hola CDN] (http://hola.github.io/examples/cdn/#vjs5_cdn)
 
 
 # 3. Test Hola CDN statistics locally
