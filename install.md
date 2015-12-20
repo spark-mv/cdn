@@ -1,6 +1,7 @@
 # Overview
 
 This is a step-by-step guide to adding HolaCDN to your website. The is a two-step process:
+
 1. Add the JS to your site and collect user experience statistics. 
 2. Enable Hola and measure user experience and cost improvements.
 
