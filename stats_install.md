@@ -16,10 +16,8 @@ user: portal_demo@hola.org
 password: holacdn
 ```
 
-## **_Hola video statistics are and will always remain free._**
-
-# Implementation
-
 Implementation should take only a few minutes. Follow the [step by step guide] (https://github.com/hola/cdn/blob/master/stats_install.md)
 
 If you have any questions during implementation, please email cdn-help [at] hola [dot] or skype:holacdn.com
+
+## **_Hola video statistics are and will always remain free for commercial and non-commercial use._**
