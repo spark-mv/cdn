@@ -164,7 +164,7 @@ For example:
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
-##_Your video user experience statistics collection is now configured and active._##
+###_Hola CDN video user experience statistics collection is now active._###
 
 
 
