@@ -29,9 +29,13 @@ If you have any questions during implementation, please email cdn-help [at] hola
 
 # Overview
 
-This is a step-by-step guide to adding HolaCDN to your website.
+This is a step-by-step guide to adding HolaCDN to your website. The is a two-step process:
+1. Add the JS to your site and collect user experience statistics. 
+2. Enable Hola and measure user experience and cost improvements.
 
 If you have any questions during implementation, please email cdn-help [at] hola [dot] or skype:holacdn.com 
+
+# Step 1: Collect current user experience statistics
 
 # 1. Create an account
 
@@ -188,9 +192,11 @@ For example:
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
-# Enabling Hola CDN
+# Step 2:  Enabling Hola CDN and measuring performance/cost improvements
 
-The following steps will enable the complete Hola CDN system, which will result in performance increases and cost reductions by using both the cliet-side Javascript and Hola CDN servers around the world.
+Now that you have the code on your site collecting statistics, you can easily turn on Hola CDN, by following the next steps. 
+
+Enabling g Hola CDN which will result in performance increases and cost reductions by using both the cliet-side Javascript and Hola CDN servers around the world.
 
 Note that some of the instructions below are relevant to progressive download, and some to adaptive protocols.
 
