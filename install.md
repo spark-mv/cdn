@@ -124,7 +124,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 [With Hola CDN] (http://js.do/gilad/html5_vjs)
 
 
-# 3. Testing Hola CDN statistics locally
+# 3. Test Hola CDN statistics locally
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by either appending a command to your URL, or by entering commands in the browser developer console. 
 
@@ -152,7 +152,7 @@ Note: If your site includes frames, don’t forget to enter the console commands
 
 Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to your account. Note that you will only see statistics in the 'disabled' column, since Hola CDN is only operating in statistics mode at this point. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
 
-# 4. Deployment to production
+# 4. Deploy to production
 
 When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers
 
@@ -172,7 +172,7 @@ Enabling g Hola CDN which will result in performance increases and cost reductio
 
 Note that some of the instructions below are relevant to progressive download, and some to adaptive protocols.
 
-# 5. Video server configuration 
+# 5. Configure your video server 
 
 To ensure optimal operation of Hola CDN, certain HTTP headers need to be enabled on the servers serving video files. The following section describes how to verify and if needed, enable these headers.
 
@@ -241,7 +241,7 @@ In some implementations, the first video URL is redirected to another URL. In th
 
 - The response headers must respond to OPTIONS with 200/204 status, and not with 302.
 
-# 6. Allowing Hola CDN to download content
+# 6. Allow Hola CDN to download content
 
 Hola’s CDN servers need to download a first copy of the video from your infrastructure to serve to future users. 
 
@@ -293,7 +293,7 @@ There are a few ways:
 
 Please contact Hola in order to determine the best way to address this issue.
 
-# 7. Testing Hola CDN locally on your PC
+# 7. Test Hola CDN locally on your PC
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by either appending a command to your URL, or by entering commands in the browser developer console. 
 
@@ -323,7 +323,7 @@ Note: If your site includes frames, don’t forget to enter the console commands
 
 Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics begin to appear in the "enabled" column. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
 
-# 8. Deployment to production
+# 8. Deploy to production
 
 When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers
 
