@@ -164,6 +164,12 @@ For example:
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
+##_Your video user experience statistics collection is now configured and active._##
+
+
+
+
+
 # Step 2:  Enabling Hola CDN and measuring performance/cost improvements
 
 Now that you have the code on your site collecting statistics, you can easily turn on Hola CDN, by following the next steps. 
