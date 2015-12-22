@@ -9,7 +9,7 @@ The entire implementation can be completed in 15 minutes.
 
 If you have any questions during implementation, please email cdn-help [at] hola [dot] or skype:holacdn.com 
 
-# Step 1: Collect current user experience statistics
+# *Step 1: Collect current user experience statistics*
 
 # 1. Create an account
 
@@ -250,9 +250,9 @@ Changes take effect immediately, and you will receive a confirmation email every
 
 
 
+If you would like to enable the Hola CDN, continue following the relevant steps below:
 
-
-# Step 2:  Enabling Hola CDN and measuring performance/cost improvements
+# *Step 2:  Enabling Hola CDN and measuring performance/cost improvements*
 
 Now that you have the code on your site collecting statistics, you can easily turn on Hola CDN, by following the next steps. 
 
