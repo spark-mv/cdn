@@ -37,7 +37,7 @@ Examples provided throughout use MP4 video, but same syntax is used for HLS (M3U
 
 Hola player is a VideoJS based video player with [additional features] (https://github.com/hola/video.js#features). It is completely free to use and offers best performance and compatibility with Hola CDN.
 
-Add Hola scripts to your page as follows:
+1) Add Hola scripts to your page as follows:
 
 ```
 <head>
@@ -48,7 +48,7 @@ Add Hola scripts to your page as follows:
 </head>
 ```
 
-Create a video tag with the following classes: ```video-js vjs-default-skin```
+2) Create a video tag with the following classes: ```video-js vjs-default-skin```
 
 ```
   <video class="video-js vjs-default-skin" poster="http://poster.jpg" width="640" height="360" controls>
@@ -56,7 +56,7 @@ Create a video tag with the following classes: ```video-js vjs-default-skin```
   </video>
 ```
 
-Add the following script at the end of your body:
+3) Add the following script at the end of your body:
 
 ```
   <script>
@@ -83,13 +83,21 @@ Add the following script at the end of your body:
 
 When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag. A video tag can be embedded in the raw HTML itself, or it can be dynamically created by your video player (e.g. VideoJS)
 
-Add the script to your page as follows:
+1) Add the script to your page as follows:
 
 ```
 <html>
 ...
 video src="http://example.com/uploads/myVideo.mp4" controls
 <script async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
+<script>
+    (function(){
+        if (window.hola_cdn)
+            window.hola_cdn.init();
+        else
+            window.hola_cdn_on_load = true;
+    })();
+</script>
 ...
 <html>
 ```
@@ -148,7 +156,7 @@ else
 
 Note: In case you load the player and its init code in a separate script which you can not modify, enable Hola as follows. Make sure that Hola init code is executed after ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
-<script type="text/javascript” src=”https://content.jwplatform.com/players/<player_script>.js”></script>
+<script src=”https://content.jwplatform.com/players/<player_script>.js”></script>
 <script>
 if (window.hola_cdn)
     window.hola_cdn.init();
@@ -174,6 +182,20 @@ If your site uses a videoJS based player with flash technology, follow these ste
 <script type="text/javascript” async src=”//player.h-cdn.com/loader.js?customer=XXXXXX”></script>
 ...
 </head>
+```
+
+2) Initialize Hola at the end of the body:
+
+```
+<script>
+    (function(){
+        if (window.hola_cdn)
+            window.hola_cdn.init();
+        else
+            window.hola_cdn_on_load = true;
+    })();
+</script>
+</body>
 ```
 
 #### Live Example
