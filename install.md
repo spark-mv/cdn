@@ -264,23 +264,25 @@ Hola’s CDN servers need to download a first copy of the video from your infras
 
 ## 6.1 Configuring video origin servers
 
-Hola’s CDN needs to know where to download a copy of the video from your infrastructure to serve to future users. Please email cdn-help [at] hola [dot] with your customer ID and a list of the video servers. 
+Hola’s CDN needs to know where to download a copy of the video from your infrastructure to serve to future users.
 
-For example, if the URL to your video file looks like
+Go to the configuration page on the Hola CDN portal, and enter video sources for the 'gen' (general) zone. See more on zones below.
 
-[http://video.example.org/content/sample_video.mp4](http://video.example.org/content/sample_video.mp4)
-, or
-[http://video.example.org/content/sample_video.m3u8](http://video.example.org/content/sample_video.m3u8)
+## 6.2 Optional - Configuring zones
 
-simply send ‘video.example.org’ with your customerID to HolaCDN. 
+If you have multiple websites under your customer ID, or you would like to experiment with different settings on parts of your website(s), you can create zones for each site or test.
 
-## 6.2 Handling content protection
+Each zone can have its own set of video sources and activation rules. You can use regular expressions to define the zone.
 
-If your video servers do not use any content protection algorithms, skip to step 4.
+'Gen' is a the default zone. It is applied when it is not overridden by another zone. The gen zone cannot be removed.
+
+## 6.3 Handling content protection
+
+If your video servers do not use any content protection algorithms, skip to step 7.
 
 In case your video URLs use content protection scheme, Hola servers will not be able to download videos, and Hola CDN will not be able to function. There are a few ways of dealing with content protection:
 
-### 6.2.1 Whitelisting Hola CDN servers
+### 6.3.1 Whitelisting Hola CDN servers
 
 Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to operate. Add the following servers to your list of whitelisted IPs:
 
@@ -298,7 +300,7 @@ Whitelisting the Hola CDN servers is the fastest way to enable Hola CDN to opera
 66.90.111.2
 ```
 
-### 6.2.2 Allow Hola servers to access your videos using other methods 
+### 6.3.2 Allow Hola servers to access your videos using other methods 
 
 In case whitelisting IPs is not an option, you will need to work with Hola to define alternative ways to allow the Hola servers to download video files. 
 
