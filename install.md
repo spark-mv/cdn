@@ -149,8 +149,9 @@ Once the code is live on the webpage, remember it is still disabled by default o
 ## Configuring via address bar
 
 To control HolaCDN via the address bar, append ```?hola_mode=xxx``` to the URL.
-To enable stats mode: 	append ```?hola_mode=stats```
-To disable HolaCDN:	append ```?hola_mode=disabled```
+
+* To enable stats mode: 	append ```?hola_mode=stats```
+* To disable HolaCDN:	append ```?hola_mode=disabled```
 
 Note that in order to check mode or see statistics, you will need to use the console, see below. 
 
@@ -326,9 +327,10 @@ Once the code is live on the webpage, remember it is still disabled by default o
 ## Configuring via address bar
 
 To control HolaCDN via the address bar, append ```?hola_mode=xxx``` to the URL.
-To enable CDN mode:	append ```?hola_mode=cdn```
-To enable stats mode: 	append ```?hola_mode=stats```
-To disable HolaCDN:	append ```?hola_mode=disabled```
+
+* To enable CDN mode:	append ```?hola_mode=cdn```
+* To enable stats mode: 	append ```?hola_mode=stats```
+* To disable HolaCDN:	append ```?hola_mode=disabled```
 
 Note that in order to check mode or see statistics, you will need to use the console, see below. 
 
