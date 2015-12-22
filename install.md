@@ -159,11 +159,11 @@ Note that in order to check mode or see statistics, you will need to use the con
 
 In the browser developer console, enter one of the following commands:
 
-To enable: 		```hola_cdn.set_mode_stats()```
-To disable:		```hola_cdn.set_mode_disable()```
-To view the mode: 	```hola_cdn.mode```
-To see statistics: 	```hola_cdn.get_stats()```
-To see all settings:	```hola_cdn.help()```
+* To enable: 		```hola_cdn.set_mode_stats()```
+* To disable:		```hola_cdn.set_mode_disable()```
+* To view the mode: 	```hola_cdn.mode```
+* To see statistics: 	```hola_cdn.get_stats()```
+* To see all settings:	```hola_cdn.help()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
@@ -353,7 +353,7 @@ Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify th
 
 # 8. Deploy to production
 
-When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers
+When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account's configuration section. Use the granular controls to enable Hola on different platforms/browsers
 
 For example:
 
