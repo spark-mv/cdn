@@ -21,7 +21,11 @@ In order to see a live portal account, login to the [demo account] (http://bit.l
 
 # 2. Add Hola JS to your website
 
-You can enable Hola CDN on your existing player, or use the Hola VideoJS-based player. The implementation varies slightly based on the video player used - see below.
+You can enable Hola CDN on:
+
+* Any [HTML5 based video player] (https://github.com/hola/cdn/blob/master/install.md#22-html5-video-players)
+* Flash based players such as [JWPlayer] (https://github.com/hola/cdn/blob/master/install.md#231-jw-player) or [VideoJS] (https://github.com/hola/cdn/blob/master/install.md#232-videojs)
+* The [Hola VideoJS-based player] (https://github.com/hola/cdn/blob/master/install.md#21-using-hola-videojs-player)
 
 Note that you can safely add the JS code to your web page, it is disabled by default on the server side in order to protect from accidental mass deployment. 
 
