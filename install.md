@@ -37,6 +37,43 @@ Examples provided throughout use MP4 video, but same syntax is used for HLS (M3U
 
 Hola player is a VideoJS based video player with [additional features] (https://github.com/hola/video.js#features). It is completely free to use and offers best performance and compatibility with Hola CDN.
 
+Add Hola scripts to your page as follows:
+
+```
+<head>
+...
+    <script src="//player.h-cdn.com/player_vjs5.js"></script>
+    <script src="//player.h-cdn.com/loader.js?customer=XXXXX" async></script>
+...
+</head>
+```
+
+Create a video tag with the following classes: ```video-js vjs-default-skin```
+
+```
+  <video class="video-js vjs-default-skin" poster="http://poster.jpg" width="640" height="360" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+```
+
+Add the following script at the end of your body:
+
+```
+  <script>
+    (function(){
+        window.hola_player(function(player){
+            player.init({}, function(){
+                if (window.hola_cdn)
+                    window.hola_cdn.init();
+                else
+                    window.hola_cdn_on_load = true;
+            });
+        });
+    })();
+  </script>
+</body>
+```
+
 #### Live examples:
 [Without Hola CDN] (http://hola.github.io/examples/cdn/#hola_player)
 
