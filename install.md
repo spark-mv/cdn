@@ -33,6 +33,7 @@ Examples provided throughout use MP4 video, but same syntax is used for HLS (M3U
 
 Hola player is a VideoJS based video player with [additional features] (https://github.com/hola/video.js#features). It is completely free to use and offers best performance and compatibility with Hola CDN.
 
+#### Live examples:
 [Without Hola CDN] (http://hola.github.io/examples/cdn/#hola_player)
 
 [With HolaCDN] (http://hola.github.io/examples/cdn/#hola_player_cdn)
