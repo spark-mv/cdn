@@ -193,7 +193,7 @@ Changes take effect immediately, and you will receive a confirmation email every
 
 Now that you have the code on your site collecting statistics, you can easily turn on Hola CDN, by following the next steps. 
 
-Enabling g Hola CDN which will result in performance increases and cost reductions by using both the cliet-side Javascript and Hola CDN servers around the world.
+Enabling Hola CDN which will result in performance increases and cost reductions by using both the cliet-side Javascript and Hola CDN servers around the world.
 
 Note that some of the instructions below are relevant to progressive download, and some to adaptive protocols.
 
