@@ -15,7 +15,9 @@ If you have any questions during implementation, please email cdn-help [at] hola
 
 If you didn’t do so already, create an account on [https://holacdn.com](https://holacdn.com/), and note your customer ID which was sent to you following the registration.
 
-On the HolaCDN customer portal, you will be able to view user experience statistics such as video start time, buffering, video quality and other settings. You will also be able to configure your HolaCDN system. To see a live portal account, login to the [demo account] (http://bit.ly/HolaCDNPortalDemo) with user: portal_demo@hola.org, password: holacdn.
+On the HolaCDN customer portal, you will be able to view user experience statistics such as video start time, buffering, video quality and other settings. You will also be able to configure your HolaCDN system. 
+
+In order to see a live portal account, login to the [demo account] (http://bit.ly/HolaCDNPortalDemo) with user: portal_demo@hola.org, password: holacdn.
 
 # 2. Add Hola JS to your website
 
