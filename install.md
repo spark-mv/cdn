@@ -349,7 +349,7 @@ Each zone can have its own set of video sources and activation rules. You can us
 
 ## 7.3 Handling content protection
 
-If your video servers do not use any content protection algorithms, skip to step 7.
+If your video servers do not use any content protection algorithms, skip to step 8.
 
 In case your video URLs use content protection scheme, Hola servers will not be able to download videos, and Hola CDN will not be able to function. There are a few ways of dealing with content protection:
 
