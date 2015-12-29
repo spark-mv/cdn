@@ -1,6 +1,6 @@
-# Hola CDN: free bandwidth saver and video analytics tool 
+# HolaCDN: measure and improve your user's video viewing experience
 
-**_These modules are completely free for both non-commercial and commercial use._**
+HolaCDN was specifically designed to measure and optimize online video. Use the free video analytics to measure existing performance, and enable HolaCDN to improve it and save costs.
 
 ## [Detailed video analytics (FREE)] (https://github.com/hola/cdn/blob/master/stats_install.md)
 
@@ -8,9 +8,12 @@
 * Is there video buffering for Indian users during peak times?
 * What percentage of your users click play, but never see a video and move on to another site?
 
-Login to the [demo account] (http://bit.ly/HolaCDNPortalDemo) to see a live example (user: portal_demo@hola.org, password: holacdn)
+No matter what kind of video, origin or CDN(s) you use - HolaCDN can provide answers.
 
-To implement, follow the step-by-step instructions in [the guide] (https://github.com/hola/cdn/blob/master/stats_install.md), and access realtime statistics on the portal.
+Implementation is simple: simply add a JavaScript to your site. [Start now] (https://github.com/hola/cdn/blob/master/stats_install.md), and access realtime statistics on the portal.
+
+To see a live account, login to the [demo account] (http://bit.ly/HolaCDNPortalDemo)  (user: portal_demo@hola.org, password: holacdn)
+
 
 ##[Hola video CDN (1TB FREE per month)] (https://github.com/hola/cdn/blob/master/install.md)
 
@@ -20,7 +23,7 @@ Hola client side code “auctions” each chunk of the video between the existin
 
 Your video is played using chunks downloaded from multiple CDN servers, at high speed & reliability, with minimal cost. For more details, visit [the website] (http://www.holacdn.com)
 
-## [Bandwidth saver for progressive video downloads (FREE)](https://github.com/hola/cdn/blob/master/BWsaver_install.md) 
+## [Does your site use progressive video ? Use the bandwidth saver (FREE)](https://github.com/hola/cdn/blob/master/BWsaver_install.md) 
 
 Progressive MP4/FLV is an easy way to deliver online video, but also wastes bandiwdth. Simply put, video downloads in full, but most users don't view all the downloaded bytes. 
 
