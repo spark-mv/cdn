@@ -200,9 +200,9 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 #### Live Example
 
-VJS5 without HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5) | [HLS] (http://hola.github.io/examples/cdn/#vjs5_hls) | [HDS] (http://hola.github.io/examples/cdn/#vjs5_hds)
+VJS5 without HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5) 
 
-VJS5 with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5_cdn) | [HLS] (http://hola.github.io/examples/cdn/#vjs5_hls_cdn) | [HDS] (http://hola.github.io/examples/cdn/#vjs5_hds_cdn)
+VJS5 with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5_cdn) 
 
 # 3. Test HolaCDN statistics locally
 
