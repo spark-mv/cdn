@@ -14,7 +14,7 @@ Implementation is simple: simply add a JavaScript to your site. [Start now] (htt
 
 To see a live account, login to the [demo account] (http://bit.ly/HolaCDNPortalDemo)  (user: portal_demo@hola.org, password: holacdn)
 
-##[Hola video CDN (1TB FREE per month)] (https://github.com/hola/cdn/blob/master/install.md)
+##[Hola video CDN] (https://github.com/hola/cdn/blob/master/install.md)
 
 Hola also offers a commercial CDN service, specifically designed for video delivery. 
 
