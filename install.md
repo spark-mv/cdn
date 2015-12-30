@@ -76,9 +76,9 @@ Hola player is a VideoJS based video player with [additional features] (https://
 
 #### Live examples:
 
-Hola Player/Flash without HolaCDN: [MP4] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player.html) | [HLS] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player_hls.html) | [HDS] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player_hds.html)
+Hola Player/Flash without HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#hola_player.html) | [HLS] (http://hola.github.io/examples/cdn/#hola_player_hls.html) | [HDS] (http://hola.github.io/examples/cdn/#hola_player_hds.html)
 
-Hola Player/Flash with HolaCDN: [MP4] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player_cdn.html) | [HLS] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player_hls_cdn.html) | [HDS] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player_hds_cdn.html)
+Hola Player/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#hola_player_cdn.html) | [HLS] (http://hola.github.io/examples/cdn/#hola_player_hls_cdn.html) | [HDS] (http://hola.github.io/examples/cdn/#hola_player_hds_cdn.html)
 
 ## 2.2 HTML5 video players
 
