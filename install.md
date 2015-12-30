@@ -167,9 +167,9 @@ else
 
 #### Live examples:
 
-JWPlayer/Flash without HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6) [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls) [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds)
+JWPlayer/Flash without HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6) | [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls) | [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds)
 
-JWPlayer/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6_cdn) [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn) [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn)
+JWPlayer/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6_cdn) | [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn) | [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn)
 
 ### 2.3.2 VideoJS
 
