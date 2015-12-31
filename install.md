@@ -225,7 +225,6 @@ In the browser developer console, enter one of the following commands:
 * To check mode: 	```hola_cdn.mode```
 * To enable: 		```hola_cdn.set_mode_stats()```
 * To disable:		```hola_cdn.set_mode_disable()```
-
 * To see statistics: 	```hola_cdn.get_stats()``` (while video is playing)
 * To see all settings:	```hola_cdn.help()```
 * To reset settings:	```hola_cdn.set_mode_default()```
