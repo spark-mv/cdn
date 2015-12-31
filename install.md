@@ -232,7 +232,11 @@ Note: If your site includes frames, don’t forget to enter the console commands
 
 # 4. Checking statistics on the portal
 
-Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to your account. Note that you will only see statistics in the 'disabled' column, since HolaCDN is only operating in statistics mode at this point. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
+Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
+
+The quickest way to see your recent activity is by clicking on 'debug mode' and the the 'recent events' button.
+
+When looking at the table, note that you will only see statistics in the 'disabled' column, since HolaCDN is only operating in statistics mode at this point. 
 
 # 5. Deploy to production
 
