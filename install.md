@@ -328,16 +328,16 @@ Go to the configuration page on the HolaCDN portal, and enter video source(s) fo
 
 For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com.
 
-See more on zones below.
+See more on zones in the [advanced configuration section] (https://github.com/hola/cdn/blob/master/install.md#11-optional---configuring-zones)
 
 
-## 7.3 Handling content protection
+## 7.2 Handling content protection
 
 If your video servers do not use any content protection algorithms, skip to step 8.
 
 In case your video URLs use content protection scheme, Hola servers will not be able to download videos, and HolaCDN will not be able to function. There are a few ways of dealing with content protection:
 
-### 7.3.1 Whitelisting HolaCDN servers
+### 7.2.1 Whitelisting HolaCDN servers
 
 Whitelisting the HolaCDN servers is the fastest way to enable HolaCDN to operate. Add the following servers to your list of whitelisted IPs:
 
@@ -355,7 +355,7 @@ Whitelisting the HolaCDN servers is the fastest way to enable HolaCDN to operate
 66.90.111.2
 ```
 
-### 7.3.2 Allow Hola servers to access your videos using other methods 
+### 7.2.2 Allow Hola servers to access your videos using other methods 
 
 In case whitelisting IPs is not an option, you will need to work with Hola to define alternative ways to allow the Hola servers to download video files. 
 
@@ -417,9 +417,10 @@ To verify that your changes took effect, don't forget to set HolaCDN to default 
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
-# Congratulations! HolaCDN is up and running*
+# Congratulations! HolaCDN is up and running #
 
-Advanced
+
+# Advanced configuration settings
 
 # 11. Optional - Configuring zones
 
@@ -429,7 +430,7 @@ Each zone can have its own set of video sources and activation rules. You can us
 
 'Gen' is a the default zone. It is applied when it is not overridden by another zone. The gen zone cannot be removed.
 
-# 12. Optional - Configuring zones
+# 12. Optional - CORS settings for HLS/HDS video
 
 HolaCDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. Basic operation does not require any changes to CORS settings.
 
