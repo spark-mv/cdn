@@ -225,7 +225,7 @@ In the browser developer console, enter one of the following commands:
 * To enable: 		```hola_cdn.set_mode_stats()```
 * To disable:		```hola_cdn.set_mode_disable()```
 * To view the mode: 	```hola_cdn.mode```
-* To see statistics: 	```hola_cdn.get_stats()```
+* To see statistics: 	```hola_cdn.get_stats()``` (while video is playing)
 * To see all settings:	```hola_cdn.help()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
@@ -409,7 +409,7 @@ To enable: 		```hola_cdn.set_mode_cdn()```
 To enable: 		```hola_cdn.set_mode_stats()```
 To disable:		```hola_cdn.set_mode_disable()```
 To view the mode: 	```hola_cdn.mode```
-To see statistics: 	```hola_cdn.get_stats()```
+To see statistics: 	```hola_cdn.get_stats()```  (while video is playing)
 To see all settings:	```hola_cdn.help()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
