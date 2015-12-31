@@ -180,7 +180,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 ```
 <head>
 ...
-<script type="text/javascript” async src=”//player.h-cdn.com/loader.js?customer=XXXXXX”></script>
+<script type="text/javascript" async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 ...
 </head>
 ```
