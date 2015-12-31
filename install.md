@@ -227,6 +227,7 @@ In the browser developer console, enter one of the following commands:
 * To view the mode: 	```hola_cdn.mode```
 * To see statistics: 	```hola_cdn.get_stats()``` (while video is playing)
 * To see all settings:	```hola_cdn.help()```
+* To reset settings:		```hola_cdn.set_mode_default()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
@@ -247,6 +248,8 @@ For example:
 * Start by enabling HolaCDN in statistics mdoe for 10% of Chrome/Win users.
 * Increase HolaCDN statistics collection to 100% of Chrome/Win users.
 * Add more/browsers/platforms.
+
+To verify that your changes took effect, don't forget to set HolaCDN to default mode (		```hola_cdn.set_mode_default()```) so that it will be initalized based on decisions on the server side.
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
@@ -411,12 +414,17 @@ To disable:		```hola_cdn.set_mode_disable()```
 To view the mode: 	```hola_cdn.mode```
 To see statistics: 	```hola_cdn.get_stats()```  (while video is playing)
 To see all settings:	```hola_cdn.help()```
+* To reset settings:		```hola_cdn.set_mode_default()```
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
 # 9. Checking statistics on the portal
 
-Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics begin to appear in the "enabled" column. To view individual events, click on ‘debug mode’. Note that it may take a few minutes for statistics to appear on the portal.
+Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
+
+The quickest way to see your recent activity is by clicking on 'debug mode' and the the 'recent events' button.
+
+Now that HolaCDN is enabled, when looking at the table, verify that statistics also begin to appear in the "enabled" column.
 
 # 10. Deploy to production
 
@@ -428,4 +436,9 @@ For example:
 * Increase HolaCDN to 90% of Chrome/Win users, and leave 10% for statistics.
 * Add more/browsers/platforms.
 
+To verify that your changes took effect, don't forget to set HolaCDN to default mode (		```hola_cdn.set_mode_default()```) so that it will be initalized based on decisions on the server side.
+
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
+
+# Congratulations! HolaCDN is up and running*
+
