@@ -300,27 +300,7 @@ If the response is different from the desired response, configure the missing he
 
 ## 6.2 Optional: CORS settings for HLS/HDS
 
-HolaCDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. Basic operation does not require any changes to CORS settings.
-
-Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. These changes are optional, and can be enabled at any time.
-
-Test to see if your HTTP server is configured correctly by using:
-
-```curl -v -H "Origin: <site origin link>" -X OPTIONS <link to m3u8/f4m manifest file>```
-
-The desired response is:
-
-```
-HTTP/1.1 200 OK
-Content-Length: 0
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-Access-Control-Expose-Headers: Date, Etag
-Access-Control-Max-Age: 600
-Timing-Allow-Origin: *
-```
-
-In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
+HolaCDN does not require any changes to CORS settings when working with HLS/HDS video. However, Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. These changes are optional, and can be enabled at any time. They are described in step 12.
 
 ## 6.3 Configuring CORS headers
 
@@ -346,13 +326,7 @@ HolaCDN’s needs to know where to download a copy of the video from your infras
 
 Go to the configuration page on the HolaCDN portal, and enter video sources for the 'gen' (general) zone. See more on zones below.
 
-## 7.2 Optional - Configuring zones
 
-If you have multiple websites under your customer ID, or you would like to experiment with different settings on parts of your website(s), you can create zones for each site or test.
-
-Each zone can have its own set of video sources and activation rules. You can use regular expressions to define the zone.
-
-'Gen' is a the default zone. It is applied when it is not overridden by another zone. The gen zone cannot be removed.
 
 ## 7.3 Handling content protection
 
@@ -442,3 +416,36 @@ Changes take effect immediately, and you will receive a confirmation email every
 
 # Congratulations! HolaCDN is up and running*
 
+Advanced
+
+# 11. Optional - Configuring zones
+
+If you have multiple websites under your customer ID, or you would like to experiment with different settings on parts of your website(s), you can create zones for each site or test.
+
+Each zone can have its own set of video sources and activation rules. You can use regular expressions to define the zone.
+
+'Gen' is a the default zone. It is applied when it is not overridden by another zone. The gen zone cannot be removed.
+
+# 12. Optional - Configuring zones
+
+HolaCDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. Basic operation does not require any changes to CORS settings.
+
+Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. These changes are optional, and can be enabled at any time.
+
+Test to see if your HTTP server is configured correctly by using:
+
+```curl -v -H "Origin: <site origin link>" -X OPTIONS <link to m3u8/f4m manifest file>```
+
+The desired response is:
+
+```
+HTTP/1.1 200 OK
+Content-Length: 0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: HEAD, GET, OPTIONS
+Access-Control-Expose-Headers: Date, Etag
+Access-Control-Max-Age: 600
+Timing-Allow-Origin: *
+```
+
+In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
