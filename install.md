@@ -324,8 +324,11 @@ HolaCDN’s servers need to download a first copy of the video from your infrast
 
 HolaCDN’s needs to know where to download a copy of the video from your infrastructure to serve to future users.
 
-Go to the configuration page on the HolaCDN portal, and enter video sources for the 'gen' (general) zone. See more on zones below.
+Go to the configuration page on the HolaCDN portal, and enter video source(s) for the 'gen' (general) zone. 
 
+For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com.
+
+See more on zones below.
 
 
 ## 7.3 Handling content protection
