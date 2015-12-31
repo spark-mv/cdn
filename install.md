@@ -119,7 +119,7 @@ If your site uses JW Player with flash technology, follow these steps:
 ```
 <head>
 ...
-<script type="text/javascript” async src=”//player.h-cdn.com/loader.js?customer=XXXXXX”></script>
+<script type="text/javascript" async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 ...
 </head>
 ```
@@ -157,7 +157,7 @@ else
 
 Note: In case you load the player and its init code in a separate script which you can not modify, enable Hola as follows. Make sure that Hola init code is executed after ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
-<script src=”https://content.jwplatform.com/players/<player_script>.js”></script>
+<script src="https://content.jwplatform.com/players/<player_script>.js"></script>
 <script>
 if (window.hola_cdn)
     window.hola_cdn.init();
