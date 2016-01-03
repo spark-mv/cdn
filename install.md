@@ -115,7 +115,7 @@ video src="http://example.com/uploads/myVideo.mp4" controls
 
 If your site uses JW Player with flash technology, follow these steps:
 
-1) Add Hola loader to the <head> element of the video HTML page, along with your customerID:
+1) Add Hola loader to the '<head>' element of the video HTML page, along with your customerID:
 ```
 <head>
 ...
@@ -176,7 +176,7 @@ JWPlayer/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer
 
 If your site uses a videoJS based player with flash technology, follow these steps:
 
-1) Add Hola loader to the <head> element of the video HTML page, along with your customerID:
+1) Add Hola loader to the '<head>' element of the video HTML page, along with your customerID:
 ```
 <head>
 ...
