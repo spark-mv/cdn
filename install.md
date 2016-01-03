@@ -229,6 +229,8 @@ In the browser developer console, enter one of the following commands:
 * To see all settings:	```hola_cdn.help()```
 * To reset settings:	```hola_cdn.set_mode_default()```
 
+To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, enter ```hola_cdn.get_stats()```. You should see printouts from HolaCDN with video timelime information.
+
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
 # 4. Checking statistics on the portal
@@ -392,6 +394,8 @@ In the browser developer console, enter one of the following commands:
 * To see statistics:```hola_cdn.get_stats()```  (while video is playing)
 * To see all settings:	```hola_cdn.help()```
 * To reset settings:```hola_cdn.set_mode_default()```
+
+To instantly see if HolaCDN is working, play the video look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers.
 
 Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
 
