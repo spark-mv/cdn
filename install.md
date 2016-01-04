@@ -251,7 +251,7 @@ For example:
 * Increase HolaCDN statistics collection to 100% of Chrome/Win users.
 * Add more/browsers/platforms.
 
-To verify that your changes took effect, don't forget to set HolaCDN to default mode (		```hola_cdn.set_mode_default()```) so that it will be initalized based on decisions on the server side.
+To verify that your changes took effect, don't forget to set HolaCDN to default mode (		```hola_cdn.set_mode_default()```) so that it will be initalized based on decisions on the server side, and not the local setting you entered earlier.
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
@@ -417,7 +417,7 @@ For example:
 * Increase HolaCDN to 90% of Chrome/Win users, and leave 10% for statistics.
 * Add more/browsers/platforms.
 
-To verify that your changes took effect, don't forget to set HolaCDN to default mode (		```hola_cdn.set_mode_default()```) so that it will be initalized based on decisions on the server side.
+To verify that your changes took effect, don't forget to set HolaCDN to default mode (using 		```hola_cdn.set_mode_default()```) so that it will be initalized based on the server side, and not the local setting you entered earlier.
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
