@@ -1,4 +1,4 @@
-# HolaCDN: measure and improve your user's video viewing experience
+# [HolaCDN: measure and improve your user's video viewing experience] (https://github.com/hola/cdn/blob/master/install.md)
 
 HolaCDN was specifically designed to measure and optimize online video. Use the free video analytics to measure existing performance, and enable HolaCDN to improve it and save costs.
 
