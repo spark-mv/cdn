@@ -105,9 +105,9 @@ video src="http://example.com/uploads/myVideo.mp4" controls
 
 #### Live examples:
 
-HTML5 video Without HolaCDN [Chrome native] (http://hola.github.io/examples/cdn/#html5) | [Flowplayer] (http://hola.github.io/examples/cdn/#html5_flowplayer)
+HTML5 video Without HolaCDN [Chrome native] (http://hola.github.io/examples/cdn/#html5) | [Flowplayer] (http://hola.github.io/examples/cdn/#html5_flowplayer) | [JW player] (http://hola.github.io/examples/cdn/#html5_jwplayer)
 
-HTML5 video With HolaCDN [Chrome native] (http://hola.github.io/examples/cdn/#html5_cdn) | [Flowplayer] (http://hola.github.io/examples/cdn/#html5_flowplayer_cdn)
+HTML5 video With HolaCDN [Chrome native] (http://hola.github.io/examples/cdn/#html5_cdn) | [Flowplayer] (http://hola.github.io/examples/cdn/#html5_flowplayer_cdn) | [JW player] (http://hola.github.io/examples/cdn/#html5_jwplayer_cdn)
 
 ## 2.3 Flash based video players
 
