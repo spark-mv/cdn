@@ -231,7 +231,7 @@ Note: If your site includes frames, enter the console commands in the frame cont
 
 # 4. Checking statistics on the portal
 
-Login to [your HolaCDN account] (http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
+Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
 
 The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. These events will appear only a few seconds after you finish viewing a video.
 
@@ -389,7 +389,7 @@ Note: If your site includes frames, enter the console commands in the frame cont
 
 # 9. Checking statistics on the portal
 
-Login to [your HolaCDN account] (http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
+Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
 
 The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. These events will appear only a few seconds after you finish viewing a video.
 
@@ -397,15 +397,15 @@ Now that HolaCDN is enabled, when looking at the table, verify that statistics a
 
 # 10. Deploy to production
 
-When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account's configuration section. Use the granular controls to enable Hola on different platforms/browsers
+When you are satisfied with local testing, you can gradually enable the service in production. Login to [your HolaCDN account] (http://www.holacdn.com) and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers. For example:
 
 For example:
 
 * Start by enabling HolaCDN for 10% of Chrome/Win users, and 90% only for statistics collection.
-* Increase HolaCDN to 90% of Chrome/Win users, and leave 10% for statistics.
+* Increase HolaCDN to 90% of Chrome/Win users and leave 10% in statistics mode, as a control group.
 * Add more/browsers/platforms.
 
-To verify that your changes took effect, don't forget to set HolaCDN to default mode (using 		```hola_cdn.set_mode_default()```) so that it will be initalized based on the server side, and not the local setting you entered earlier.
+To verify that your changes took effect, remember to set HolaCDN to default mode (```hola_cdn.set_mode_default()```) to ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
