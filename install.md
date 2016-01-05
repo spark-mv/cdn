@@ -9,7 +9,7 @@ The entire implementation can be completed in 15 minutes.
 
 If you have any questions during implementation, please email cdn-help [at] hola [dot] or skype:holacdn.com 
 
-# *Step 1: Collect current user experience statistics*
+# *Step 1: Collect user experience statistics (FREE)*
 
 # 1. Create an account
 
