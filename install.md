@@ -1,23 +1,19 @@
 # Overview
 
-This is a step-by-step guide to adding HolaCDN to your website. The is a two-step process:
+Enabling HolaCDN on your website is a two-step process, which can be completed in 15 minutes:
 
 1. Add the JS to your site and collect FREE user experience statistics. 
 2. Enable HolaCDN and measure user experience and cost improvements.
 
-The entire implementation can be completed in 15 minutes.
-
-If you have any questions during implementation, please email cdn-help [at] hola [dot] or skype:holacdn.com 
+If you have any questions, email cdn-help [at] hola [dot] or skype:holacdn.com 
 
 # *Step 1: Collect user experience statistics (FREE)*
 
 # 1. Create an account
 
-If you didn’t do so already, create an account on [https://holacdn.com](https://holacdn.com/), and note your customer ID which was sent to you following the registration.
+If you didn’t do so already, create [a HolaCDN account] (https://holacdn.com/), and note your customer ID which was sent to you following the registration.
 
-On the HolaCDN customer portal, you will be able to view user experience statistics such as video start time, buffering, video quality and other settings. You will also be able to configure your HolaCDN system. 
-
-In order to see a live portal account, login to the [demo account] (http://bit.ly/HolaCDNPortalDemo) with user: portal_demo@hola.org, password: holacdn.
+On the HolaCDN portal, you can configure your HolaCDN system and see user experience statistics such as video start time, buffering, video quality and more. Curious? Visit the [demo account] (https://github.com/hola/cdn/blob/master/stats_install.md#curious-login-to-the-demo-account-for-live-data)
 
 # 2. Add Hola JS to your website
 
