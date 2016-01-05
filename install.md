@@ -1,4 +1,4 @@
-# Overview
+# Introduction
 
 Enabling HolaCDN on your website is a two-step process, which can be completed in 15 minutes:
 
