@@ -19,7 +19,7 @@ On the HolaCDN portal, you can configure your HolaCDN system and see user experi
 
 You can enable HolaCDN on:
 
-* Any [HTML5 based video player] (https://github.com/hola/cdn/blob/master/install.md#22-html5-video-players)
+* Any [HTML5 based video player] (https://github.com/hola/cdn/blob/master/install.md#22-html5-video-players) - Native, JW player, Flowplayer and others.
 * Flash based players such as [JWPlayer] (https://github.com/hola/cdn/blob/master/install.md#231-jw-player) or [VideoJS] (https://github.com/hola/cdn/blob/master/install.md#232-videojs)
 * The [Hola VideoJS-based player] (https://github.com/hola/cdn/blob/master/install.md#21-using-hola-videojs-player)
 
