@@ -23,9 +23,9 @@ You can enable HolaCDN on:
 * Flash based players such as [JWPlayer] (https://github.com/hola/cdn/blob/master/install.md#231-jw-player) or [VideoJS] (https://github.com/hola/cdn/blob/master/install.md#232-videojs)
 * The [Hola VideoJS-based player] (https://github.com/hola/cdn/blob/master/install.md#21-using-hola-videojs-player)
 
-Note that you can safely add the JS code to your web page, it is disabled by default on the server side in order to protect from accidental mass deployment. 
+You can safely add the JS code to your web page. It is disabled by default on the server side, to protect from accidental mass deployment.
 
-After the code is on your web pages, you can enable HolaCDN gradually in order to ensure a smooth deployment, first on your local machine (step 4) and then to a subset of users, then to all users (step 5).
+After the code is on your web pages, you will enable HolaCDN. First on your local machine (step 4), and then, gradually, to real (step 5).
 
 Examples provided throughout use MP4 video, but same syntax is used for HLS (M3U8) or HDS (F4M) videos.
 
@@ -47,8 +47,8 @@ Hola player is a VideoJS based video player with [additional features] (https://
 2) Create a video tag with the following classes: ```video-js vjs-default-skin```
 
 ```
-  <video class="video-js vjs-default-skin" poster="http://poster.jpg" width="640" height="360" controls>
-    <source src="video.mp4" type="video/mp4">
+  <video class="video-js vjs-default-skin" poster="//example.org/poster.jpg" width="640" height="360" controls>
+    <source src="//example.org/video.mp4" type="video/mp4">
   </video>
 ```
 
@@ -85,7 +85,7 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 ```
 <html>
 ...
-video src="http://example.com/uploads/myVideo.mp4" controls
+video src="//example.org/myVideo.mp4" controls
 <script async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 <script>
     (function(){
@@ -227,27 +227,25 @@ In the browser developer console, enter one of the following commands:
 
 To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, enter ```hola_cdn.get_stats()```. You should see printouts from HolaCDN with video timelime information.
 
-Note: If your site includes frames, don’t forget to enter the console commands in the frame where the video player is located.
+Note: If your site includes frames, enter the console commands in the frame containing the video player.
 
 # 4. Checking statistics on the portal
 
-Login to your account on [www.holacdn.com](http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
+Login to [your HolaCDN account] (http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
 
-The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button.
+The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. These events will appear only a few seconds after you finish viewing a video.
 
-When looking at the table, note that you will only see statistics in the 'disabled' column, since HolaCDN is only operating in statistics mode at this point. 
+You will only see detailed statistics in the 'disabled' column, since HolaCDN is only operating in statistics mode at this point.
 
 # 5. Deploy to production
 
-When you are satisfied with local testing, you can gradually enable the service in production. Login to your portal account and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers
+When you are satisfied with local testing, you can gradually enable the service in production. Login to [your HolaCDN account] (http://www.holacdn.com) and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers. For example:
 
-For example:
-
-* Start by enabling HolaCDN in statistics mdoe for 10% of Chrome/Win users.
+* Enable HolaCDN in statistics mode only for 10% of Chrome/Win users.
 * Increase HolaCDN statistics collection to 100% of Chrome/Win users.
 * Add more/browsers/platforms.
 
-To verify that your changes took effect, don't forget to set HolaCDN to default mode (		```hola_cdn.set_mode_default()```) so that it will be initalized based on decisions on the server side, and not the local setting you entered earlier.
+To verify that your changes took effect, remember to set HolaCDN to default mode (```hola_cdn.set_mode_default()```) to ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
 
 Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
 
@@ -255,21 +253,25 @@ Changes take effect immediately, and you will receive a confirmation email every
 
 
 
-If you would like to enable the HolaCDN, continue following the relevant steps below:
+To enable HolaCDN servers, offload your CDN and improve user experience, continue following the relevant steps below:
 
 # *Step 2:  Enabling HolaCDN and measuring performance/cost improvements*
 
-Now that you have the code on your site collecting statistics, you can easily turn on HolaCDN, by following the next steps. 
-
-Enabling HolaCDN which will result in performance increases and cost reductions by using both the cliet-side Javascript and HolaCDN servers around the world.
-
-Note that some of the instructions below are relevant to progressive download, and some to adaptive protocols.
+Enabling HolaCDN will result in performance increases and cost reductions by using both the cliet-side Javascript and HolaCDN servers around the world. And since HolaCDN statistics are now live on your site, enabling HolaCDN is simple; follow these steps. 
 
 # 6. Configure your video server 
 
 To ensure optimal operation of HolaCDN, certain HTTP headers need to be enabled on the servers serving video files. The following section describes how to verify and if needed, enable these headers.
 
-## 6.1 CORS settings for MP4/FLV/WEBM progressive video
+Note that some of the instructions below are relevant to progressive download, and some to adaptive protocols (e.g. HLS/HDS).
+
+## 6.1 Optional: CORS settings for HLS/HDS
+
+HolaCDN does *not*u require any changes to CORS settings when working with HLS/HDS video. However, Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. 
+
+Feel free to continue. These changes are optional, and can be enabled at any time. They are described in step 12.
+
+## 6.2 CORS settings for MP4/FLV/WEBM progressive video
 
 Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled.
 
@@ -296,9 +298,7 @@ Timing-Allow-Origin: *
 
 If the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. See the ‘Configuring CORS headers’ section for instructions.
 
-## 6.2 Optional: CORS settings for HLS/HDS
 
-HolaCDN does not require any changes to CORS settings when working with HLS/HDS video. However, Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. These changes are optional, and can be enabled at any time. They are described in step 12.
 
 ## 6.3 Configuring CORS headers
 
