@@ -1,6 +1,6 @@
 # Introduction
 
-Enabling HolaCDN on your website is a two-step process, which can be completed in 15 minutes:
+Adding HolaCDN to your website is a two-step process which can be completed in 15 minutes:
 
 1. Add the JS to your site and collect FREE user experience statistics. 
 2. Enable HolaCDN and measure user experience and cost improvements.
