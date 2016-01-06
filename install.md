@@ -7,7 +7,7 @@ Adding HolaCDN to your website is a two-step process which can be completed in 1
 
 If you have any questions, email cdn-help [at] hola [dot] or skype:holacdn.com 
 
-# *Step 1: Collect user experience statistics (FREE)*
+# *Collect user experience statistics (FREE)*
 
 # 1. Create an account
 
@@ -216,6 +216,8 @@ Note that in order to check mode or see statistics, you will need to use the con
 
 ## 3.2 Configuring via browser console
 
+Console commands must be entered in the frame containing th video player. If your site includes frames, enter the console commands in the correct frame.
+
 In the browser developer console, enter one of the following commands:
 
 * Check current mode: ```hola_cdn.mode```
@@ -226,8 +228,6 @@ In the browser developer console, enter one of the following commands:
 * See all settings:	```hola_cdn.help()```
 
 To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, enter ```hola_cdn.get_stats()```. You should see printouts from HolaCDN with video timelime information.
-
-Note: If your site includes frames, enter the console commands in the frame containing the video player.
 
 # 4. Checking statistics on the portal
 
@@ -255,7 +255,7 @@ Changes take effect immediately, and you will receive a confirmation email every
 
 To enable HolaCDN servers, offload your CDN and improve user experience, continue following the relevant steps below:
 
-# *Step 2:  Enabling HolaCDN and measuring performance/cost improvements*
+# *Enabling HolaCDN and measuring performance/cost improvements*
 
 Enabling HolaCDN will result in performance increases and cost reductions by using both the cliet-side Javascript and HolaCDN servers around the world. And since HolaCDN statistics are now live on your site, enabling HolaCDN is simple; follow these steps. 
 
@@ -321,7 +321,6 @@ HolaCDN’s servers need to download an initial copy of the video from your infr
 
 For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com.
 
-See more on zones in the [advanced configuration section] (https://github.com/hola/cdn/blob/master/install.md#11-optional---configuring-zones)
 
 ## 7.2 Handling content protection
 
@@ -373,6 +372,8 @@ Note that in order to check mode or see statistics, you will need to use the con
 
 ## 8.2 Configuring via browser console
 
+Console commands must be entered in the frame containing th video player. If your site includes frames, enter the console commands in the correct frame.
+
 In the browser developer console, enter one of the following commands:
 
 * Check current mode: ```hola_cdn.mode```
@@ -385,7 +386,8 @@ In the browser developer console, enter one of the following commands:
 
 To instantly see if HolaCDN is working, play the video look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers.
 
-Note: If your site includes frames, enter the console commands in the frame containing the video player.
+
+Note: If you receive a console message saying "HolaCDN skip..", the settings on the portal did not take effect yet - try again in a few minutes.
 
 # 9. Checking statistics on the portal
 
