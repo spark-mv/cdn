@@ -321,7 +321,7 @@ For example, if your video URL looks like http://video.myserver.com/static/mp4/v
 
 ## 2.2 Handling content protection
 
-If your video servers do not use any content protection algorithms, [skip to step 8] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc).
+If your video servers do not use any content protection algorithms, [skip to step 3] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc).
 
 In case your video URLs use content protection scheme, Hola servers will not be able to download videos. There are a few ways of dealing with content protection:
 
