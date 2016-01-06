@@ -380,7 +380,7 @@ You can enter other console commands, for example:
 
 ## 3.2 Configuring via address bar
 
-To control HolaCDN via the address bar, append ```?hola_mode=xxx``` to the URL.
+You can also control HolaCDN via the address bar by appending a string to the URL of the video page.
 
 * Enable CDN mode: append ```?hola_mode=cdn```
 * Enable stats mode: append ```?hola_mode=stats```
