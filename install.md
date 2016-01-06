@@ -267,7 +267,7 @@ Enabling HolaCDN will result in performance increases and cost reductions by usi
 
 This section is only required if you are using progressive MP4/FLV/WebM video. 
 
-If you are using adaptive protocls (e.g. HLS/HDS/Dash), skip to section XXXXX.
+If you are using adaptive protocls (e.g. HLS/HDS/Dash), [skip to section 2] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content).
 
 ## 1.1 CORS settings
 
