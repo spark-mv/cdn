@@ -11,7 +11,7 @@ If you have any questions, email cdn-help [at] hola [dot] or skype:holacdn.com
 
 # 1. Create an account
 
-If you didn’t do so already, create [a HolaCDN account] (https://holacdn.com/), and note your customer ID which was sent to you following the registration.
+If you didn’t do so already, create [a HolaCDN account] (https://holacdn.com/cp), and note your customer ID which was sent to you following the registration.
 
 On the HolaCDN portal, you can configure your HolaCDN system and see user experience statistics such as video start time, buffering, video quality and more. Curious? Visit the [demo account] (https://github.com/hola/cdn/blob/master/stats_install.md#curious-login-to-the-demo-account-for-live-data)
 
@@ -235,7 +235,7 @@ You can also control HolaCDN via the address bar by appending a string to the UR
 
 # 4. Checking statistics on the portal
 
-Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com/cp), then go to the 'detailed statistics' area to verify that statistics are recorded by the portal.
+Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com/cp), then go to the 'detailed statistics' area to verify that statistics are recorded into your account.
 
 The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. You should see a few lines, with your IP address and browser information. Events appear 5-10 seconds after you finish viewing a video.
 
@@ -315,9 +315,13 @@ In some implementations, the first video URL is redirected to another URL. In th
 
 ## 2.1 Configuring video origin servers
 
-HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. To configure where to download a copy from, go to the configuration page on the HolaCDN portal, and enter one or more video source(s). 
+HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. 
 
-For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com.
+To configure where to download a copy from, go to the configuration page on the [your HolaCDN account] (http://www.holacdn.com/cp), and enter one or more video source(s). 
+
+For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com. 
+
+For HDS/HLS video, enter server (s) for manifests (M3U8/F4M) and for video chunks (TS or Frag).
 
 ## 2.2 Handling content protection
 
