@@ -388,10 +388,10 @@ In the browser developer console, enter one of the following commands:
 * Reset local settings:	```hola_cdn.set_mode_default()```
 * See all settings: ```hola_cdn.help()```
 
-To instantly see if HolaCDN is working, play the video look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers.
+To instantly see if HolaCDN is working, play the video look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com)
 
 
-Note: If you receive a console message saying "HolaCDN skip..", the settings on the portal did not take effect yet - try again in a few minutes.
+Note: If you receive a console message saying "Hola cdn skip", the settings on the portal did not take effect yet - try again in a few minutes.
 
 # 9. Checking statistics on the portal
 
