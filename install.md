@@ -67,6 +67,8 @@ Hola player is a VideoJS based video player with [additional features] (https://
         });
     })();
   </script>
+  .
+  .
 </body>
 ```
 
@@ -192,6 +194,8 @@ If your site uses a videoJS based player with flash technology, follow these ste
             window.hola_cdn_on_load = true;
     })();
 </script>
+.
+.
 </body>
 ```
 
