@@ -207,7 +207,7 @@ VJS5 with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5_cdn)
 
 # 3. Test HolaCDN statistics locally
 
-Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by either appending a command to your URL, or by entering commands in the browser developer console. 
+Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by entering commands in the browser developer console. 
 
 ## 3.1 Configuring HolaCDN via browser console
 
@@ -243,7 +243,7 @@ You will only see detailed statistics in the 'disabled' column, since HolaCDN is
 
 # 5. Deploy to production
 
-When you are satisfied with local testing, you can gradually enable the service in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. Use the granular controls to enable Hola on different platforms/browsers. For example:
+When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. Use the granular controls to enable Hola on different platforms/browsers. For example:
 
 * Enable HolaCDN in statistics mode only for 10% of Chrome/Win users.
 * Increase HolaCDN statistics collection to 100% of Chrome/Win users.
@@ -321,7 +321,7 @@ For example, if your video URL looks like http://video.myserver.com/static/mp4/v
 
 ## 2.2 Handling content protection
 
-If your video servers do not use any content protection algorithms, [skip to step 8] (https://github.com/hola/cdn/blob/master/install.md#8-test-holacdn-locally-on-your-pc).
+If your video servers do not use any content protection algorithms, [skip to step 8] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc).
 
 In case your video URLs use content protection scheme, Hola servers will not be able to download videos. There are a few ways of dealing with content protection:
 
@@ -355,9 +355,26 @@ Contact Hola in order to determine the best way to address this issue.
 
 # 3. Test HolaCDN locally on your PC
 
-Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by either appending a command to your URL, or by entering commands in the browser developer console
+Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by entering commands in the browser developer console. 
 
-## 8.1 Configuring via address bar
+## 3.1 Configuring via browser console
+
+Console commands must be entered in the frame containing th video player. If your site includes frames, enter the console commands in the correct frame.
+
+Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```
+
+Refresh the page and check that HolaCDN is in CDN mode by entering ```hola_cdn.mode```
+
+To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```
+
+Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). If you receive a console message starting with "Hola cdn skip", the settings on the portal did not take effect yet - try again in a few minutes.
+
+You can enter other console commands, for example:
+* Disable HolaCDN:	```hola_cdn.set_mode_disable()```
+* Reset local settings:	```hola_cdn.set_mode_default()```
+* See all commands:	```hola_cdn.help()```
+
+## 3.2 Configuring via address bar
 
 To control HolaCDN via the address bar, append ```?hola_mode=xxx``` to the URL.
 
@@ -365,38 +382,17 @@ To control HolaCDN via the address bar, append ```?hola_mode=xxx``` to the URL.
 * Enable stats mode: append ```?hola_mode=stats```
 * Disable HolaCDN: append ```?hola_mode=disabled```
 
-Note that in order to check mode or see statistics, you will need to use the console, see below. 
+# 4. Checking statistics on the portal
 
-## 8.2 Configuring via browser console
+Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com/cp), then go to the 'detailed statistics' area to verify that statistics are recorded by the portal.
 
-Console commands must be entered in the frame containing th video player. If your site includes frames, enter the console commands in the correct frame.
+The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. You should see a few lines, with your IP address and browser information. Events appear 5-10 seconds after you finish viewing a video.
 
-In the browser developer console, enter one of the following commands:
+Now that HolaCDN is enabled, when looking at the table, verify that statistics also begin to appear in the "enabled" column. Note that it may take a few minutes for statistics to appear in the table.
 
-* Check current mode: ```hola_cdn.mode```
-* Enable aCDN: ```hola_cdn.set_mode_cdn()```
-* Enable statistics: ```hola_cdn.set_mode_stats()```
-* Disable HolaCDN: ```hola_cdn.set_mode_disable()```
-* See statistics: ```hola_cdn.get_stats()```  (while video is playing)
-* Reset local settings:	```hola_cdn.set_mode_default()```
-* See all settings: ```hola_cdn.help()```
+# 5. Deploy to production
 
-To instantly see if HolaCDN is working, play the video look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com)
-
-
-Note: If you receive a console message saying "Hola cdn skip", the settings on the portal did not take effect yet - try again in a few minutes.
-
-# 9. Checking statistics on the portal
-
-Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com) and verify that statistics are written to the video analytics section. Note that it may take a few minutes for statistics to appear on the portal.
-
-The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. These events will appear only a few seconds after you finish viewing a video.
-
-Now that HolaCDN is enabled, when looking at the table, verify that statistics also begin to appear in the "enabled" column.
-
-# 10. Deploy to production
-
-When you are satisfied with local testing, you can gradually enable the service in production. Login to [your HolaCDN account] (http://www.holacdn.com) and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers. For example:
+When you are satisfied with local testing, you can gradually enable HolaCDN for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers. For example:
 
 For example:
 
@@ -404,9 +400,9 @@ For example:
 * Increase HolaCDN to 90% of Chrome/Win users and leave 10% in statistics mode, as a control group.
 * Add more/browsers/platforms.
 
-To verify that your changes took effect, remember to set HolaCDN to default mode (```hola_cdn.set_mode_default()```) to ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
+Make sure you save your settings. Changes will take up to 5 minutes to take effect. You will receive a confirmation email every time you change settings on the portal.
 
-Changes take effect immediately, and you will receive a confirmation email every time you change settings on the portal.
+To verify that your changes took effect, remember to set HolaCDN to default mode (```hola_cdn.set_mode_default()```) to ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
 
 # Congratulations! HolaCDN is up and running #
 
