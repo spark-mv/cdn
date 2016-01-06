@@ -209,29 +209,36 @@ VJS5 with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5_cdn)
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by either appending a command to your URL, or by entering commands in the browser developer console. 
 
-## 3.1 Configuring via address bar
-
-To control HolaCDN via the address bar, append ```?hola_mode=xxx``` to the URL.
-
-* Enable stats mode: append ```?hola_mode=stats```
-* Disable HolaCDN:	append ```?hola_mode=disabled```
-
-Note that in order to check mode or see statistics, you will need to use the console, see below. 
-
-## 3.2 Configuring via browser console
+## 3.1 Configuring via browser console
 
 Console commands must be entered in the frame containing th video player. If your site includes frames, enter the console commands in the correct frame.
 
-In the browser developer console, enter one of the following commands:
+In the browser developer console, enable statistics by entering: the following command:
+
+* Enable statistics: ```hola_cdn.set_mode_stats()```
+
+Refresh the page and check that HolaCDN is in statistics mode by entering the following command:
 
 * Check current mode: ```hola_cdn.mode```
-* Enable statistics: ```hola_cdn.set_mode_stats()```
-* Disable HolaCDN:	```hola_cdn.set_mode_disable()```
-* See statistics: 	```hola_cdn.get_stats()``` (while video is playing)
-* Reset local settings:	```hola_cdn.set_mode_default()```
-* See all settings:	```hola_cdn.help()```
 
-To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, enter ```hola_cdn.get_stats()```. You should see printouts from HolaCDN with video timelime information.
+To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering the following command:
+
+* See statistics: 	```hola_cdn.get_stats()```
+
+You should see printouts from HolaCDN with video timelime information.
+
+You can enter other console commands, for example:
+* Disable HolaCDN:	```hola_cdn.set_mode_disable()```
+* Reset local settings:	```hola_cdn.set_mode_default()```
+* See all commands:	```hola_cdn.help()```
+
+
+## 3.2 Configuring via address bar
+
+You can also control HolaCDN via the address bar by appending a string to the URL of the video page.
+
+* Enable stats mode: append ```?hola_mode=stats```
+* Disable HolaCDN:	append ```?hola_mode=disabled```
 
 # 4. Checking statistics on the portal
 
