@@ -236,7 +236,17 @@ You can also control HolaCDN via the address bar by appending a string to the UR
 
 Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com/cp), then go to the 'detailed statistics' area to verify that statistics are recorded into your account.
 
-The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. You should see a few lines, with your IP address and browser information. Events appear 5-10 seconds after you finish viewing a video.
+The quickest way to see your recent activity is by clicking on 'debug mode' and then on the 'recent events' button. Events appear 5-10 seconds after you finish viewing a video. You should see a few lines, with your IP address and browser information, which will look like:
+```
+ID	Timestamp	IP	Zone	Country	Browser	Platform	URL
+bwsaver_all_codecs_supported_2	10-Jan-2016 16:58:51	212.235.66.73	gen	il	chrome 47	Win32	Link
+video_init	10-Jan-2016 16:58:50	212.235.66.73	gen	il	chrome 47	Win32	Link
+bwsaver_all_codecs_supported_2	10-Jan-2016 16:58:35	212.235.66.73	gen	il	chrome 47	Win32	Link
+video_init	10-Jan-2016 16:58:34	212.235.66.73	gen	il	chrome 47	Win32	Link
+bwsaver_report	10-Jan-2016 16:55:25	212.235.66.73	gen	il	chrome 47	Win32	Link
+bwsaver_all_codecs_supported_2	10-Jan-2016 16:53:39	212.235.66.73	gen	il	chrome 47	Win32	Link
+video_init	10-Jan-2016 16:53:39	212.235.66.73	gen	il	chrome 47	Win32	Link
+```
 
 You will only see detailed statistics in the 'disabled' column, since HolaCDN is only operating in statistics mode at this point. Note that it may take a few minutes for statistics to appear in the table.
 
