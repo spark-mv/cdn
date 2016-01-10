@@ -243,7 +243,7 @@ bwsaver_report	10-Jan-2016 16:55:25	212.235.66.73	gen	    il      chrome 47   Wi
 video_init      10-Jan-2016 16:53:39	212.235.66.73	gen	    il      chrome 47   Win32
 ```
 
-If you see ```bwsaver_report``` recent events, go back to the detailed statistics table. HolaCDN is currently in statistics mode, so you will only see numbers in the 'Stats mode' column. Note that it may take a few minutes for statistics to appear in the table.
+If you see ```bwsaver_report``` events, go back to the detailed statistics table. HolaCDN is currently in statistics mode, so you will only see numbers in the 'Stats mode' column. Note that it may take a few minutes for statistics to appear in the table.
 
 # 5. Deploy to production
 
@@ -402,7 +402,7 @@ bwsaver_all_codecs_supported_2	10-Jan-2016 16:58:51	212.235.66.73	gen	    il	   
 video_init                      10-Jan-2016 16:53:39	212.235.66.73	gen	    il      chrome 47
 ```
 
-If you see ```bwsaver_report``` recent events, go back to the detailed statistics table. HolaCDN is currently in CDN mode, so you will start to see numbers in the 'CDN mode' column as well. Note that it may take a few minutes for statistics to appear in the table.
+If you see ```bwsaver_report``` events, go back to the detailed statistics table. HolaCDN is currently in CDN mode, so you will start to see numbers in the 'CDN mode' column as well. Note that it may take a few minutes for statistics to appear in the table.
 
 # 5. Deploy to production
 
