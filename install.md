@@ -317,7 +317,7 @@ In some implementations, the first video URL is redirected to another URL. In th
 
 HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. 
 
-To configure where to download a copy from, go to the configuration page on the [your HolaCDN account] (http://www.holacdn.com/cp), and enter one or more video source(s). 
+To configure where to download a copy from, go to the configuration page on the [your HolaCDN account] (http://www.holacdn.com/cp). You will arrive to the default zone ('gen'). In that zone, click "new source" and enter one or more video source(s). 
 
 For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com. 
 
