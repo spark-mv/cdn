@@ -247,7 +247,7 @@ If you see ```bwsaver_report``` events, go back to the detailed statistics table
 
 # 5. Deploy to production
 
-When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. Use the granular controls to enable Hola on different platforms/browsers. For example:
+When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. In the 'gen' zone, use the granular controls to enable Hola on different platforms/browsers. For example:
 
 * Enable HolaCDN in statistics mode only for 10% of Chrome/Win users.
 * Increase HolaCDN statistics collection to 100% of Chrome/Win users.
@@ -406,7 +406,7 @@ If you see ```bwsaver_report``` events, go back to the detailed statistics table
 
 # 5. Deploy to production
 
-When you are satisfied with local testing, you can gradually enable HolaCDN for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the configuration section. Use the granular controls to enable Hola on different platforms/browsers. For example:
+When you are satisfied with local testing, you can gradually enable HolaCDN for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the configuration section. In the 'gen' zone, use the granular controls to enable Hola on different platforms/browsers. For example:
 
 For example:
 
