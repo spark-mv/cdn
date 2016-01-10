@@ -5,8 +5,7 @@ Adding HolaCDN to your website is a two-step process which can be completed in 1
 1. Add the JS to your site and collect FREE user experience statistics. 
 2. Enable HolaCDN and measure user experience and cost improvements.
 
-If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn.com 
-
+If you have any questions, email cdn-help [at] hola [dot] org, or skype:holaf
 # *Collect user experience statistics (FREE)*
 
 # 1. Create an account
@@ -211,7 +210,7 @@ Once the code is live on the webpage, remember it is still disabled by default o
 
 ## 3.1 Configuring HolaCDN via browser console
 
-Console commands must be entered in the frame containing th video player. If your site includes frames, enter the console commands in the correct frame.
+Console commands must be entered in the frame containing th video player. If your site includes frames, select the video frame from the drop down box in the console, and enter the console commands in the correct frame.
 
 Enable statistics by entering ```hola_cdn.set_mode_stats()```
 
@@ -363,7 +362,7 @@ Once the code is live on the webpage, remember it is still disabled by default o
 
 ## 3.1 Configuring via browser console
 
-Console commands must be entered in the frame containing th video player. If your site includes frames, enter the console commands in the correct frame.
+Console commands must be entered in the frame containing th video player. If your site includes frames, select the video frame from the drop down box in the console, and enter the console commands in the correct frame.
 
 Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```
 
