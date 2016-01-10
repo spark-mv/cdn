@@ -396,10 +396,10 @@ Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com/c
 
 First, click on 'debug mode' and then on the 'recent events' button. You should see a few lines, with your IP address and browser information, which will look like:
 ```
-ID	                            Timestamp               IP	            Zone    Country Browser	    Platform
-bwsaver_report	                10-Jan-2016 16:55:25	212.235.66.73	gen	    il      chrome 47   Win32
-bwsaver_all_codecs_supported_2	10-Jan-2016 16:58:51	212.235.66.73	gen	    il	    chrome 47	Win32
-video_init                      10-Jan-2016 16:53:39	212.235.66.73	gen	    il      chrome 47   Win32
+ID	                            Timestamp               IP	            Zone    Country Browser
+bwsaver_report	                10-Jan-2016 16:55:25	212.235.66.73	gen	    il      chrome 47
+bwsaver_all_codecs_supported_2	10-Jan-2016 16:58:51	212.235.66.73	gen	    il	    chrome 47
+video_init                      10-Jan-2016 16:53:39	212.235.66.73	gen	    il      chrome 47
 ```
 
 If you see ```bwsaver_report``` recent events, go back to the detailed statistics table. HolaCDN is currently in CDN mode, so you will start to see numbers in the 'CDN mode' column as well. Note that it may take a few minutes for statistics to appear in the table.
