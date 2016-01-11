@@ -457,4 +457,4 @@ In case the response is different from the desired response, configure the missi
 
 # 3. Ad Serving
 
-Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player_vast.html).
+Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (http://hola.github.io/examples/cdn/#hola_player_vast).
