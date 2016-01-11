@@ -423,7 +423,7 @@ To verify that your changes took effect, remember to set HolaCDN to default mode
 
 # Advanced configuration settings
 
-# 11. Optional - Configuring zones
+# 1. Optional - Configuring zones
 
 If you have multiple websites under your customer ID, or you would like to experiment with different settings on parts of your website(s), you can create zones for each site or test.
 
@@ -431,7 +431,7 @@ Each zone can have its own set of video sources and activation rules. You can us
 
 'Gen' is a the default zone. It is applied when it is not overridden by another zone. The gen zone cannot be removed.
 
-# 12. Optional - CORS settings for HLS/HDS video
+# 2. Optional - CORS settings for HLS/HDS video
 
 HolaCDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. Basic operation does not require any changes to CORS settings.
 
@@ -455,6 +455,6 @@ Timing-Allow-Origin: *
 
 In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
 
-# 13. Ad Serving
+# 3. Ad Serving
 
 Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (https://github.com/hola/hola.github.io/blob/master/examples/cdn/hola_player_vast.html).
