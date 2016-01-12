@@ -5,7 +5,8 @@ Adding HolaCDN to your website is a two-step process which can be completed in 1
 1. Add the JS to your site and collect FREE user experience statistics. 
 2. Enable HolaCDN and measure user experience and cost improvements.
 
-If you have any questions, email cdn-help [at] hola [dot] org, or skype:holaf
+If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
+
 # *Collect user experience statistics (FREE)*
 
 # 1. Create an account
