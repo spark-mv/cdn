@@ -46,7 +46,7 @@ For step by step instructions regarding how to enable CORS on different web serv
 
 After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
 
-## Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
+#### Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
 
 ### 2.2 Amazon web servers
 
@@ -80,4 +80,4 @@ You can add up to 100 rules to the configuration. You add the XML document as th
 
 After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
 
-## Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
+#### Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
