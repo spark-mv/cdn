@@ -276,39 +276,9 @@ If you are using adaptive protocls (e.g. HLS/HDS/Dash), [skip to section 2] (htt
 
 ## 1.1 CORS settings
 
-Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled.
+Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled. Please see the [how to verify and configure CORS] (https://github.com/hola/cdn/blob/master/CORS.md)
 
-Test to see if your HTTP server is configured correctly by using:
-
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV/WEBM file>```
-
-Note: If you are using Amazon S3, use:
-
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" -H "Access-Control-Request-Method: GET" <link to MP4/FLV/WEBM file>```
-
-The desired response is:
-
-```
-HTTP/1.1 200 OK
-Content-Length: 0
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-Access-Control-Expose-Headers: Content-Range, Date, Etag
-Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
-Access-Control-Max-Age: 600
-Timing-Allow-Origin: *
-```
-
-If the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly.
-
-## 1.2 Configuring CORS headers
-
-For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
-If you are using Amazon S3, please click [[here](https://github.com/hola/cdn/blob/master/progressive_download.md#using-amazon-s3)] (https://github.com/hola/cdn/blob/master/progressive_download.md#using-amazon-s3). 
-
-After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
-
-## 1.3 Handling redirects
+## 1.2 Handling redirects
 
 In some implementations, the first video URL is redirected to another URL. In this case, make sure that:
 
