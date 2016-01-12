@@ -1,19 +1,21 @@
-## Server side configuration for MP4/FLV/WebM progressive download
+# Server side configuration for MP4/FLV/WebM progressive download
 
-In order to allow the client side module to send byte-range requests, please enable CORS on the HTTP server(s) that is serving the video files and verify response headers to MP4/FLV files from this server(s) include the following headers:
+## 1 CORS settings
 
-* Access-Control-Allow-Origin: *
-* Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-* Access-Control-Expose-Headers: Content-Range, Date, Etag, X-Cache
-* Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
-* Access-Control-Max-Age: 600
-* Timing-Allow-Origin: *
+Instrcuctions for verifying and configuring CORS settings for different web servers are below. 
 
-For step by step instructions regarding how to enable CORS on different web servers, see the original [CORS documentation] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the instructions.
+If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
 
-#### Testing server headers
-```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" <video link>```  
-Verify response:
+### 1.1 Most web servers
+
+Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled.
+
+Test to see if your HTTP server is configured correctly by using:
+
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV/WEBM file>```
+
+The desired response is:
+
 ```
 HTTP/1.1 200 OK
 Content-Length: 0
@@ -24,9 +26,33 @@ Access-Control-Allow-Headers: Content-Type, Origin, Accept, Range, Cache-Control
 Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
 ```
-#### Using Amazon S3 
 
-If you are using Amazon S3 to store videos, you should configure your bucket to allow cross-origin requests, you create a CORS configuration, an XML document with rules that identify the origins that you will allow to access your bucket, the operations (HTTP methods) will support for each origin, and other operation-specific information. You can add up to 100 rules to the configuration. You add the XML document as the cors subresource to the bucket.
+If the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly.
+
+### 1.1 Amazon web servers
+
+If you are using Amazon S3 to store videos, you should configure your bucket to allow cross-origin requests, you create a CORS configuration, an XML document with rules that identify the origins that you will allow to access your bucket, the operations (HTTP methods) will support for each origin, and other operation-specific information. 
+
+Test to see if your HTTP server is configured correctly by using:
+
+```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" -H "Access-Control-Request-Method: GET" <link to MP4/FLV/WEBM file>```
+
+
+## 1.2 Configuring CORS headers
+
+### 1.2.1 Most web servers
+
+For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
+
+After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
+
+## Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
+
+### 1.2.2 Amazon web servers
+
+For step by step instructions regarding how to enable CORS on Amazon S3, see the [Amazon documentation] (http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
+
+You can add up to 100 rules to the configuration. You add the XML document as the cors subresource to the bucket.
 
 ```
 <CORSConfiguration>
@@ -52,9 +78,6 @@ If you are using Amazon S3 to store videos, you should configure your bucket to 
 </CORSConfiguration>
 ```
 
-For step by step instructions regarding how to enable CORS on Amazon S3, see the [Amazon documentation] (http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
+After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
 
 ## Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
-
-
-For any questions, please contact cdn-help [at] hola [dot] org.
