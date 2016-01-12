@@ -1,6 +1,6 @@
 # Server side configuration for MP4/FLV/WebM progressive download
 
-## 1 Verify current CORS settings
+## 1. Verify current CORS settings
 
 Instrcuctions for verifying and configuring CORS settings for different web servers are below. 
 
@@ -38,7 +38,7 @@ Test to see if your HTTP server is configured correctly by using:
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H "Access-Control-Request-Headers: range" -H "Access-Control-Request-Method: GET" <link to MP4/FLV/WEBM file>```
 
 
-## 2 Configuring CORS headers
+## 2. Configuring CORS headers
 
 ### 2.1 Most web servers
 
