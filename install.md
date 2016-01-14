@@ -7,7 +7,7 @@ Adding HolaCDN to your website is a two-step process which can be completed in 1
 
 If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
 
-# *Collect user experience statistics (FREE)*
+# *Video user experience statistics (FREE)*
 
 # 1. Create an account
 
