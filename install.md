@@ -17,13 +17,13 @@ On the HolaCDN portal, you can configure your HolaCDN system and see user experi
 
 # 2. Add Hola JS to your website
 
+HolaCDN requires a client-side JavaScript in order to collects video statistics. The JavaScript is loaded asynchronously, and will not affect the page load time. 
+
 You can enable HolaCDN on:
 
 * Any HTML5 based video player - [Native, JW player, Flowplayer] (https://github.com/hola/cdn/blob/master/install.md#22-html5-video-players) and others.
 * Flash based players such as [JWPlayer] (https://github.com/hola/cdn/blob/master/install.md#231-jw-player) or [VideoJS] (https://github.com/hola/cdn/blob/master/install.md#232-videojs)
 * The [Hola VideoJS-based player] (https://github.com/hola/cdn/blob/master/install.md#21-using-hola-videojs-player)
-
-The JavaScript is loaded asynchronously, and will not affect the page load time. 
 
 You can safely add the JS code to your web page. It is disabled by default on the server side, to protect from accidental mass deployment.
 
