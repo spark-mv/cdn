@@ -290,7 +290,7 @@ In some implementations, the first video URL is redirected to another URL. In th
 
 ## 2.1 Configuring video origin servers
 
-HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. 
+HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. HolaCDN uses a 'pull' model. There is no need to proactively push content to HolaCDN.
 
 To configure where to download a copy from, go to the configuration page on the [your HolaCDN account] (http://www.holacdn.com/cp). You will arrive to the default zone ('gen'). In that zone, click "new source" and enter one or more video source(s). 
 
