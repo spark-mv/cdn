@@ -426,6 +426,27 @@ Timing-Allow-Origin: *
 
 In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
 
-# 3. Ad Serving
+# 3. Video platforms
+
+## 3.1 Brightcove
+
+HolaCDN offers a 'plug and play' integration with the Brightcove video platform. 
+
+There is no need to specify any parameters. Simply add the following code at the END of the body, just before the closing </body> tag:
+
+```
+.
+.
+<script src="//player.h-cdn.com/loader.js?customer=XXXXX" async></script><script>
+   if (window.hola_cdn)
+       window.hola_cdn.init();
+   else
+       window.hola_cdn_on_load = true;
+</script>
+.
+<Body>
+```
+
+# 4. Ad Serving
 
 Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (http://hola.github.io/examples/cdn/#hola_player_vast).
