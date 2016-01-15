@@ -248,6 +248,8 @@ video_init      10-Jan-2016 16:53:39	212.235.66.73	gen	    il      chrome 47   W
 
 If you see ```bwsaver_report``` events, go back to the detailed statistics table. HolaCDN is currently in statistics mode, so you will only see numbers in the 'Stats mode' column. Note that it may take a few minutes for statistics to appear in the table.
 
+To protect you from accidental mass deployment, at this stage HolaCDN is still disabled on the server side. You will see an ```using zone gen mode disabled (no_browser_match)``` error message on any device trying to play a video with HolaCDN. This is by design and expected. Continue to the next step to gradually enable in production.
+
 # 5. Deploy to production
 
 When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. In the 'gen' zone, use the granular controls to enable Hola on different platforms/browsers. For example:
@@ -377,9 +379,10 @@ video_init                      10-Jan-2016 16:53:39	212.235.66.73	gen	    il   
 
 If you see ```bwsaver_report``` events, go back to the detailed statistics table. HolaCDN is currently in CDN mode, so you will start to see numbers in the 'CDN mode' column as well. Note that it may take a few minutes for statistics to appear in the table.
 
+To protect you from accidental mass deployment, at this stage HolaCDN is still disabled on the server side. You will see an ```using zone gen mode disabled (no_browser_match)``` error message on any device trying to play a video with HolaCDN. This is by design and expected. Continue to the next step to gradually enable in production.
+
 # 5. Deploy to production
 
-At this stage the HolaCDN is still disabled on the server side. You will get a "No browser match - HolaCDN disabled" message from any other machine other than your test machine until you enable it.
 
 When you are satisfied with local testing, you can gradually enable HolaCDN for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the configuration section. In the 'gen' zone, use the granular controls to enable Hola on different platforms/browsers. For example:
 
