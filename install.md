@@ -379,6 +379,8 @@ If you see ```bwsaver_report``` events, go back to the detailed statistics table
 
 # 5. Deploy to production
 
+At this stage the HolaCDN is still disabled on the server side. You will get a "No browser match - HolaCDN disabled" message from any other machine other than your test machine until you enable it.
+
 When you are satisfied with local testing, you can gradually enable HolaCDN for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the configuration section. In the 'gen' zone, use the granular controls to enable Hola on different platforms/browsers. For example:
 
 For example:
