@@ -230,7 +230,7 @@ You can enter other console commands, for example:
 
 ## 3.2 Controlling HolaCDN via the address bar
 
-You can also control HolaCDN via the address bar by appending a string to the URL of the video page.
+As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
 
 * Enable stats mode: append ```?hola_mode=stats```
 * Disable HolaCDN:	append ```?hola_mode=disabled```
@@ -346,13 +346,13 @@ Once the code is live on the webpage, remember it is still disabled by default o
 
 Console commands must be entered in the frame containing th video player. If your site includes frames, select the video frame from the drop down box in the console, and enter the console commands in the correct frame.
 
-Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```
+Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```, then refresh the page and check that HolaCDN is in CDN mode by entering ```hola_cdn.mode```
 
-Refresh the page and check that HolaCDN is in CDN mode by entering ```hola_cdn.mode```
+To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```. Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). 
 
-To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```
+While the video us playing, you can also look at the network tab of the developer console. You will see some video chunks coming from your own server, and some from HolaCDN servers.
 
-Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). If you receive a console message starting with "Hola cdn skip", the settings on the portal did not take effect yet - try again in a few minutes.
+If you receive a console message starting with "Hola cdn skip", the settings on the portal did not take effect yet - try again in a few minutes.
 
 You can enter other console commands, for example:
 * Disable HolaCDN:	```hola_cdn.set_mode_disable()```
@@ -361,7 +361,7 @@ You can enter other console commands, for example:
 
 ## 3.2 Configuring via address bar
 
-You can also control HolaCDN via the address bar by appending a string to the URL of the video page.
+As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
 
 * Enable CDN mode: append ```?hola_mode=cdn```
 * Enable stats mode: append ```?hola_mode=stats```
