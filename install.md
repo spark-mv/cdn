@@ -252,7 +252,9 @@ To protect you from accidental mass deployment, at this stage HolaCDN is still d
 
 # 5. Deploy to production
 
-When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. In the 'gen' zone, use the granular controls to enable Hola on different platforms/browsers. For example:
+When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. 
+
+Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. In the 'gen' zone, click 'New rule' and define one or more rule to define how HolaCDN is enabled on different platforms/browsers. For example:
 
 * Enable HolaCDN in statistics mode only for 10% of Chrome/Win users.
 * Increase HolaCDN statistics collection to 100% of Chrome/Win users.
@@ -383,8 +385,9 @@ To protect you from accidental mass deployment, at this stage HolaCDN is still d
 
 # 5. Deploy to production
 
+When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. 
 
-When you are satisfied with local testing, you can gradually enable HolaCDN for real users in production. Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the configuration section. In the 'gen' zone, use the granular controls to enable Hola on different platforms/browsers. For example:
+Login to [your HolaCDN account] (http://www.holacdn.com/cp) and go to the 'configuration' section. In the 'gen' zone, click 'New rule' and define one or more rule to define how HolaCDN is enabled on different platforms/browsers. For example:
 
 For example:
 
