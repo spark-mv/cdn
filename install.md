@@ -389,8 +389,8 @@ When you are satisfied with local testing, you can gradually enable statsitics c
 1. Login to [your HolaCDN account] (http://www.holacdn.com/cp)
 2. Go to the 'configuration' section and find the the 'gen' zone
 3. Click 'New rule' and define one or more rule to define how HolaCDN is enabled on different platforms/browsers. For example:
-    * Start by enabling HolaCDN for 10% of Chrome/Win users, and 90% only for statistics collection.
-    * Increase HolaCDN to 90% of Chrome/Win users and leave 10% in statistics mode, as a control group.
+    * Start by enabling HolaCDN CDN mode for 10% of Chrome/Win users, and 90% only for statistics collection.
+    * Increase HolaCDN to 90% CDN mode for Chrome/Win users. Leave 10% in statistics mode, as a control group.
     * Add more/browsers/platforms.
 4. Click the 'Save" button to save your settings. Changes will take up to 5 minutes to take effect. You will receive a confirmation email every time you change settings on the portal.
 5. Verify that your changes took effect. Set HolaCDN to default mode (```hola_cdn.set_mode_default()```) and reload the video. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
