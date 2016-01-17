@@ -262,7 +262,7 @@ When you are satisfied with local testing, you can gradually enable statsitics c
     * Increase HolaCDN statistics collection to 100% of Chrome/Win users.
     * Add more/browsers/platforms.
 4. Click the 'Save" button to save your settings. Changes will take up to 5 minutes to take effect. You will receive a confirmation email every time you change settings on the portal.
-5. Verify that your changes took effect. Set HolaCDN to default mode (```hola_cdn.set_mode_default()```) and reload the video. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
+5. Verify that your changes took effect. Set HolaCDN to default mode using the ```hola_cdn.set_mode_default()``` console command, and refresh. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
 
 ###_HolaCDN video user experience statistics collection is now active._###
 
@@ -394,7 +394,7 @@ When you are satisfied with local testing, you can gradually enable statsitics c
     * Increase HolaCDN to 90% CDN mode for Chrome/Win users. Leave 10% in statistics mode, as a control group.
     * Add more/browsers/platforms.
 4. Click the 'Save" button to save your settings. Changes will take up to 5 minutes to take effect. You will receive a confirmation email every time you change settings on the portal.
-5. Verify that your changes took effect. Set HolaCDN to default mode (```hola_cdn.set_mode_default()```) and reload the video. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
+5. Verify that your changes took effect. Set HolaCDN to default mode using the ```hola_cdn.set_mode_default()``` console command and refresh. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
 
 # Congratulations! HolaCDN is up and running #
 
