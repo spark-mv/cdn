@@ -49,8 +49,9 @@ Hola player is a VideoJS based video player with [additional features] (https://
 2) Create a video tag with the following classes: ```video-js vjs-default-skin```
 
 ```
-  <video class="video-js vjs-default-skin" poster="//example.org/poster.jpg" width="640" height="360" controls>
-    <source src="//example.org/video.mp4" type="video/mp4">
+  <video class="video-js vjs-default-skin" poster="//example.org/poster.jpg" 
+  width="640" height="360" controls>
+  <source src="//example.org/video.mp4" type="video/mp4">
   </video>
 ```
 
