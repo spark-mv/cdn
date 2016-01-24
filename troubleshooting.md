@@ -45,8 +45,10 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 1. HolaCDN servers cannot download a copy of the video from your servers. The HolaCDN client therefore detaches from the player, and the video plays normally. 
 
 #### Solutions
-1. Allow HolaCDN servers access to your CDN or origin servers2. 
-
+1. Allow HolaCDN servers access to your CDN or origin servers. 
+  * See additional information in the [setup instructions] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
+  * Go to the configuration section and scroll down to the video zone source
+  * Add one or more video sources
 ## browser_unsupported
 
 
