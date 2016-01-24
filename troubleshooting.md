@@ -3,7 +3,6 @@
 HolaCDN may generate warnings and errors to the browser's developer console. Search this page for the error message you see to understand possible causes and solutions.
 
 ## disabled no_browser_match
-
 #### Possible causes
 1. HolaCDN is disabled on the server side. This is the default starting configuration, and is meant to prevent accidental mass deployments.
 
@@ -27,10 +26,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   * Reload the page.
   * HolaCDN will load either in stats or CDN - according to probabilities specified in the control panel.
 
-## fallback error
-
 ## hola skip
-
 ### Possible causes
 1. HolaCDN client cannot find sources for the given video URL, because no video sources are defined on the HolaCDN control panel. It is therefore skipped (played without HolaCDN). 
 
@@ -56,4 +52,5 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 ## cdn is not attached
 
+## fallback error
 
