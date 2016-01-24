@@ -225,7 +225,7 @@ To instantly see if HolaCDN attached itself to your player and is sending statis
 You should see printouts from HolaCDN with video timelime information.
 
 You can enter other console commands, for example:
-* Disable HolaCDN:	```hola_cdn.set_mode_disable()```
+* Disable HolaCDN:	```hola_cdn.set_mode_disabled()```
 * Reset local settings:	```hola_cdn.set_mode_default()```
 * See all commands:	```hola_cdn.help()```
 
