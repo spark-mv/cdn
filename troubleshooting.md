@@ -1,10 +1,10 @@
 # HolaCDN troubleshooting page
 
-HolaCDN may generate warnings and errors to the browser's developer console. Search this page for the error message you see to understand possible causes and solutions.
+HolaCDN may generate warnings and errors to the browser's developer console. Search this page for the relevant error message to understand possible causes and solutions.
 
 ## disabled no_browser_match
 #### Possible causes
-1. HolaCDN is disabled on the server side. This is the default starting configuration, and is meant to prevent accidental mass deployments.
+1. HolaCDN is disabled on the server side for the browser you are using. This is the default starting configuration for all browsers, and is meant to prevent accidental mass deployments.
 
 #### Solutions
 1. Define which browsers will be activated in each mode on the control panel.
@@ -16,7 +16,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 ## disabled random
 #### Possible causes
-1. This is actually not an error message - it simply means that based on settings in the HolaCDN control panel, the HolaCDN client was instructed by the server to be loaded in disabled mode. This will happen if the total of CDN + stats percentages in the control panel is under 100%. 
+1. This is actually not an error message - it simply means that the HolaCDN client was explicitly instructed by the server to be loaded in disabled mode. This will happen if the total of CDN + stats percentages in the control panel is under 100%. Any percentage not allocated to stats or CDN will be disabled. 
 
 #### Solutions
 1. Ensure the total of CDN and statistics percentages adds up to 100% in the control panel.
@@ -27,6 +27,11 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   * HolaCDN will load either in stats or CDN - according to probabilities specified in the control panel.
 
 ## disabled browser_unsupported
+### Possible causes
+1. HolaCDN requires Media Source Extensions (MSE) to be enabled on the web browsr. Older versions of browsers which do not support MSE are not supported by HolaCDN. Here is the [full list of supported platforms] (http://holacdn.com/faq#in_platforms).  
+
+### Solutions
+1. Use a supported browser
 
 ## hola skip
 ### Possible causes
