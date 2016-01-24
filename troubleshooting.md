@@ -36,12 +36,12 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 ### Solutions
 1. Define one or more video sources for the video. Note that the matching is done for the full domain.
-  a. Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
-  b. Go to the configuration section and scroll down to the video zone source
-  c. Add one or more video sources
-  d. Save your settings, which will take a few minutes to go into effect
-  e. Reload the page.
-  f. The error should disappear and video will be downloaded from HolaCDN.
+  * Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
+  * Go to the configuration section and scroll down to the video zone source
+  * Add one or more video sources
+  * Save your settings, which will take a few minutes to go into effect
+  * Reload the page.
+  * The error should disappear and video will be downloaded from HolaCDN.
 
 
 ## wrapper detached from player
