@@ -4,10 +4,10 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 ## disabled no_browser_match
 
-### Possible causes
+#### Possible causes
 1. HolaCDN is disabled on the server side. This is the default starting configuration, and is meant to prevent accidental mass deployments.
 
-### Solutions
+#### Solutions
 1. Define which browsers will be activated in each mode on the control panel.
   a. Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
   b. Go to the configuration section
@@ -17,10 +17,10 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   f. HolaCDN will load in one of three modes - disabled, stats or CDN - according to probabilities specified in the control panel.
 
 ## disabled random
-### Possible causes
+#### Possible causes
 1. This is actually not an error message - it simply means that based on settings in the HolaCDN control panel, the HolaCDN client was instructed by the server to be loaded in disabled mode. This will happen if the total of CDN + stats percentages in the control panel is under 100%. 
 
-### Solutions
+#### Solutions
 1. Ensure the total of CDN and statistics percentages adds up to 100% in the control panel.
   a. Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
   b. Go to the configuration section
@@ -47,10 +47,10 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 
 ## wrapper detached from player
-### Possible causes
+#### Possible causes
 1. HolaCDN servers cannot download a copy of the video from your servers. The HolaCDN client therefore detaches from the player, and the video plays normally. 
 
-### Solutions
+#### Solutions
 1. Allow HolaCDN servers access to your CDN or origin servers2. 
 
 ## browser_unsupported
