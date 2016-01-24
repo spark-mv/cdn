@@ -9,12 +9,12 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 #### Solutions
 1. Define which browsers will be activated in each mode on the control panel.
-  a. Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
-  b. Go to the configuration section
-  c. Add the relevant browsers
-  d. Save your settings, which will take a few minutes to go into effect
-  e. Reload the page.
-  f. HolaCDN will load in one of three modes - disabled, stats or CDN - according to probabilities specified in the control panel.
+* Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
+* Go to the configuration section
+* Add the relevant browsers
+* Save your settings, which will take a few minutes to go into effect
+* Reload the page.
+* HolaCDN will load in one of three modes - disabled, stats or CDN - according to probabilities specified in the control panel.
 
 ## disabled random
 #### Possible causes
