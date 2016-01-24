@@ -9,8 +9,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 #### Solutions
 1. Define which browsers will be activated in each mode on the control panel.
-  * Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
-  * Go to the configuration section
+  * Login to [your account] (http://holacdn.com/signin?utm_source=holaext) and go to the configuration section
   * Add the relevant browsers
   * Save your settings, which will take a few minutes to go into effect
   * Reload the page.
@@ -22,12 +21,11 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 #### Solutions
 1. Ensure the total of CDN and statistics percentages adds up to 100% in the control panel.
-  a. Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
-  b. Go to the configuration section
-  c. Adjust CDN and stats percentages
-  d. Save your settings, which will take a few minutes to go into effect
-  e. Reload the page.
-  f. HolaCDN will load either in stats or CDN - according to probabilities specified in the control panel.
+  * Login to [your account] (http://holacdn.com/signin?utm_source=holaext) and go to the configuration section
+  * Adjust CDN and stats percentages
+  * Save your settings, which will take a few minutes to go into effect
+  * Reload the page.
+  * HolaCDN will load either in stats or CDN - according to probabilities specified in the control panel.
 
 ## fallback error
 
