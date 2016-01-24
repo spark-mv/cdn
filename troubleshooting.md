@@ -1,7 +1,6 @@
-# This page is for troubleshooting
+# HolaCDN troubleshooting page
 
-Search the page for the error message you see on the developer console.
-
+HolaCDN may generate warnings and errors to the browser's developer console. Search this page for the error message you see to understand possible causes and solutions.
 
 ## disabled no_browser_match
 
@@ -18,6 +17,17 @@ Search the page for the error message you see on the developer console.
   f. HolaCDN will load in one of three modes - disabled, stats or CDN - according to probabilities specified in the control panel.
 
 ## disabled random
+### Possible causes
+1. This is actually not an error message - it simply means that based on settings in the HolaCDN control panel, the HolaCDN client was instructed by the server to be loaded in disabled mode. This will happen if the total of CDN + stats percentages in the control panel is under 100%. 
+
+### Solutions
+1. Ensure the total of CDN and statistics percentages adds up to 100% in the control panel.
+  a. Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
+  b. Go to the configuration section
+  c. Adjust CDN and stats percentages
+  d. Save your settings, which will take a few minutes to go into effect
+  e. Reload the page.
+  f. HolaCDN will load either in stats or CDN - according to probabilities specified in the control panel.
 
 ## fallback error
 
