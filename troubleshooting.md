@@ -26,6 +26,8 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   * Reload the page.
   * HolaCDN will load either in stats or CDN - according to probabilities specified in the control panel.
 
+## disabled browser_unsupported
+
 ## hola skip
 ### Possible causes
 1. HolaCDN client cannot find sources for the given video URL, because no video sources are defined on the HolaCDN control panel. It is therefore skipped (played without HolaCDN). 
@@ -50,7 +52,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   * Go to the configuration section and scroll down to the video zone source
   * Add one or more video sources
 
-## browser_unsupported
+
 
 ## cdn is not attached
 
