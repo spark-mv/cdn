@@ -80,4 +80,8 @@ You can add up to 100 rules to the configuration. You add the XML document as th
 
 After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
 
+### 2.3. MaxCDN
+
+Please refer to [these instructions] (https://docs.google.com/document/d/12wQr79BXaTJ4WF9_-oueEW9Cx0FMvsNOCcMBifzfzIE) for step by step instructions on how to set-up CORS on MaxCDN.
+
 #### Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
