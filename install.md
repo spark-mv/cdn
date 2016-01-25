@@ -237,6 +237,8 @@ You can enter other console commands, for example:
 * Reset local settings:	```hola_cdn.set_mode_default()```
 * See all commands:	```hola_cdn.help()```
 
+Next step is to [check that statistics appear on the portal] (https://github.com/hola/cdn/blob/master/install.md#4-checking-statistics-on-the-portal)
+
 ## 3.2 Controlling HolaCDN via the address bar
 
 As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
@@ -366,6 +368,8 @@ You can enter other console commands, for example:
 * Disable HolaCDN:	```hola_cdn.set_mode_disable()```
 * Reset local settings:	```hola_cdn.set_mode_default()```
 * See all commands:	```hola_cdn.help()```
+
+Next step is to [check that statistics appear on the portal] (https://github.com/hola/cdn/blob/master/install.md#4-checking-statistics-on-the-portal-1)
 
 ## 3.2 Configuring via address bar
 
