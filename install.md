@@ -239,13 +239,6 @@ You can enter other console commands, for example:
 
 Next step is to [check that statistics appear on the portal] (https://github.com/hola/cdn/blob/master/install.md#4-checking-statistics-on-the-portal)
 
-## 3.2 Controlling HolaCDN via the address bar
-
-As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
-
-* Enable stats mode: append ```?hola_mode=stats```
-* Disable HolaCDN:	append ```?hola_mode=disabled```
-
 # 4. Checking statistics on the portal
 
 Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com/cp), then go to the 'detailed statistics' area to verify that statistics are recorded into your account.
@@ -373,14 +366,6 @@ You can enter other console commands, for example:
 
 Next step is to [check that statistics appear on the portal] (https://github.com/hola/cdn/blob/master/install.md#4-checking-statistics-on-the-portal-1)
 
-## 3.2 Configuring via address bar
-
-As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
-
-* Enable CDN mode: append ```?hola_mode=cdn```
-* Enable stats mode: append ```?hola_mode=stats```
-* Disable HolaCDN: append ```?hola_mode=disabled```
-
 # 4. Checking statistics on the portal
 
 Play a few videos, and login to [your HolaCDN account] (http://www.holacdn.com/cp), then go to the 'detailed statistics' area to verify that statistics are recorded into your account.
@@ -470,6 +455,14 @@ There is no need to specify any parameters. Simply add the following code at the
 <Body>
 ```
 
-# 4. Ad Serving
+# 4. Shortcut: controlling HolaCDN via the address bar
+
+As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
+
+* Enable CDN mode: append ```?hola_mode=cdn```
+* Enable stats mode: append ```?hola_mode=stats```
+* Disable HolaCDN: append ```?hola_mode=disabled```
+
+# 5. Ad Serving
 
 Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (http://hola.github.io/examples/cdn/#hola_player_vast).
