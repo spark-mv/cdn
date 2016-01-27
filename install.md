@@ -309,39 +309,6 @@ For example, if your video URL looks like http://video.myserver.com/static/mp4/v
 
 For HDS/HLS video, enter server (s) for manifests (M3U8/F4M) and for video chunks (TS or Frag).
 
-## 2.2 Handling content protection
-
-If your video servers do not use any content protection algorithms, [skip to step 3] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc).
-
-In case your video URLs use content protection scheme, Hola servers will not be able to download videos. There are a few ways of dealing with content protection:
-
-### 2.2.1 Whitelisting HolaCDN servers
-
-Whitelisting a few HolaCDN servers is the fastest way to enable HolaCDN to operate. Add the following servers to your list of whitelisted IPs:
-
-```
-50.7.1.2
-46.105.109.214
-212.150.236.132
-83.149.70.164
-192.240.106.66
-85.17.24.129
-5.196.82.58
-204.45.27.2
-37.187.161.44
-76.73.18.98
-66.90.111.2
-```
-
-### 2.2.2 Allow Hola servers to access your videos using other methods 
-
-If whitelisting IPs is not an option, you will need to work with Hola to define alternative ways to allow the Hola servers to download video files, for example: 
-
-* Share the key generation algorithms with Hola, so that Hola servers will generate requests your servers will accept
-* Set up a direct/hidden URL for Hola servers to download from
-* Set-up a special key which will identify Hola servers
-
-Contact Hola in order to determine the best way to address this issue.
 
 # 3. Test HolaCDN locally on your PC
 
@@ -463,6 +430,40 @@ As a shortcut, you can also control HolaCDN via the address bar by appending a s
 * Enable stats mode: append ```?hola_mode=stats```
 * Disable HolaCDN: append ```?hola_mode=disabled```
 
-# 5. Ad Serving
+# 5 Handling content protection
+
+If your video servers do not use any content protection algorithms, [skip to step 3] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc).
+
+In case your video URLs use content protection scheme, Hola servers will not be able to download videos. There are a few ways of dealing with content protection:
+
+## 5.1 Whitelisting HolaCDN servers
+
+Whitelisting a few HolaCDN servers is the fastest way to enable HolaCDN to operate. Add the following servers to your list of whitelisted IPs:
+
+```
+50.7.1.2
+46.105.109.214
+212.150.236.132
+83.149.70.164
+192.240.106.66
+85.17.24.129
+5.196.82.58
+204.45.27.2
+37.187.161.44
+76.73.18.98
+66.90.111.2
+```
+
+## 5.2 Allow Hola servers to access your videos using other methods 
+
+If whitelisting IPs is not an option, you will need to work with Hola to define alternative ways to allow the Hola servers to download video files, for example: 
+
+* Share the key generation algorithms with Hola, so that Hola servers will generate requests your servers will accept
+* Set up a direct/hidden URL for Hola servers to download from
+* Set-up a special key which will identify Hola servers
+
+Contact Hola in order to determine the best way to address this issue.
+
+# 6. Ad Serving
 
 Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (http://hola.github.io/examples/cdn/#hola_player_vast).
