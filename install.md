@@ -256,7 +256,7 @@ To protect you from accidental mass deployment, at this stage HolaCDN is still d
 
 Next step is to [start collecting statistics from real users] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production)
 
-# 5. Deploy to production
+# 5. Deploy statistics collection to production
 
 When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. 
 
@@ -299,8 +299,6 @@ In some implementations, the first video URL is redirected to another URL. In th
 
 # 2. Allow HolaCDN to download content
 
-## 2.1 Configuring video origin servers
-
 HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. HolaCDN uses a 'pull' model. There is no need to proactively push content to HolaCDN.
 
 To configure where to download a copy from, go to the configuration page on the [your HolaCDN account] (http://www.holacdn.com/cp). You will arrive to the default zone ('gen'). In that zone, click "new source" and enter one or more video source(s). 
@@ -309,6 +307,7 @@ For example, if your video URL looks like http://video.myserver.com/static/mp4/v
 
 For HDS/HLS video, enter server (s) for manifests (M3U8/F4M) and for video chunks (TS or Frag).
 
+You must add a video source, otherwise HolaCDN will not work. Finished? You can now [test HolaCDN locally on your PC] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc)
 
 # 3. Test HolaCDN locally on your PC
 
@@ -351,7 +350,7 @@ To protect you from accidental mass deployment, at this stage HolaCDN is still d
 
 Next step is to [start deploying HolaCDN to real users] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production-1)
 
-# 5. Deploy to production
+# 5. Deploy HolaCDN traffic to production
 
 When you are satisfied with local testing, you can gradually enable statsitics collection for real users in production. 
 
