@@ -218,8 +218,6 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by entering commands in the browser developer console. 
 
-## 3.1 Configuring HolaCDN via browser console
-
 Console commands must be entered in the frame containing th video player. If your site includes frames, select the video frame from the drop down box in the console, and enter the console commands in the correct frame.
 
 Enable statistics by entering ```hola_cdn.set_mode_stats()```
@@ -310,8 +308,6 @@ You must add a video source, otherwise HolaCDN will not work. Finished? You can 
 # 3. Test HolaCDN locally on your PC
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by entering commands in the browser developer console. 
-
-## 3.1 Configuring via browser console
 
 Console commands must be entered in the frame containing th video player. If your site includes frames, select the video frame from the drop down box in the console, and enter the console commands in the correct frame.
 
