@@ -25,7 +25,7 @@ First, choose the correct implementation for your existing player. You can enabl
 * Flash based players such as [JWPlayer] (https://github.com/hola/cdn/blob/master/install.md#231-jw-player) or [VideoJS] (https://github.com/hola/cdn/blob/master/install.md#232-videojs)
 * The [Hola VideoJS-based player] (https://github.com/hola/cdn/blob/master/install.md#21-using-hola-videojs-player)
 
-You can safely add the JS code to your web page. It is disabled by default on the server side, to protect from accidental mass deployment. After the code is on your web pages, you will enable HolaCDN [on your machine for local testing (step 3)] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) and then gradually [deploy to real users(step 5)] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production).
+You can safely add the JS code to your web page. It is disabled by default on the server side, to protect from accidental mass deployment. After the code is on your web pages, you will [enable HolaCDN on your machine for local testing] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) and then gradually [deploy to real users] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production).
 
 Examples provided throughout use MP4 video, but same syntax is used for HLS (M3U8) or HDS (F4M) videos.
 
