@@ -220,13 +220,10 @@ Once the code is live on the webpage, remember it is still disabled by default o
 
 Console commands must be entered in the frame containing th video player. If your site includes frames, select the video frame from the drop down box in the console, and enter the console commands in the correct frame.
 
-Enable statistics by entering ```hola_cdn.set_mode_stats()```
-
-Refresh the page and check that HolaCDN is in statistics mode by entering ```hola_cdn.mode```
-
-To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```
-
-You should see printouts from HolaCDN with video timelime information.
+1. Enable statistics by entering ```hola_cdn.set_mode_stats()```
+2. Refresh the page and check that HolaCDN is in statistics mode by entering ```hola_cdn.mode```
+3. To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```
+4. You should see printouts from HolaCDN with video timelime information.
 
 You can enter other console commands, for example:
 * Disable HolaCDN:	```hola_cdn.set_mode_disabled()```
@@ -311,11 +308,11 @@ Once the code is live on the webpage, remember it is still disabled by default o
 
 Console commands must be entered in the frame containing th video player. If your site includes frames, select the video frame from the drop down box in the console, and enter the console commands in the correct frame.
 
-Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```, then refresh the page and check that HolaCDN is in CDN mode by entering ```hola_cdn.mode```
-
-To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```. Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). 
-
-While the video us playing, you can also look at the network tab of the developer console. You will see some video chunks coming from your own server, and some from HolaCDN servers.
+1. Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```
+2. Refresh the page and check that HolaCDN is in CDN mode by entering ```hola_cdn.mode```
+3. To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```.
+4. Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). 
+5. While the video us playing, you can also look at the network tab of the developer console. You will see some video chunks coming from your own server, and some from HolaCDN servers.
 
 If you receive a console message starting with "Hola cdn skip", the settings on the portal did not take effect yet - try again in a few minutes.
 
