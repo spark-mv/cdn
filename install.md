@@ -300,6 +300,8 @@ For example, if your video URL looks like http://video.myserver.com/static/mp4/v
 
 For HDS/HLS video, enter server (s) for manifests (M3U8/F4M) and for video chunks (TS or Frag).
 
+If your video servers use content protection algorithms, [check out the advanced settings] (https://github.com/hola/cdn/blob/master/install.md#5-handling-content-protection).
+
 You must add a video source, otherwise HolaCDN will not work. Finished? You can now [test HolaCDN locally on your PC] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc)
 
 # 3. Test HolaCDN locally on your PC
@@ -420,9 +422,7 @@ As a shortcut, you can also control HolaCDN via the address bar by appending a s
 * Enable stats mode: append ```?hola_mode=stats```
 * Disable HolaCDN: append ```?hola_mode=disabled```
 
-# 5 Handling content protection
-
-If your video servers do not use any content protection algorithms, [skip to step 3] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc).
+# 5. Handling content protection
 
 In case your video URLs use content protection scheme, Hola servers will not be able to download videos. There are a few ways of dealing with content protection:
 
