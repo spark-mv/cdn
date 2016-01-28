@@ -127,7 +127,15 @@ If your site uses JW Player with flash technology, follow these steps:
 </head>
 ```
 
-2) Replace your JW player SWF with the Hola-enabled version. This is done by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
+2) Replace your JW player SWF with the Hola-enabled version. 
+
+Download the Hola-enabled version and place it on your own server. Get it from:
+
+* JWPlayer 6.12.4956: [https://player.h-cdn.com/jwplayer.flash.hls.swf](https://player.h-cdn.com/jwplayer.flash.hls.swf)
+
+* JWPlayer 7.1.0: [https://player.h-cdn.com/jwplayer.flash.7_1_0.swf](https://player.h-cdn.com/jwplayer.flash.7_1_0.swf)
+
+Once you downloaded the file, continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
 jwplayer(‘video-container’).setup({
     file: ‘//cdn.example.com/popular_videos/example.mp4’,
@@ -137,11 +145,6 @@ jwplayer(‘video-container’).setup({
     height: 360
 });
 ```
-Download the Hola-enabled version and place it on your own server. Get it from:
-
-* JWPlayer 6.12.4956: [https://player.h-cdn.com/jwplayer.flash.hls.swf](https://player.h-cdn.com/jwplayer.flash.hls.swf)
-
-* JWPlayer 7.1.0: [https://player.h-cdn.com/jwplayer.flash.7_1_0.swf](https://player.h-cdn.com/jwplayer.flash.7_1_0.swf)
 
 3) Initialize HolaCDN loader right after the call to ```jwplayer(‘video-container’).setup(opt)```.
 ```
@@ -214,9 +217,9 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 
-### 2.3.1 Flowplayer (HLS only)
+### 2.3.3 Flowplayer (HLS only)
 
-If your site uses Flowplayer with flash technology, follow these steps:
+If your site plays HLS video using Flowplayer with flash technology, follow these steps:
 
 1) Add Hola loader to the 'head' element of the video HTML page, along with your customerID:
 ```
@@ -227,7 +230,11 @@ If your site uses Flowplayer with flash technology, follow these steps:
 </head>
 ```
 
-2) Replace your Flowplayer SWF with the Hola-enabled version. This is done by configuring ```{swf: <url>, swfHls: <url>}``` option in ```flowplayer(‘video-container’, opt)``` call:
+2) Replace your Flowplayer SWF with the Hola-enabled version. 
+
+Download the [Hola-enabled version] (https://holacdn.com/flowplayerhls.6.0.5.hola.swf) and place it on your own server.
+
+Once you have downloaded the SWF, continue by configuring ```{swf: <url>, swfHls: <url>}``` option in ```flowplayer(‘video-container’, opt)``` call:
 ```
 var player = flowplayer(document.getElementById('video-container'), {
     swf: '//example.com/static/<new-version-flashplayer>.swf',
@@ -240,7 +247,7 @@ var player = flowplayer(document.getElementById('video-container'), {
     }
 });
 ```
-Both ```swf``` and ```swfHls``` are changed to the same file. Download the Hola-enabled version and place it on your own server. Get it from [https://holacdn.com/flowplayerhls.6.0.5.hola.swf](https://holacdn.com/flowplayerhls.6.0.5.hola.swf)
+Both ```swf``` and ```swfHls``` are changed to the same file. 
 
 3) Initialize HolaCDN loader when the player is ready:
 ```
