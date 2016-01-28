@@ -236,7 +236,8 @@ Download the [Hola-enabled version] (https://holacdn.com/flowplayerhls.6.0.5.hol
 
 Once you have downloaded the SWF, continue by configuring ```{swf: <url>, swfHls: <url>}``` option in ```flowplayer(‘video-container’, opt)``` call:
 ```
-var player = flowplayer(document.getElementById('video-container'), {
+var container = document.getElementById('video-container');
+var player = flowplayer(container, {
     swf: '//example.com/static/<new-version-flashplayer>.swf',
     swfHls: '//example.com/static/<new-version-flashplayer>.swf',
     clip: {
@@ -252,7 +253,7 @@ Both ```swf``` and ```swfHls``` are changed to the same file.
 3) Initialize HolaCDN loader when the player is ready:
 ```
 var container = document.getElementById('video-container');
-var player = flowplayer(, {
+var player = flowplayer(container, {
     swf: '//example.com/static/flowplayerhls.6.0.5.hola.swf',
     swfHls: '//example.com/static/flowplayerhls.6.0.5.hola.swf',
     clip: {
