@@ -514,4 +514,27 @@ Contact Hola in order to determine the best way to address this issue.
 
 # 6. Ad Serving
 
+## 6.1 Hola player + VAST
 Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (http://hola.github.io/examples/cdn/#hola_player_vast).
+
+## 6.2 Adblock issues
+
+Adblock extensions, which are pretty popular these days, may lead to unexpected exceptions thrown during ad init. So it sometimes (e.g. when executed in scope of player configuration) breaks the player init sequence and as a result Hola cannot detect it.
+
+Here is one of examples: **videojs+ima+adblock**
+```
+videojs(element, {}, function(){
+    this.ima({id: this.id(), adTagUrl: '<ad_tag_url>'});
+});
+videojs.players => {} // no player instance detected, even though videojs successfully initialized.
+```
+
+The solution to the problem is to wrap ad init to be exception-safe. Thus the example above could be fixed to:
+```
+videojs(element, {}, function(){
+    try { this.ima({id: this.id(), adTagUrl: '<ad_tag_url>'}); }
+    catch(e){ console.log('failed to initialize ad plugin, running with adblock?'); }
+});
+videojs.players => {my_vjs_player: a}
+```
+
