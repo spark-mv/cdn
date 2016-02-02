@@ -217,7 +217,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 
-### 2.3.3 Flowplayer (HLS only)
+### 2.3.3 Flowplayer (HLS)
 
 If your site plays HLS video using Flowplayer with flash technology, follow these steps:
 
@@ -263,11 +263,11 @@ var player = flowplayer(container, {
        }]
    }
 });
-player.one('ready', function hola_init(){
+player.one('ready', function(){
    if (window.hola_cdn)
-       window.hola_cdn.init({flashls: container.querySelector('object')});
+       window.hola_cdn.init();
    else
-       window.hola_cdn_on_load = hola_init;
+       window.hola_cdn_on_load = true;
 });
 ```
 
