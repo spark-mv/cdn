@@ -217,6 +217,61 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 
+### 2.3.3 Flowplayer (HLS only)
+
+If your site plays HLS video using Flowplayer with flash technology, follow these steps:
+
+1) Add Hola loader to the 'head' element of the video HTML page, along with your customerID:
+```
+<head>
+...
+<script type="text/javascript" async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
+...
+</head>
+```
+
+2) Replace your Flowplayer SWF with the Hola-enabled version. 
+
+Download the [Hola-enabled version] (https://holacdn.com/flowplayerhls.6.0.5.hola.swf) and place it on your own server.
+
+Once you have downloaded the SWF, continue by configuring ```{swf: <url>, swfHls: <url>}``` option in ```flowplayer(‘video-container’, opt)``` call:
+```
+var container = document.getElementById('video-container');
+var player = flowplayer(container, {
+   swf: '//example.com/static/<new-version-flashplayer>.swf',
+   swfHls: '//example.com/static/<new-version-flashplayer>.swf',
+   clip: {
+       sources: [{
+           type: "application/x-mpegurl",
+           src:  "//cdn.example.com/popular_videos/example.m3u8",
+       }]
+   }
+});
+```
+Both ```swf``` and ```swfHls``` are changed to the same file. 
+
+3) Initialize HolaCDN loader when the player is ready:
+```
+var container = document.getElementById('video-container');
+var player = flowplayer(container, {
+   swf: '//example.com/static/flowplayerhls.6.0.5.hola.swf',
+   swfHls: '//example.com/static/flowplayerhls.6.0.5.hola.swf',
+   clip: {
+       sources: [{
+           type: "application/x-mpegurl",
+           src:  "//cdn.example.com/popular_videos/example.m3u8",
+       }]
+   }
+});
+player.one('ready', function hola_init(){
+   if (window.hola_cdn)
+       window.hola_cdn.init({flashls: container.querySelector('object')});
+   else
+       window.hola_cdn_on_load = hola_init;
+});
+```
+
+4) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 # 3. Test HolaCDN statistics locally
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by entering commands in the browser developer console. 
