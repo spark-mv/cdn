@@ -14,7 +14,9 @@ Test to see if your HTTP server is configured correctly by using:
 
 ```curl -v -H "Origin: <site origin link>" -X OPTIONS -H  "Access-Control-Request-Headers: range" <link to MP4/FLV/WEBM file>```
 
-The desired response is:
+Another way to quickly to see if your HTTP server is configured correctly is using the Chrome develope console. Open the 'network' tab, load your page, and click on the line with the MP4. In the 'headers' tab look at the response headers.
+
+In both cases, the desired response is:
 
 ```
 HTTP/1.1 200 OK
