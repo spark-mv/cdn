@@ -487,20 +487,20 @@ In case your video URLs use content protection scheme, Hola servers will not be 
 Whitelisting a few HolaCDN servers is the fastest way to enable HolaCDN to operate. Add the following servers to your list of whitelisted IPs:
 
 ```
-50.7.1.2
-46.105.109.214
-212.150.236.132
-83.149.70.164
-192.240.106.66
-85.17.24.129
-5.196.82.58
-204.45.27.2
-37.187.161.44
-76.73.18.98
-66.90.111.2
 103.27.232.194
-82.80.17.117
+192.240.106.66
+204.45.27.2
 209.58.176.3
+212.150.236.132
+37.187.161.44
+46.105.109.214
+5.196.82.58
+50.7.1.2
+66.90.111.2
+76.73.18.98
+82.80.17.117
+83.149.70.164
+85.17.24.129
 ```
 
 ## 5.2 Allow Hola servers to access your videos using other methods 
