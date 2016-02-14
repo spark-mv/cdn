@@ -498,6 +498,9 @@ Whitelisting a few HolaCDN servers is the fastest way to enable HolaCDN to opera
 37.187.161.44
 76.73.18.98
 66.90.111.2
+103.27.232.194
+82.80.17.117
+209.58.176.3
 ```
 
 ## 5.2 Allow Hola servers to access your videos using other methods 
