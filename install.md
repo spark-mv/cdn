@@ -39,7 +39,7 @@ HolaCDN can work with your existing player, but we recommend using Hola player. 
 <head>
 ...
     <script src="//player.h-cdn.com/player_vjs5.js"></script>
-    <script src="//player.h-cdn.com/loader.js?customer=XXXXX" async></script>
+    <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
 ...
 </head>
 ```
@@ -91,7 +91,7 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 <html>
 ...
 video src="//example.org/myVideo.mp4" controls
-<script async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
+<script async crossorigin="anonymous"  src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 <script>
     (function(){
         if (window.hola_cdn)
@@ -188,7 +188,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 ```
 <head>
 ...
-<script type="text/javascript" async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
+<script type="text/javascript" async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 ...
 </head>
 ```
@@ -225,7 +225,7 @@ If your site plays HLS video using Flowplayer with flash technology, follow thes
 ```
 <head>
 ...
-<script type="text/javascript" async src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
+<script type="text/javascript" async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
 ...
 </head>
 ```
