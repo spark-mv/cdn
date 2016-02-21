@@ -215,9 +215,9 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 
-### 2.3.3 Flowplayer
+### 2.3.3 Flowplayer (HLS only; HDS, MP4 coming soon)
 
-If your site plays video using Flowplayer with flash technology, follow these steps:
+If your site plays HLS video using Flowplayer with flash technology, follow these steps:
 
 1) Add Hola loader to the 'head' element of the video HTML page, along with your customerID:
 ```
