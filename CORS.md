@@ -1,5 +1,16 @@
 # Server side configuration for MP4/FLV/WebM progressive download
 
+**Table of Contents**
+- [1. Configuring CORS headers](#)
+	- [1.1 CORS configuration for most web servers](#)
+		- [Finished with CORS configuration? You can go back to enabling HolaCDN](#)
+	- [1.2 CORS configuration for Amazon AWS](#)
+		- [Finished with CORS configuration? You can go back to enabling HolaCDN](#)
+	- [1.3. CORS configuration for MaxCDN](#)
+		- [Finished with CORS configuration? You can go back to enabling HolaCDN](#)
+- [2. Verify current CORS settings](#)
+	- [2.1 Verification for most web servers](#)
+	- [ 2.2 Verification for Amazon AWS](#)
 
 ## 1. Configuring CORS headers
 
