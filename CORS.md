@@ -1,10 +1,9 @@
 # Server side configuration for MP4/FLV/WebM progressive download
 
-**Table of Contents**
 - [1. Configuring CORS headers](#config)
 	- [1.1 CORS configuration for most web servers](#configMostServers)
 	- [1.2 CORS configuration for Amazon AWS](#configAWS)
-	- [1.3. CORS configuration for MaxCDN](#configMaxCDN)
+	- [1.3 CORS configuration for MaxCDN](#configMaxCDN)
 - [2. Verify CORS settings](#verify)
 	- [2.1 Verification for most web servers](#verifyMostServers)
 	- [2.2 Verification for Amazon AWS](#verifyAWS)
@@ -17,16 +16,20 @@ For step by step instructions regarding how to enable CORS on different web serv
 
 After committing the configuration changes, verify response that headers to from this server(s) include required headers, as described above.
 
+Uppon completion, [verify CORS configuration] (#verifyMostServers).
+
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
 
 ### <a name="configAWS"></a> 1.2 CORS configuration for Amazon AWS
 
-Note: If the bucket used to store the video files is not the same bucket used to store the
-page that loads the video, then the following must be configured for all related buckets.
+Note: If the S3 bucket used to store the video files is not the same S3 bucket used to store the
+page that loads the video, then the following must be configured for all related S3 buckets.
+
+![Amazon AWS steps](/resources/cors_howto.png)
 
 From your AWS console go to S3 and follow the steps:
 
-1. Select the relevant bucket.
+1. Select the relevant S3 bucket.
 2. Click on “Properties”.
 3. Click “Permissions”.
 4. Click “Edit CORS Configuration”.
@@ -60,7 +63,7 @@ If you require a more in-depth guide to customizing your S3 bucket configuration
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
 
 
-### <a name="configMaxCDN"></a> 1.3. CORS configuration for MaxCDN
+### <a name="configMaxCDN"></a> 1.3 CORS configuration for MaxCDN
 
 Please refer to [these instructions] (https://docs.google.com/document/d/12wQr79BXaTJ4WF9_-oueEW9Cx0FMvsNOCcMBifzfzIE) for step by step instructions on how to set-up CORS on MaxCDN.
 
