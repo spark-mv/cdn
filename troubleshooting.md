@@ -57,7 +57,16 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   * Go to the configuration section and scroll down to the video zone source
   * Add one or more video sources
 
+## Error 403
+#### Possible causes
+1. Incorrectly configured CORS.
+2. Browser doesn't correctly manage persistent cache.
 
+#### Solutions
+1. [CORS.md](Verify CORS configuration)
+2. Clearing browser's persistent cache.<br/>
+Open your browser's Developer Tools and remove the relevant locally stored keys.
+![Clear persistent local cache](/resources/clear_local_cache.png)
 
 ## cdn is not attached
 
