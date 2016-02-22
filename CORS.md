@@ -1,18 +1,19 @@
 # Server side configuration for MP4/FLV/WebM progressive download
 
-Instructions for verifying and configuring CORS settings for different web servers are below. 
+Instructions for configuring and verifying CORS settings for different web servers are below. 
 
 If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
 
-[CORS setup for most web servers](#configMostServers)
-[CORS setup for Amazon AWS S3](#configAWS)
-[CORS setup for MaxCDN](#configMaxCDN)
+Available guides:
+- [CORS setup for most web servers](#configMostServers)
+- [CORS setup for Amazon AWS S3](#configAWS)
+- [CORS setup for MaxCDN](#configMaxCDN)
 
 ### <a name="configMostServers"></a> CORS configuration for most web servers
 
 For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
 
-After committing the configuration changes, [verify it works] here](https://docs.google.com/document/d/1aLFKeQIbs3EnSMXKjXQrseVf_XkeOlDNMDYbxnbH2N8/edit?usp=sharing)
+After committing the configuration changes, [verify it works](https://docs.google.com/document/d/1aLFKeQIbs3EnSMXKjXQrseVf_XkeOlDNMDYbxnbH2N8/edit?usp=sharing)
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
 
