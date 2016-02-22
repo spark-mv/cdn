@@ -1,5 +1,9 @@
 # Server side configuration for MP4/FLV/WebM progressive download
 
+Instrcuctions for verifying and configuring CORS settings for different web servers are below. 
+
+If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
+
 - [1. Configuring CORS headers](#config)
 	- [1.1 CORS configuration for most web servers](#configMostServers)
 	- [1.2 CORS configuration for Amazon AWS](#configAWS)
@@ -72,11 +76,13 @@ Please refer to [these instructions] (https://docs.google.com/document/d/12wQr79
 
 ## <a name="verify"></a> 2. Verify current CORS settings
 
-Instrcuctions for verifying and configuring CORS settings for different web servers are below. 
-
-If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
+<a name="clear_cache"></a>Before you continue, make sure to clear your browser's persistant cache:<br/>
+Open your browser's Developer Tools and remove the relevant locally stored keys.
+![Clear persistent local cache](/resources/clear_local_cache.png)
 
 ### <a name="verifyMostServers"></a> 2.1 Verification for most web servers
+
+Before you continue, [clear the local cache](#clear_cache)
 
 Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled.
 
@@ -102,6 +108,8 @@ Timing-Allow-Origin: *
 If the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly.
 
 ### <a name="verifyAWS"></a> 2.2 Verification for Amazon AWS
+
+Before you continue, [clear the local cache](#clear_cache)
 
 If you are using Amazon S3 to store videos, you should configure your bucket to allow cross-origin requests, you create a CORS configuration, an XML document with rules that identify the origins that you will allow to access your bucket, the operations (HTTP methods) will support for each origin, and other operation-specific information.
 
