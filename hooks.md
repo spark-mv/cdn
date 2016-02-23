@@ -8,14 +8,21 @@ Note that the HolaCDN hooks do not affect the performance or functionality of yo
 
 Choose your player and protocol from the list below: 
 
-# HDS
+## HDS
 
 * Your own player - use [HolaCDN OSMF] (https://github.com/hola/osmf)
 * [VideoJS5] (https://github.com/hola/videojs5-osmf)
 
-# HLS
+## HLS
 * [FlashHLS] (https://github.com/hola/flashls)
 * [Flowplayer] (https://github.com/hola/flowplayer-hlsjs)
 * [VideoJS] (https://github.com/hola/videojs-contrib-hls)
 
-# MP4
+## MP4
+
+# Testing
+
+* To test the HolaCDN hooks with your player without HolaCDN, deploy the modified player to parts of your site and compare its performance to your baseline player. Results should be identical.
+* To test HolaCDN, follow the [step by step instructions] (https://github.com/hola/cdn/blob/master/install.md)
+
+If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
