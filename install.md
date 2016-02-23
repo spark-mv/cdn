@@ -24,8 +24,9 @@ First, choose the correct implementation for your existing player. You can enabl
 * Any HTML5 based video player - [Native, JW player, Flowplayer] (https://github.com/hola/cdn/blob/master/install.md#22-html5-video-players) and others.
 * Flash based players such as [JWPlayer] (https://github.com/hola/cdn/blob/master/install.md#231-jw-player), [FlowPlayer] (https://github.com/hola/cdn/blob/master/install.md#233-flowplayer) or [VideoJS] (https://github.com/hola/cdn/blob/master/install.md#232-videojs)
 * The [Hola VideoJS-based player] (https://github.com/hola/cdn/blob/master/install.md#21-using-hola-videojs-player)
+* [Your own Flash based player] (https://github.com/hola/cdn/blob/master/hooks.md)
 
-You can safely add the JS code to your web page. It is disabled by default on the server side, to protect from accidental mass deployment. After the code is on your web pages, you will [enable HolaCDN on your machine for local testing] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) and then gradually [deploy to real users] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production).
+You can safely add the JS code to your web page. It is disabled by default on the server side, to protect from accidental mass deployment. After the code is on your web pages, you will enable HolaCDN on your machine for [local testing] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) and then gradually deploy to [real users] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production).
 
 Examples provided throughout use MP4 video, but same syntax is used for HLS (M3U8) or HDS (F4M) videos.
 
