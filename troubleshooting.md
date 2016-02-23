@@ -70,7 +70,8 @@ Open your browser's Developer Tools and remove the relevant locally stored keys.
 
 ## Request canceled error
 The following error type is expected and does not indicate HolaCDN is not working properly.
-![Canceled error example](/resources/canceled_error.png)
+![Canceled error example](/resources/canceled_error_2.png)
+![Canceled error example](/resources/canceled_error_1.png)
 
 ## cdn is not attached
 
