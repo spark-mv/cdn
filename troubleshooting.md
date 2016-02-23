@@ -68,6 +68,10 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 Open your browser's Developer Tools and remove the relevant locally stored keys.
 ![Clear persistent local cache](/resources/clear_local_cache.png)
 
+## Request canceled error
+The following error type is expected and does not indicate HolaCDN is not working properly.
+![Canceled error example](/resources/canceled_error.png)
+
 ## cdn is not attached
 
 ## fallback error
