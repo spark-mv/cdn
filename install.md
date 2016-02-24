@@ -459,7 +459,8 @@ There is no need to specify any parameters. Simply add the following code at the
 ```
 .
 .
-<script src="//player.h-cdn.com/loader.js?customer=XXXXX" async></script><script>
+<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX" ></script>
+<script>
    if (window.hola_cdn)
        window.hola_cdn.init();
    else
