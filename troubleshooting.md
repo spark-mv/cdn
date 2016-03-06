@@ -73,6 +73,14 @@ The following error type is expected and does not indicate HolaCDN is not workin
 ![Canceled error example](/resources/canceled_error_2.png)
 ![Canceled error example](/resources/canceled_error_1.png)
 
+## Statistics don't work / seeing only zone_init events
+#### Possible causes
+1. Incorrect Video Source(s) configuration.
+
+#### Solutions
+1. Set the Video Source(s) to specific sources your videos are coming from, or `*` for any location.
+![Video Source configuration](/resources/video_sources.png)
+
 ## cdn is not attached
 
 ## fallback error
