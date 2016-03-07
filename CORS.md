@@ -8,6 +8,7 @@ Available guides:
 - [CORS setup for most web servers](#configMostServers)
 - [CORS setup for Amazon AWS S3](#configAWS)
 - [CORS setup for MaxCDN](#configMaxCDN)
+- [CORS setup for Fastly](#configFastly)
 
 ### <a name="configMostServers"></a> CORS configuration for most web servers
 
@@ -31,3 +32,8 @@ Please refer to [these instructions] (https://docs.google.com/document/d/12wQr79
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
 
+### <a name="configFastly"></a> CORS configuration for Fastly
+
+Please refer to [these instructions] (https://docs.google.com/document/d/1zIMMQe4lSy7ubcWv9FDxzsWw6acjv9_o6yZrhgoyit0/edit?usp=sharing) for a step-by-step guide on how to setup CORS on Fastly.
+
+**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
