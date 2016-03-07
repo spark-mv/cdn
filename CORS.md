@@ -10,7 +10,7 @@ Available guides:
 - [CORS setup for MaxCDN](#configMaxCDN)
 - [CORS setup for Fastly](#configFastly)
 
-### <a name="configMostServers"></a> CORS configuration for most web servers
+### <a name="configMostServers"></a>CORS configuration for most web servers
 
 For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
 
@@ -18,7 +18,7 @@ After committing the configuration changes, [verify it works](https://docs.googl
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
 
-### <a name="configAWS"></a> CORS configuration for Amazon AWS
+### <a name="configAWS"></a>CORS configuration for Amazon AWS
 
 Please refer to [these instructions](https://docs.google.com/document/d/1RrWA7gfCLDXcjgCQOQRGs0A3IRSlvn3Ktu9zHp9j-po/edit?usp=sharing) for a step-by-step guide on how to configure and verify CORS for Amazon AWS S3.
 
@@ -26,13 +26,13 @@ If you're using CloudFront, please refer to [Amazon's documentation](http://docs
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
 
-### <a name="configMaxCDN"></a> CORS configuration for MaxCDN
+### <a name="configMaxCDN"></a>CORS configuration for MaxCDN
 
 Please refer to [these instructions] (https://docs.google.com/document/d/12wQr79BXaTJ4WF9_-oueEW9Cx0FMvsNOCcMBifzfzIE/edit?usp=sharing) for a step-by-step guide on how to setup CORS on MaxCDN.
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)**
 
-### <a name="configFastly"></a> CORS configuration for Fastly
+### <a name="configFastly"></a>CORS configuration for Fastly
 
 Please refer to [these instructions] (https://docs.google.com/document/d/1zIMMQe4lSy7ubcWv9FDxzsWw6acjv9_o6yZrhgoyit0/edit?usp=sharing) for a step-by-step guide on how to setup CORS on Fastly.
 
