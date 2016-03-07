@@ -35,7 +35,7 @@ Notes:
 * Go to your website's video page and launch the developer console (F12), then click the console tab.
 
 **Load Hola CDN**
-* In console, enter `jQuery.getScript('http://client.h-cdn.com/loader_demo.js')`.
+* In console, enter `jQuery.getScript('http://client.h-cdn.com/loader.js')`.
 
 **Init Hola CDN**
 
@@ -57,22 +57,22 @@ Note: If you navigate to another video, you may need to reload the JS module. Wh
 
 ## Integrate free tool for your web-site
 
-#### Static loading of client side module loader_demo.js (preferred)
+#### Static loading of client side module loader.js (preferred)
 ```html
-<script src="http://client.h-cdn.com/loader_demo.js"></script>
+<script src="http://client.h-cdn.com/loader.js?customer=demo"></script>
 ```
-#### Dynamic loading of client side module loader_demo.js with jQuery
+#### Dynamic loading of client side module loader.js with jQuery
 ```js
-jQuery.getScript('http://client.h-cdn.com/loader_demo.js')
+jQuery.getScript('http://client.h-cdn.com/loader.js?customer=demo')
 ```
 followed by
 ```js
 hola_cdn.init()
 ```
-#### Dynamic loading of client side module loader_demo.js without jQuery
+#### Dynamic loading of client side module loader.js without jQuery
 ```js
 var script = document.createElement('script');
- script.src = '//client.h-cdn.com/loader_demo.js';
+ script.src = '//client.h-cdn.com/loader.js?customer=demo';
  script.type = 'text/javascript';
  document.getElementsByTagName('head')[0].appendChild(script);
  ```
