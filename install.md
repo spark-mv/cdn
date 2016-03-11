@@ -192,7 +192,18 @@ If your site uses a videoJS based player with flash technology, follow these ste
 </head>
 ```
 
-2) Initialize Hola at the end of the body:
+2) Replace videojs SWF with the Hola-enabled version.
+
+* Download the [Hola-enabled version] (https://client.h-cdn.com/bext/svc/cdn/pub/videojs-flashls.swf) and place it on your own server.
+* Configure videojs to use the new version.
+```
+<script type="text/javascript" src="//example.com/static/video.js"></script>
+<script type="text/javascript">
+  videojs.options.flash.swf = "//example.com/static/videojs-flashls.swf";
+</script>
+```
+
+3) Initialize Hola at the end of the body:
 
 ```
 <script>
