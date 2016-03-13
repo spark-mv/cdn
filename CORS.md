@@ -12,7 +12,10 @@ Available guides:
 
 ### <a name="configMostServers"></a>CORS configuration for most web servers
 
-For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the generic instructions.
+For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the generic instructions:
+- AllowedOrigin
+- AllowedMethod: HEAD, GET
+- ExposeHeader: Content-Range, Date, Etag
 
 After committing the configuration changes, [verify it works](https://docs.google.com/document/d/1aLFKeQIbs3EnSMXKjXQrseVf_XkeOlDNMDYbxnbH2N8/edit?usp=sharing)
 
