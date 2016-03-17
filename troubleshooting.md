@@ -35,7 +35,8 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 ## hola skip
 ### Possible causes
-1. HolaCDN client cannot find sources for the given video URL, because no video sources are defined on the HolaCDN control panel. It is therefore skipped (played without HolaCDN). 
+1. HolaCDN client cannot find sources for the given video URL, because no video sources are defined on the HolaCDN control panel. It is therefore skipped (played without HolaCDN).
+2. Malformed video URL: video URL passed on to the player must include the full domain name (e.g. 'example.com/video.mp4', and NOT '/video.mp4')
 
 ### Solutions
 1. Define one or more video sources for the video. Note that the matching is done for the full domain.
@@ -45,7 +46,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   * Save your settings, which will take a few minutes to go into effect
   * Reload the page.
   * The error should disappear and video will be downloaded from HolaCDN.
-
+2. Ensure the video URL passed on to the player includes the full domain name (e.g. 'example.com/video.mp4', and NOT '/video.mp4')
 
 ## wrapper detached from player
 #### Possible causes
