@@ -16,7 +16,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 ## disabled random
 #### Possible causes
-1. This is actually *not an error message* - it simply means that the HolaCDN client was explicitly instructed by the server to be loaded in disabled mode. This will happen if the total of CDN + stats percentages in the control panel is under 100%. Any percentage not allocated to stats or CDN will be disabled. 
+1. This is actually **not an error message** - it simply means that the HolaCDN client was explicitly instructed by the server to be loaded in disabled mode. This will happen if the total of CDN + stats percentages in the control panel is under 100%. Any percentage not allocated to stats or CDN will be disabled. 
 
 #### Solutions
 1. Ensure the total of CDN and statistics percentages adds up to 100% in the control panel.
