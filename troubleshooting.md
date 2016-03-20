@@ -27,18 +27,18 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
   * HolaCDN will load either in stats or CDN - according to probabilities specified in the control panel.
 
 ## disabled browser_unsupported
-### Possible causes
+#### Possible causes
 1. HolaCDN requires Media Source Extensions (MSE) to be enabled on the web browsr. Older versions of browsers which do not support MSE are not supported by HolaCDN. Here is the [full list of supported platforms] (http://holacdn.com/faq#in_platforms).  
 
-### Solutions
+#### Solutions
 1. Use a supported browser
 
 ## hola skip
-### Possible causes
+#### Possible causes
 1. HolaCDN client cannot find sources for the given video URL, because no video sources are defined on the HolaCDN control panel. It is therefore skipped (played without HolaCDN).
 2. Malformed video URL: video URL passed on to the player must include the full domain name (e.g. 'example.com/video.mp4', and NOT '/video.mp4')
 
-### Solutions
+#### Solutions
 1. Define one or more video sources for the video. Note that the matching is done for the full domain.
   * Login to [your account] (http://holacdn.com/signin?utm_source=holaext)
   * Go to the configuration section and scroll down to the video zone source
