@@ -350,13 +350,15 @@ Enabling HolaCDN will result in performance increases and cost reductions by usi
 
 # 1. Configure your video server 
 
-This section is only required if you are using progressive MP4/FLV/WebM video. 
+This section is mandatory only if you are using progressive MP4/FLV/WebM video. 
 
 If you are using adaptive protocls (e.g. HLS/HDS/Dash), [skip to section 2] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content).
 
 ## 1.1 CORS settings
 
-Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled. Please see the [how to verify and configure CORS] (https://github.com/hola/cdn/blob/master/CORS.md)
+Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled. 
+
+If you do not implement these settings, HolaCDN will still work but performance will be degraded. As such, see [how to verify and configure CORS.] (https://github.com/hola/cdn/blob/master/CORS.md)
 
 ## 1.2 Handling redirects
 
