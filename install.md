@@ -132,7 +132,7 @@ If your site uses JW Player with flash technology, follow these steps:
 
 Download the Hola-enabled JWpPlaer version that matches the version you are using, and place it on your own server. Choose your version from:
 
-* JWPlayer  [V6.12.4]  (https://player.h-cdn.com/jwplayer.flash.hls.swf), [V7.1.0] (https://player.h-cdn.com/jwplayer.flash.7_1_0.swf) , [V7.1.4]  (https://player.h-cdn.com/jwplayer.flash.7_1_4.swf),  [V7.2.4] (https://player.h-cdn.com/jwplayer.flash.7_2_4.swf)
+* JWPlayer  [V6.12.4]  (https://player.h-cdn.com/jwplayer.flash.6_12_4956.swf), [V7.1.0] (https://player.h-cdn.com/jwplayer.flash.7_1_0.swf) , [V7.1.4]  (https://player.h-cdn.com/jwplayer.flash.7_1_4.swf),  [V7.2.4] (https://player.h-cdn.com/jwplayer.flash.7_2_4.swf)
 
 Once you downloaded the file, continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
