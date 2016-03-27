@@ -498,6 +498,9 @@ There is no need to specify any parameters. Simply add the following code at the
 <Body>
 ```
 
+## 3.1 Nimble live streaming
+
+Nimble is supported out of the box, but needs to be configured to allow HolaCDN servers to download content - [instructions here] (http://blog.wmspanel.com/2015/06/cdn-friendly-streaming.html)
 # 4. Shortcut: controlling HolaCDN via the address bar
 
 As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
