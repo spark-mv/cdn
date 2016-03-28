@@ -569,4 +569,4 @@ videojs(element, {}, function(){
 });
 videojs.players => {my_vjs_player: a}
 ```
-
+.
