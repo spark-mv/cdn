@@ -469,7 +469,7 @@ HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: HEAD, GET, OPTIONS
-Access-Control-Expose-Headers: Date, Etag
+Access-Control-Expose-Headers: Date, Etag, Cache-Control
 Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
 ```
