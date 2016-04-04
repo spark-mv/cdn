@@ -54,19 +54,12 @@ HolaCDN can work with your existing player, but we recommend using Hola player. 
   </video>
 ```
 
-3) Add the following script at the end of your body:
+3) Add the following script after video tag to initialize Hola player:
 
 ```
   <script>
     (function(){
-        window.hola_player(function(player){
-            player.init({}, function(){
-                if (window.hola_cdn)
-                    window.hola_cdn.init();
-                else
-                    window.hola_cdn_on_load = true;
-            });
-        });
+        window.hola_player(function(player){ player.init(); });
     })();
   </script>
   .
@@ -91,16 +84,8 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 ```
 <html>
 ...
-video src="//example.org/myVideo.mp4" controls
+<video src="//example.org/myVideo.mp4" controls></video>
 <script async crossorigin="anonymous"  src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
-<script>
-    (function(){
-        if (window.hola_cdn)
-            window.hola_cdn.init();
-        else
-            window.hola_cdn_on_load = true;
-    })();
-</script>
 ...
 <html>
 ```
@@ -130,7 +115,7 @@ If your site uses JW Player with flash technology, follow these steps:
 
 2) Replace your JW player SWF with the Hola-enabled version. 
 
-Download the Hola-enabled JWpPlaer version that matches the version you are using, and place it on your own server. Choose your version from:
+Download the Hola-enabled JWPlayer version that matches the version you are using, and place it on your own server. Choose your version from:
 
 * JWPlayer  [V6.12.4]  (https://player.h-cdn.com/jwplayer.flash.6_12_4956.swf), [V7.1.0] (https://player.h-cdn.com/jwplayer.flash.7_1_0.swf) , [V7.1.4]  (https://player.h-cdn.com/jwplayer.flash.7_1_4.swf),  [V7.2.4] (https://player.h-cdn.com/jwplayer.flash.7_2_4.swf)
 
@@ -145,39 +130,13 @@ jwplayer(‘video-container’).setup({
 });
 ```
 
-3) Initialize HolaCDN loader right after the call to ```jwplayer(‘video-container’).setup(opt)```.
-```
-jwplayer(‘video-container’).setup({
-    file: ‘//cdn.example.com/popular_videos/example.mp4’,
-    flashplayer: ‘//example.com/static/<new-version-flashplayer>.swf’,
-    primary: ‘flash’,
-    width: 640,
-    height: 360
-});
-if (window.hola_cdn)
-    window.hola_cdn.init();  
-else
-    window.hola_cdn_on_load = true;**
-```
-
-Note: In case you load the player and its init code in a separate script which you can not modify, enable Hola as follows. Make sure that Hola init code is executed after ```jwplayer(‘video-container’).setup(opt)``` call:
-```
-<script src="https://content.jwplatform.com/players/<player_script>.js"></script>
-<script>
-if (window.hola_cdn)
-    window.hola_cdn.init();
-else
-    window.hola_cdn_on_load = true;
-</script>
-```
-
 #### Live examples:
 
 * JWPlayer/Flash without HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6) | [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls) | [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds)
 
 * JWPlayer/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6_cdn) | [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn) | [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn)
 
-4) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
+3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 
 ### 2.3.2 VideoJS
 
@@ -192,23 +151,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 </head>
 ```
 
-2) Initialize Hola at the end of the body:
-
-```
-<script>
-    (function(){
-        if (window.hola_cdn)
-            window.hola_cdn.init();
-        else
-            window.hola_cdn_on_load = true;
-    })();
-</script>
-.
-.
-</body>
-```
-
-3) [Flash/HLS only] If you play HLS videos with flash technology on your site, you also need to replace videojs SWF with the Hola-enabled version.
+2) [Flash/HLS only] If you play HLS videos with flash technology on your site, you also need to replace videojs SWF with the Hola-enabled version.
 
 * Download the [Hola-enabled version] (https://client.h-cdn.com/bext/svc/cdn/pub/videojs-flashls.swf) and place it on your own server.
 * Configure videojs to use the new version.
@@ -260,28 +203,8 @@ var player = flowplayer(container, {
 ```
 Both ```swf``` and ```swfHls``` are changed to the same file. 
 
-3) Initialize HolaCDN loader when the player is ready:
-```
-var container = document.getElementById('video-container');
-var player = flowplayer(container, {
-   swf: '//example.com/static/flowplayerhls.6.0.5.hola.swf',
-   swfHls: '//example.com/static/flowplayerhls.6.0.5.hola.swf',
-   clip: {
-       sources: [{
-           type: "application/x-mpegurl",
-           src:  "//cdn.example.com/popular_videos/example.m3u8",
-       }]
-   }
-});
-player.one('ready', function(){
-   if (window.hola_cdn)
-       window.hola_cdn.init();
-   else
-       window.hola_cdn_on_load = true;
-});
-```
+3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 
-4) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
 # 3. Test HolaCDN statistics locally
 
 Once the code is live on the webpage, remember it is still disabled by default on the server side. You can test the live code locally by entering commands in the browser developer console. 
@@ -482,20 +405,14 @@ In case the response is different from the desired response, configure the missi
 
 HolaCDN offers a 'plug and play' integration with the Brightcove video platform. 
 
-There is no need to specify any parameters. Simply add the following code at the END of the body, just before the closing </body> tag:
+There is no need to specify any parameters. Simply include Hola loader at the END of the body, just before the closing </body> tag:
 
 ```
 .
 .
 <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX" ></script>
-<script>
-   if (window.hola_cdn)
-       window.hola_cdn.init();
-   else
-       window.hola_cdn_on_load = true;
-</script>
 .
-<Body>
+</body>
 ```
 
 ## 3.1 Nimble live streaming
