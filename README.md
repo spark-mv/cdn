@@ -2,7 +2,7 @@
 
 1. [**Sign up**] (https://holacdn.com) to HolaCDN. Get instant access to your video delivery portal. 
 2. Add the JavaScript to your site. Use the portal to see your user's QoE (start/seek times, % buffering, bitrate, etc.).  
-3. Enable HolaCDN to improve your users' QOE and save costs. Use the portal to see the benefits.
+3. Enable HolaCDN to improve user QOE and save costs. Use the portal to control the deployment and see the benefits.
 
 ## [Detailed video analytics (FREE)] (https://github.com/hola/cdn/blob/master/stats_install.md)
 
