@@ -1,6 +1,8 @@
-# [HolaCDN: measure and improve your user's video viewing experience] (https://github.com/hola/cdn/blob/master/install.md)
+# [HolaCDN: Speeding up Video Delivery] (https://github.com/hola/cdn/blob/master/install.md)
 
-HolaCDN was specifically designed to measure and optimize online video. Use the free video analytics to measure existing performance, and enable HolaCDN to improve it and save costs.
+1. [Sign up] (https://holacdn.com) to HolaCDN. Get instant access to your video delivery portal. 
+2. Add the JavaScript to your site. Use the portal to see your user's QoE (start/seek times, % buffering, bitrate, etc.).  
+3. Enable HolaCDN to improve your users' QOE and save costs. Use the portal to see the benefits.
 
 ## [Detailed video analytics (FREE)] (https://github.com/hola/cdn/blob/master/stats_install.md)
 
