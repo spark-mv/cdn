@@ -1,6 +1,6 @@
 # [HolaCDN: Speeding up Video Delivery] (https://github.com/hola/cdn/blob/master/install.md)
 
-1. [Sign up] (https://holacdn.com) to HolaCDN. Get instant access to your video delivery portal. 
+1. [**Sign up**] (https://holacdn.com) to HolaCDN. Get instant access to your video delivery portal. 
 2. Add the JavaScript to your site. Use the portal to see your user's QoE (start/seek times, % buffering, bitrate, etc.).  
 3. Enable HolaCDN to improve your users' QOE and save costs. Use the portal to see the benefits.
 
