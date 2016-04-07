@@ -1,4 +1,4 @@
-# Introduction
+# Introduction1
 
 Adding HolaCDN to your website is a two-step process which can be completed in 15 minutes:
 
