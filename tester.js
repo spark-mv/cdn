@@ -19,17 +19,17 @@ var players = {
             return p.version;
         },
         type: function(p){
-            return p.renderingMode;
+            return p().renderingMode;
         }
     },
     jwplayer7: {
         name: 'jwplayer',
-        obj: w.jwplayer(),
+        obj: w.jwplayer,
         version: function(p){
-            return p.version;
+            return p().version;
         },
         type: function(p){
-            return p.getProvider().name;
+            return p().getProvider().name;
         }
     },
     flowplayer: {
