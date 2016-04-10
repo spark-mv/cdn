@@ -6,48 +6,69 @@ console.log('checker loaded');
 function Player(mapper){
     if (!(this instanceof Player))
         return new Player(mapper);
-    this.version = mapper.version();
+    var p = mapper.obj;
+    this.version = mapper.version(p);
+    this.type = mapper.type(p);
 }
 
 var players = {
     jwplayer6: {
         name: 'jwplayer',
-        version: function(){
-            return w.jwplayer.version;
+        obj: w.jwplayer,
+        version: function(p){
+            return p.version;
         },
-        type: function(){
-            return 
+        type: function(p){
+            return p.renderingMode;
         }
     },
     jwplayer7: {
         name: 'jwplayer',
-        version: function(){
-            return w.jwplayer().version;
+        obj: w.w.jwplayer(),
+        version: function(p){
+            return p.version;
+        },
+        type: function(p){
+            return p.getProvider();
         }
     },
     flowplayer: {
         name: 'flowplayer',
-        version: function(){
-            return w.flowplayer.version;
+        obj: w.flowplayer,
+        version: function(p){
+            return p.version;
+        },
+        type: function(p){
+            return p.engine.engineName;
         }
     },
     videojs: {
         name: 'videojs',
-        version: function(){
-            return w.videojs.VERSION;
+        obj: w.videojs,
+        version: function(p){
+            return p.VERSION;
+        },
+        type: function(p){
+            return this._getPlayer(p).tech();
+            
+        },
+        _getPlayer: function(p){ // XXX ziv return first player only
+            var ps = p.getPlayers();
+            return ps[Object.keys(ps)[0]];
         }
     },
     hola: {
         name: 'hola_player',
+        obj: w.hola_player,
         version: function(){
             // XXX ziv no impl for version in hola_player
-            return 'unkwon';
+            return '-';
         }
     },
     native: {
         name: 'native',
         version: function(){
-            return null;
+            return '-';
         }
     }
 };
