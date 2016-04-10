@@ -24,7 +24,7 @@ var players = {
     },
     jwplayer7: {
         name: 'jwplayer',
-        obj: w.w.jwplayer(),
+        obj: w.jwplayer(),
         version: function(p){
             return p.version;
         },
