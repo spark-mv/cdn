@@ -9,7 +9,22 @@ var players = {
     hola_player
 };
 function detect_player(){
-    
+    if (w.jwplayer)
+    {
+        console.log('jwplayer');
+    }
+    else if (w.flowplayer)
+    {
+        console.log('flowplayer');
+    }
+    else if (w.videojs)
+    {
+        console.log('videojs');
+    }
+    else if (w.hola_player)
+    {
+        console.log('hola_player');
+    }
 }
-console.log(players);
+detect_player();
 })(window);
