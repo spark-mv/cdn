@@ -53,7 +53,7 @@ var players = {
             
         },
         _getPlayer: function(p){ // XXX ziv return first player only
-            var ps = p.getPlayers();
+            var ps = p().getPlayers();
             return ps[Object.keys(ps)[0]];
         }
     },
