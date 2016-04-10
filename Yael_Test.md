@@ -46,7 +46,7 @@ HolaCDN can work with your existing player, but we recommend using the Hola play
 ...
 </head>
 ```
-Replace XXXXX with your Hola customer ID.
+* Replace XXXXX with your Hola customer ID.
 
 2) Create a video tag with the following classes: ```video-js vjs-default-skin```
 
@@ -95,7 +95,7 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 <html>
 ```
 
-Replace XXXXX with your Hola customer ID.
+* Replace XXXXX with your Hola customer ID.
 
 #### Live examples:
 
@@ -119,7 +119,7 @@ If your site uses JW Player with flash technology, follow these steps:
 ...
 </head>
 ```
-Replace XXXXX with your Hola customer ID.
+* Replace XXXXX with your Hola customer ID.
 
 2) Replace your JW player SWF with the Hola-enabled version. 
 
@@ -161,7 +161,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 </head>
 ```
 
-Replace XXXXX with your Hola customer ID.
+* Replace XXXXX with your Hola customer ID.
 
 2) [Flash/HLS only] If you play HLS videos with flash technology on your site, you also need to replace videojs SWF with the Hola-enabled version.
 
@@ -197,7 +197,7 @@ If your site plays HLS video using Flowplayer with flash technology, follow thes
 </head>
 ```
 
-Replace XXXXX with your Hola customer ID.
+* Replace XXXXX with your Hola customer ID.
 
 2) Replace your Flowplayer SWF with the Hola-enabled version. 
 
@@ -375,7 +375,7 @@ There is no need to specify any parameters. Simply include Hola loader at the EN
 </body>
 ```
 
-Replace XXXXX with your Hola customer ID.
+* Replace XXXXX with your Hola customer ID.
 
 ## 3.1 Nimble live streaming
 
