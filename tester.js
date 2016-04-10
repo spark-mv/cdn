@@ -49,11 +49,13 @@ var players = {
             return p.VERSION;
         },
         type: function(p){
-            return this._getPlayer(p).tech();
+            return this._getPlayer(p);//.tech();
             
         },
         _getPlayer: function(p){ // XXX ziv return first player only
-            var ps = p().getPlayers();
+            var ps = p.getPlayers();
+            console.log(ps);
+            return '1';
             return ps[Object.keys(ps)[0]];
         }
     },
