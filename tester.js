@@ -2,11 +2,21 @@
 (function(w, d){
 'use strict'; /*jsling brwoser:true*/
 console.log('checker loaded');
+
+function Player(mapper){
+    if (!(this instanceof Player))
+        return new Player(mapper);
+    this.version = mapper.version();
+}
+
 var players = {
     jwplayer6: {
         name: 'jwplayer',
         version: function(){
             return w.jwplayer.version;
+        },
+        type: function(){
+            return 
         }
     },
     jwplayer7: {
@@ -68,8 +78,8 @@ function detect_player(){
     throw new Error('unrecognized player');
 }
 function main(){
-    var player = detect_player();
-    console.log(player.name, player.version());
+    var player = Player(detect_player());
+    console.log(player);
 }
 main();
 })(window, document);
