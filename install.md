@@ -5,7 +5,7 @@ Adding HolaCDN to your website is a simple process which can be completed in 15 
 1. Sign up for a new account
 2. Add the Hola JS to your website
 3. Configure your video server
-4. Allow HolaCDN to download content
+4. Allow HolaCDN to collect statistics and download content
 5. Enable HolaCDN on your machine for local testing
 6. Redirect your user's traffic to use HolaCDN or enable statistics collection
 
@@ -231,17 +231,21 @@ In some implementations, the first video URL is redirected to another URL. In th
 - Any video data links that redirect also respond to OPTIONS with CORS headers as detailed above.
 - The response headers must respond to OPTIONS with 200/204 status, and not with 302.
 
-# 4. Allow HolaCDN to download content
+# 4. Allow HolaCDN to collect statistics and download content
 
-HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. HolaCDN uses a 'pull' model. There is no need to proactively push content to HolaCDN.
+HolaCDN’s servers need to download an initial copy of the video from your infrastructure to serve to future users. HolaCDN uses a 'pull' model. There is no need to proactively push content to HolaCDN. The same server will also be used for statistics gathering.
 
-To configure where to download a copy from, go to the configuration page on the [your HolaCDN account] (http://www.holacdn.com/cp). You will arrive to the default zone ('gen'). In that zone, click "new source" and enter one or more video source(s). 
+To configure where to download a copy from:
 
-For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com. For HDS/HLS video, enter server (s) for manifests (M3U8/F4M) and for video chunks (TS or Frag).
+1. Open [your HolaCDN account] (http://www.holacdn.com/cp). 
+2. Go to the configuration page ('conf').
+3. You will arrive to the default zone ('gen'). In this zone, click "Insert a new video source group" and enter one or more video source(s). For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com. For HDS/HLS video, enter server (s) for manifests (M3U8/F4M) and for video chunks (TS or Frag).
 
-If your video servers use content protection algorithms, [check out the advanced settings] (https://github.com/hola/cdn/blob/master/Install.md#advanced-configuration-settings).
+* If your video servers use content protection algorithms, [check out the advanced settings] (https://github.com/hola/cdn/blob/master/Install.md#advanced-configuration-settings).
 
-To simplify testing, HolaCDN is configured with video source '*'. Make sure to change it to your real video source(s). Finished? You can now [test HolaCDN locally on your PC] (https://github.com/hola/cdn/blob/master/Install.md#5-enable-holacdn-on-your-machine-for-local-testing)
+* To simplify testing, HolaCDN is configured with video source '*'. Make sure to change it to your real video source(s). 
+
+Finished? You can now [test HolaCDN locally on your PC] (https://github.com/hola/cdn/blob/master/Install.md#5-enable-holacdn-on-your-machine-for-local-testing)
 
 # 5. Enable HolaCDN on your machine for local testing
 
