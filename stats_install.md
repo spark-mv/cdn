@@ -18,6 +18,6 @@ password: holacdn
 
 Implementation should take only a few minutes. Follow the [step by step guide] (https://github.com/hola/cdn/blob/master/install.md)
 
-If you have any questions during implementation, please email cdn-help [at] hola [dot] or skype:holacdn.com
+If you have any questions during implementation, please email cdn-help [at] hola [dot] org or skype:holacdn.com
 
 ## **_Hola video statistics are free for commercial & non-commercial use._**
