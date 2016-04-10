@@ -16,7 +16,11 @@ var players = {
 };
 function detect_player(){
     if (w.jwplayer)
+    {
+        var v = w.jwplayer().version.match(/^\d+\.\d+\.\d+/);
+        console.log(v);
         return players.jwplayer;
+    }
     else if (w.flowplayer)
         return players.flowplayer;
     else if (w.videojs)
