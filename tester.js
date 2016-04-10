@@ -23,7 +23,7 @@ var players = {
             return p().getRenderingMode();
         },
         video_src: function(p){
-            return p().getPlaylist()[0]['file'];
+            return p().getPlaylistItem()['file'];
         }
     },
     jwplayer7: {
@@ -34,6 +34,9 @@ var players = {
         },
         type: function(p){
             return p().getProvider().name;
+        },
+        video_src: function(p){
+            return p().getPlaylistItem()['file'];
         }
     },
     flowplayer: {
