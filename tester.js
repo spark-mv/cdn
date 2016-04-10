@@ -39,7 +39,7 @@ var players = {
             return p.version;
         },
         type: function(p){
-            return p.engine.engineName;
+            return p().engine.engineName;
         }
     },
     videojs: {
