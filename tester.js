@@ -29,7 +29,7 @@ var players = {
             return p.version;
         },
         type: function(p){
-            return p.getProvider();
+            return p.getProvider().name;
         }
     },
     flowplayer: {
