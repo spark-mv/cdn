@@ -309,8 +309,10 @@ When you are satisfied with local testing, you can gradually enable statsitics c
 1. Login to [your HolaCDN account] (http://www.holacdn.com/cp).
 2. Go to the 'configuration' section and find the the 'gen' zone.
 3. Click 'New rule' and define one or more rules that will determine how HolaCDN will be enabled on different platforms/browsers. For example:
-	* Enable HolaCDN CDN mode for 10% of Chrome/Win users, and 90% for statistics collection. ????????????????????????????????????? add screenshot
-	* Enable HolaCDN in statistics mode for 25% of Chrome/Win users. ???????????????????????????????????????????????????????????????? add screenshot
+	* Enable CDN mode for 10% of Chrome/Win users, and 90% for statistics collection.
+	![Rule 1 example](/resources/Rule_1.png)
+	* Enable HolaCDN in statistics mode for 10% of Chrome/Win users. 
+	![Rule 2 example](/resources/Rule_2.png)
 	* Add more/browsers/platforms.
 4. Click the 'Save and apply' button to save your settings. Changes will take effect within 5 minutes. You will receive a confirmation email every time you change settings on the portal.
 5. Verify that your changes take effect: Set HolaCDN to default mode using the ```hola_cdn.set_mode_default()``` console command, and refresh. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
