@@ -26,7 +26,8 @@ function detect_player(){
         var ver = w.jwplayer.version||w.jwplayer().version;
         if (!ver)
             throw new Error('Unknown version of jwplayer detected');
-        console.log(ver.match(/\d+\.\d+\.\d+/));
+        var major = ver.match(/\d+/);
+        console.log(major);
         return ver;
     }
     else if (w.flowplayer)
