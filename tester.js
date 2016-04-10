@@ -3,7 +3,13 @@
 'use strict'; /*jsling brwoser:true*/
 console.log('checker loaded');
 var players = {
-    jwplayer: {
+    jwplayer6: {
+        name: 'jwplayer',
+        version: function(){
+            return '6.x';
+        }
+    },
+    jwplayer7: {
         name: 'jwplayer',
         version: function(){
             return w.jwplayer().version;
@@ -15,11 +21,11 @@ var players = {
     native: {}
 };
 function detect_player(){
-    if (w.jwplayer)
+    if (w.jwplayer) /// XXX ziv this is too open assumption
     {
-        var v = w.jwplayer().version.match(/^\d+\.\d+\.\d+/);
-        console.log(v);
-        return players.jwplayer;
+        var ver = w.jwplayer.version||w.jwplayer().version;
+        console.log(ver);
+        return ver;
     }
     else if (w.flowplayer)
         return players.flowplayer;
@@ -35,7 +41,7 @@ function detect_player(){
 function main(){
     var player = detect_player();
     
-    console.log(player.name, player.version())
+    //console.log(player.name, player.version())
 }
 main();
 })(window);
