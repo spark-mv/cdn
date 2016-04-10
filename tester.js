@@ -9,6 +9,7 @@ var players = {
     hola_player
 };
 function detect_player(){
-    if (w.jwplayer
+    
 }
+console.log(players);
 })(window);
