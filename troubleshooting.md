@@ -103,3 +103,5 @@ More information can be seen using your browser's console:
 
 ## fallback error
 
+## Didn't find what you were looking for?
+Email us at cdn-help [at] hola [dot] org, or skype: holacdn
