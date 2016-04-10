@@ -8,7 +8,7 @@ function Player(mapper){
         return new Player(mapper);
     var p = mapper.obj;
     this.version = mapper.version(p);
-    this.type = mapper.type(p);
+    this.type = mapper.type(p).toLowerCase();
 }
 
 var players = {
