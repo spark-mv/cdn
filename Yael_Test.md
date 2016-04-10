@@ -278,9 +278,11 @@ You can enter other console commands, for example:
 ## 5.3 Checking statistics on the portal
 
 In order to verify that the video statistics are recorded into your account:
+
 1. Login to [your HolaCDN account] (http://www.holacdn.com/cp).
 2. Click on 'debug mode'. 
 3. In order to see that your latest CDN events were recorded, click on 'Show recent events'.
+4. 
 You should see a few lines with your IP address and browser information, which will look like:
 ```
 ID	            Timestamp               IP	            Zone    Country Browser	    Platform
