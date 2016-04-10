@@ -24,7 +24,9 @@ function detect_player(){
     if (w.jwplayer) /// XXX ziv this is too open assumption
     {
         var ver = w.jwplayer.version||w.jwplayer().version;
-        console.log(ver);
+        if (!ver)
+            throw new Error('Unknown version of jwplayer detected');
+        console.log(ver.match(/\d+\.\d+\.\d+/));
         return ver;
     }
     else if (w.flowplayer)
