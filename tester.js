@@ -50,7 +50,6 @@ var players = {
         },
         type: function(p){
             return this._getPlayer(p).techName_;
-            
         },
         _getPlayer: function(p){ // XXX ziv return first player only
             var ps = p.getPlayers();
