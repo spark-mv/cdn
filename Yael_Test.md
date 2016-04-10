@@ -57,7 +57,7 @@ HolaCDN can work with your existing player, but we recommend using the Hola play
   </video>
 ```
 
-Replace example.org/poster.jpg and example.org/video.mp4 with your own links.
+* Replace example.org/poster.jpg and example.org/video.mp4 with your own links.
 
 3) Add the following script after video tag to initialize Hola player:
 
@@ -103,7 +103,7 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 
 * HTML5 video With HolaCDN [Chrome native] (http://hola.github.io/examples/cdn/#html5_cdn) | [Flowplayer] (http://hola.github.io/examples/cdn/#html5_flowplayer_cdn) | [JW player] (http://hola.github.io/examples/cdn/#html5_jwplayer_cdn)
 
-2) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
+2) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to [configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 ## 2.3 Flash based video players
 
@@ -146,7 +146,7 @@ Replace cdn.example.com/popular_videos/example.mp4 with your own link.
 
 * JWPlayer/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6_cdn) | [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn) | [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn)
 
-3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
+3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to [configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 ### 2.3.2 VideoJS
 
@@ -182,7 +182,7 @@ Replace example.com/static/video.js and example.com/static/videojs-flashls.swf w
 
 * VJS5 with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5_cdn) 
 
-3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
+3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to [onfiguring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 ### 2.3.3 Flowplayer (HLS only; HDS, MP4 coming soon)
 
@@ -219,7 +219,7 @@ var player = flowplayer(container, {
 ```
 Both ```swf``` and ```swfHls``` are changed to the same file. 
 
-3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
+3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to [configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 # 3. Configure your video server 
 
