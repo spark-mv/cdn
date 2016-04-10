@@ -28,7 +28,7 @@ First, choose the correct implementation for your existing player. You can enabl
 * The [Hola VideoJS-based player] (https://github.com/hola/cdn/blob/master/install.md#21-using-hola-videojs-player).
 * [Your own Flash based player] (https://github.com/hola/cdn/blob/master/hooks.md).
 
-Scond, add the JS code to your web page. It is safe to add this code, because it is disabled by default on the server side, to protect from accidental mass deployment. After the code is on your web pages, you will enable HolaCDN on your machine for [local testing] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) and then gradually deploy to [real users] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production).
+Scond, add the JS code to your web page. It is safe to add this code, because it is disabled by default on the server side, to protect from accidental mass deployment. After the code is on your web pages, you will enable HolaCDN on your machine for [local testing] (https://github.com/hola/cdn/blob/master/Install.md#5-enable-holacdn-on-your-machine-for-local-testing) and then gradually deploy to [real users] (https://github.com/hola/cdn/blob/master/Install.md#6-redirect-your-users-traffic-to-use-holacdn-or-enable-statistics-collection).
 
 Examples provided below use MP4 video, but same syntax is used for HLS (M3U8) or HDS (F4M) videos.
 
@@ -78,7 +78,7 @@ Replace example.org/poster.jpg and example.org/video.mp4 with your own links.
 
 * Hola Player/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#hola_player_cdn) | [HLS] (http://hola.github.io/examples/cdn/#hola_player_hls_cdn) | [HDS] (http://hola.github.io/examples/cdn/#hola_player_hds_cdn)
 
-4) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
+4) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 ## 2.2 HTML5 video players
 
@@ -103,7 +103,7 @@ Replace XXXXX with your Hola customer ID.
 
 * HTML5 video With HolaCDN [Chrome native] (http://hola.github.io/examples/cdn/#html5_cdn) | [Flowplayer] (http://hola.github.io/examples/cdn/#html5_flowplayer_cdn) | [JW player] (http://hola.github.io/examples/cdn/#html5_jwplayer_cdn)
 
-2) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
+2) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 ## 2.3 Flash based video players
 
@@ -146,7 +146,7 @@ Replace cdn.example.com/popular_videos/example.mp4 with your own link.
 
 * JWPlayer/Flash with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#jwplayer6_cdn) | [HLS] (http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn) | [HDS] (http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn)
 
-3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
+3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 ### 2.3.2 VideoJS
 
@@ -182,7 +182,7 @@ Replace example.com/static/video.js and example.com/static/videojs-flashls.swf w
 
 * VJS5 with HolaCDN: [MP4] (http://hola.github.io/examples/cdn/#vjs5_cdn) 
 
-3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
+3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 ### 2.3.3 Flowplayer (HLS only; HDS, MP4 coming soon)
 
@@ -219,13 +219,13 @@ var player = flowplayer(container, {
 ```
 Both ```swf``` and ```swfHls``` are changed to the same file. 
 
-3) Done adding the code? It's time to [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally)
+3) Done adding the code? You can [test it locally on your browser] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-statistics-locally) or continue to {configuring the server side] (https://github.com/hola/cdn/blob/master/Install.md#3-configure-your-video-server).
 
 # 3. Configure your video server 
 
 This section is mandatory only if you are using progressive MP4/FLV/WebM video. 
 
-If you are using adaptive protocls (e.g. HLS/HDS/Dash), [skip to section 4] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content).
+If you are using adaptive protocls (e.g. HLS/HDS/Dash), [skip to section 4] (https://github.com/hola/cdn/blob/master/Install.md#4-allow-holacdn-to-download-content).
 
 ## 3.1 CORS settings
 
@@ -247,9 +247,9 @@ To configure where to download a copy from, go to the configuration page on the 
 
 For example, if your video URL looks like http://video.myserver.com/static/mp4/video.mp4, the video source is video.myserver.com. For HDS/HLS video, enter server (s) for manifests (M3U8/F4M) and for video chunks (TS or Frag).
 
-If your video servers use content protection algorithms, [check out the advanced settings] (https://github.com/hola/cdn/blob/master/install.md#5-handling-content-protection).
+If your video servers use content protection algorithms, [check out the advanced settings] (https://github.com/hola/cdn/blob/master/Install.md#advanced-configuration-settings).
 
-To simplify testing, HolaCDN is configured with video source '*'. Make sure to change it to your real video source(s). Finished? You can now [test HolaCDN locally on your PC] (https://github.com/hola/cdn/blob/master/install.md#3-test-holacdn-locally-on-your-pc)
+To simplify testing, HolaCDN is configured with video source '*'. Make sure to change it to your real video source(s). Finished? You can now [test HolaCDN locally on your PC] (https://github.com/hola/cdn/blob/master/Install.md#5-enable-holacdn-on-your-machine-for-local-testing)
 
 # 5. Enable HolaCDN on your machine for local testing
 
@@ -259,9 +259,9 @@ Console commands must be entered in the frame containing the video player. If yo
 
 ## 5.1 Enable HolaCDN for statisics purpose only
 
-1. Enable statistics by entering ```hola_cdn.set_mode_stats()```. You should get the response: cdn/loader: ```enable mode stats, need refresh```.
+1. Enable statistics by entering ```hola_cdn.set_mode_stats()```. You should get the response: ```cdn/loader: enable mode stats, need refresh```.
 2. Refresh the page.
-3. Check that HolaCDN is in statistics mode by entering ```hola_cdn.mode```. You should get the response: cdn/loader: ```"stats"```.
+3. Check that HolaCDN is in statistics mode by entering ```hola_cdn.mode```. You should get the response: ```cdn/loader: "stats"```.
 4. To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```
 5. You should see printouts from HolaCDN with video timelime information.
 
@@ -269,9 +269,9 @@ Console commands must be entered in the frame containing the video player. If yo
 
 Now you will enable Hola for content download as well. Again, this is only for testing purposes on your browser locally.
 
-1. Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```. You should get the response: cdn/loader: ```enable mode cdn, need refresh```.
+1. Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```. You should get the response: ```cdn/loader: enable mode cdn, need refresh```.
 2. Refresh the page.
-3. Check that HolaCDN is in CDN mode by entering ```hola_cdn.mode```. You should get the response: cdn/loader: ```"cdn"```.
+3. Check that HolaCDN is in CDN mode by entering ```hola_cdn.mode```. You should get the response: ```cdn/loader: "cdn"```.
 4. To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```.
 5. Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). 
 6. While the video is playing, you can also look at the network tab of the developer console. You will see some video chunks coming from your own server, and some from HolaCDN servers.
@@ -287,7 +287,7 @@ You can enter other console commands, for example:
 
 In order to verify that the video statistics are recorded into your account, login to [your HolaCDN account] (http://www.holacdn.com/cp).
 
-Click on 'Show detailed statistics' and then on 'debug mode'. In order to see your latest CDN events recorded, click on 'Show recent events'.
+Click on 'Show detailed statistics' and then on 'debug mode'. In order to see that your latest CDN events were recorded, click on 'Show recent events'.
 You should see a few lines with your IP address and browser information, which will look like:
 ```
 ID	            Timestamp               IP	            Zone    Country Browser	    Platform
@@ -300,7 +300,7 @@ Note that it may take a few minutes for statistics to appear in the table.
 
 To protect you from accidental mass deployment, at this stage HolaCDN is still disabled on the server side. You will see an ```using zone gen mode disabled (no_browser_match)``` error message on any device trying to play a video with HolaCDN. This is by design and expected. Continue to the next step to gradually enable in production.
 
-Next step is to [start collecting statistics from real users] (https://github.com/hola/cdn/blob/master/install.md#5-deploy-to-production)
+Next step is to [start collecting statistics from real users] (https://github.com/hola/cdn/blob/master/Install.md#6-redirect-your-users-traffic-to-use-holacdn-or-enable-statistics-collection).
 
 # 6. Redirect your user's traffic to use HolaCDN or enable statistics collection
 
@@ -308,18 +308,16 @@ When you are satisfied with local testing, you can gradually enable statsitics c
 
 1. Login to [your HolaCDN account] (http://www.holacdn.com/cp).
 2. Go to the 'configuration' section and find the the 'gen' zone.
-3. Click 'New rule' and define one or more rules that will determinehow HolaCDN will be enabled on different platforms/browsers. For example:
+3. Click 'New rule' and define one or more rules that will determine how HolaCDN will be enabled on different platforms/browsers. For example:
 	* Enable HolaCDN CDN mode for 10% of Chrome/Win users, and 90% for statistics collection. ????????????????????????????????????? add screenshot
 	* Enable HolaCDN in statistics mode for 25% of Chrome/Win users. ???????????????????????????????????????????????????????????????? add screenshot
 	* Add more/browsers/platforms.
 4. Click the 'Save and apply' button to save your settings. Changes will take effect within 5 minutes. You will receive a confirmation email every time you change settings on the portal.
-5. Verify that your changes take effect. Set HolaCDN to default mode using the ```hola_cdn.set_mode_default()``` console command, and refresh. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
+5. Verify that your changes take effect: Set HolaCDN to default mode using the ```hola_cdn.set_mode_default()``` console command, and refresh. This will ensure the JS is initalized based on decisions on the server side, and not the local setting you entered earlier.
 
 ###_Congratulations! HolaCDN is up and running_###
 
-# Additional information
-
-# 7. Reporting bugs										?????????????????????????????????????????????????????????
+# Reporting bugs	
 
 If you think you have found a bug, please report it to HolaCDN:
 
@@ -381,7 +379,7 @@ Replace XXXXX with your Hola customer ID.
 
 ## 3.1 Nimble live streaming
 
-Nimble is supported out of the box, but needs to be configured to allow HolaCDN servers to download content - [instructions here] (http://blog.wmspanel.com/2015/06/cdn-friendly-streaming.html)
+Nimble is supported out of the box, but needs to be configured to allow HolaCDN servers to download content - [instructions here] (http://blog.wmspanel.com/2015/06/cdn-friendly-streaming.html).
 # 4. Shortcut: controlling HolaCDN via the address bar
 
 As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
