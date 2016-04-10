@@ -9,6 +9,7 @@ function Player(mapper){
     var p = mapper.obj;
     this.version = mapper.version(p);
     this.type = mapper.type(p).toLowerCase();
+    this.video_src = mapper.video_src(p);
 }
 
 var players = {
@@ -19,7 +20,10 @@ var players = {
             return p.version;
         },
         type: function(p){
-            return p().renderingMode;
+            return p().getRenderingMode();
+        },
+        video_src: function(p){
+            return p().getPlaylist()[0]['file'];
         }
     },
     jwplayer7: {
