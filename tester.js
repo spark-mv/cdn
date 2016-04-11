@@ -9,7 +9,6 @@ function debug(){
 function Player(mapper){
     if (!(this instanceof Player))
         return new Player(mapper);
-    console.log(mapper);
     this.m = mapper;
     this.o = mapper.obj;
 }
@@ -128,6 +127,7 @@ function main(){
     debug('start');
     var player = Player(detect_player());
     debug('player', player);
+    debug(player.video_src());
     return;
     cors(player.video_src(), done);
     
