@@ -113,10 +113,12 @@ function cors(url){
         console.log(xhr.readyState);
         console.log(xhr.status);
     }
+    /*
     xhr.onerror(function(){
         console.log(xhr);
     });
     //xhr.onload(function(){});
+    */
     xhr.send();
 }
 
