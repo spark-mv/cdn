@@ -135,10 +135,11 @@ function main(){
     }
     
     function done(xhr){
+        console.log(xhr.getAllResponseHeaders());
         if (xhr.readyState!=4 || xhr.status!=200)
             return;
         console.log(xhr);
-        console.log(xhr.getAllResponseHeaders());
+        
         console.log(xhr.responseText);
         output();
     }
