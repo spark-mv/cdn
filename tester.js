@@ -121,7 +121,7 @@ function cors(url, handler){
 
 function main(){
     var player = Player(detect_player());
-    cors(player.video_src, done);
+    cors(player.video_src(), done);
     
     function output(){
         console.log('Player');
