@@ -11,7 +11,7 @@ function Player(mapper){
     this.video_src = mapper.video_src(p);
 }
 
-var players = {
+var mappers = {
     jwplayer6: {
         name: 'jwplayer',
         obj: w.jwplayer,
@@ -89,23 +89,41 @@ function detect_player(){
             throw new Error('unable to determine jwplayer version');
         var major = major[0];
         if (major=='6')
-            return players.jwplayer6;
+            return mappers.jwplayer6;
         else if (major=='7')
-            return players.jwplayer7;
+            return mappers.jwplayer7;
         throw new Error('jwplayer version '+major+' is not supported');
     }
     else if (w.flowplayer)
-        return players.flowplayer;
+        return mappers.flowplayer;
     else if (w.videojs)
-        return players.videojs;
+        return mappers.videojs;
     else if (w.hola_player)
-        return players.hola;
+        return mappers.hola;
     else if (d.getElementsByTagName('video').length)
-        return players.native;
+        return mappers.native;
     throw new Error('unrecognized player');
 }
+
+function cors(url){
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+    xhr.open('GET', url, true);
+    xgr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        console.log(xhr.status);
+    }
+    xhr.onerror(function(){
+        console.log(xhr);
+    });
+    //xhr.onload(function(){});
+    xhr.send();
+}
+
 function main(){
     var player = Player(detect_player());
+    var url = player.video_src;
+    cors(url);
     console.log('Player');
     console.log('-------------------------------------');
     console.log('name          ', player.name);
