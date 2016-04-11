@@ -5,12 +5,13 @@
 function Player(mapper){
     if (!(this instanceof Player))
         return new Player(mapper);
-    var p = mapper.obj;
-    this.name = function() {return mapper.name};
-    this.version = mapper.version(p);
-    this.type = mapper.type(p).toLowerCase();
-    this.video_src = mapper.video_src(p);
+    this.m = mapper;
+    this.o = mapper.obj;
 }
+Player.prototype.name = function() { return this.m.name; }
+Player.prototype.version = function() { return this.m.version(this.o); }
+Player.prototype.type = function() { return this.m.type(this.o).toLowerCase(); }
+Player.prototype.video_src = function() { return this.m.video_src(this.o); }
 
 var mappers = {
     jwplayer6: {
