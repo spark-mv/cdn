@@ -1,11 +1,12 @@
 // LICENSE CODE ZON
 (function(w, d){
 'use strict'; /*jsling brwoser:true*/
+
 function Player(mapper){
     if (!(this instanceof Player))
         return new Player(mapper);
     var p = mapper.obj;
-    this.name = mapper.name;
+    this.name = function() {return mapper.name};
     this.version = mapper.version(p);
     this.type = mapper.type(p).toLowerCase();
     this.video_src = mapper.video_src(p);
@@ -105,34 +106,38 @@ function detect_player(){
     throw new Error('unrecognized player');
 }
 
-function cors(url){
+function cors(url, handler){
     var xhr = new XMLHttpRequest();
-    //xhr.withCredentials = true;
     xhr.open('GET', url, true);
     xhr.onreadystatechange = function(){
-        console.log(xhr.readyState);
-        console.log(xhr.status);
+        handler(xhr);
     }
-    /*
-    xhr.onerror(function(){
-        console.log(xhr);
-    });
-    //xhr.onload(function(){});
-    */
+    xhr.onerror = function(){
+        throw new Error('error requesting '+ url, xhr);
+    }
     xhr.send();
 }
 
 function main(){
     var player = Player(detect_player());
-    var url = player.video_src;
-    cors(url);
-    console.log('Player');
-    console.log('-------------------------------------');
-    console.log('name          ', player.name);
-    console.log('version       ', player.version);
-    console.log('type          ', player.type);
-    console.log('video         ', player.video_src);
-    console.log(player);
+    cors(player.video_src, done);
+    
+    function output(){
+        console.log('Player');
+        console.log('-------------------------------------');
+        console.log('name          ', player.name);
+        console.log('version       ', player.version);
+        console.log('type          ', player.type);
+        console.log('video         ', player.video_src);
+        console.log(player);
+    }
+    
+    function done(xhr){
+        if (xhr.readyState!=4 || xhr.status!=200)
+            return;
+        console.log(xhr);
+        output();
+    }
 }
 main();
 })(window, document);
