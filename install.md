@@ -261,9 +261,9 @@ Console commands must be entered in the frame containing the video player. If yo
 4. To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```
 5. You should see printouts from HolaCDN with video timelime information.
 
-## 5.2 Enable Hola CDN on your browser
+## 5.2 Enable HolaCDN on your browser
 
-Now you will enable Hola for content download as well. Again, this is only for testing purposes on your browser locally.
+Now you will enable HolaCDN for content download as well. Again, this is only for testing purposes on your browser locally.
 
 1. Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```. You should get the response: ```cdn/loader: enable mode cdn, need refresh```.
 2. Refresh the page.
@@ -340,7 +340,7 @@ Each zone can have its own set of video sources and activation rules. You can us
 
 HolaCDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. Basic operation does not require any changes to CORS settings.
 
-Hola recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. These changes are optional, and can be enabled at any time.
+HolaCDN recommends configuring certain HTTP headers. This allows HolaCDN to calculate bandwidth and maximize performance further. These changes are optional, and can be enabled at any time.
 
 Test to see if your HTTP server is configured correctly by using:
 
@@ -366,7 +366,7 @@ In case the response is different from the desired response, configure the missi
 
 HolaCDN offers a 'plug and play' integration with the Brightcove video platform. 
 
-There is no need to specify any parameters. Simply include Hola loader at the END of the body, just before the closing </body> tag:
+There is no need to specify any parameters. Simply include HolaCDN loader at the END of the body, just before the closing </body> tag:
 
 ```
 .
@@ -376,7 +376,7 @@ There is no need to specify any parameters. Simply include Hola loader at the EN
 </body>
 ```
 
-* Replace XXXXX with your Hola customer ID.
+* Replace XXXXX with your HolaCDN customer ID.
 
 ## 3.1 Nimble live streaming
 
@@ -391,7 +391,7 @@ As a shortcut, you can also control HolaCDN via the address bar by appending a s
 
 # 5. Handling content protection
 
-In case your video URLs use content protection scheme, Hola servers will not be able to download videos. There are a few ways of dealing with content protection:
+In case your video URLs use content protection scheme, HolaCDN servers will not be able to download videos. There are a few ways of dealing with content protection:
 
 ## 5.1 Whitelisting HolaCDN servers
 
@@ -414,24 +414,24 @@ Whitelisting a few HolaCDN servers is the fastest way to enable HolaCDN to opera
 85.17.24.129
 ```
 
-## 5.2 Allow Hola servers to access your videos using other methods 
+## 5.2 Allow HolaCDN servers to access your videos using other methods 
 
-If whitelisting IPs is not an option, you will need to work with Hola to define alternative ways to allow the Hola servers to download video files, for example: 
+If whitelisting IPs is not an option, you will need to work with HolaCDN team to define alternative ways to allow the HolaCDN servers to download video files, for example: 
 
-* Share the key generation algorithms with Hola, so that Hola servers will generate requests your servers will accept
-* Set up a direct/hidden URL for Hola servers to download from
-* Set-up a special key which will identify Hola servers
+* Share the key generation algorithms with HolaCDN, so that HolaCDN servers will generate requests your servers will accept
+* Set up a direct/hidden URL for HolaCDN servers to download from
+* Set-up a special key which will identify HolaCDN servers
 
-Contact Hola in order to determine the best way to address this issue.
+Contact HolaCDN team in order to determine the best way to address this issue.
 
 # 6. Ad Serving
 
-## 6.1 Hola player + VAST
-Hola player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (http://hola.github.io/examples/cdn/#hola_player_vast).
+## 6.1 HolaCDN player + VAST
+HolaCDN player supports [video.js vast plugin] (https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5). An example on how to setup the player for serving ads can be found [here] (http://hola.github.io/examples/cdn/#hola_player_vast).
 
 ## 6.2 Adblock issues
 
-Adblock extensions, which are pretty popular these days, may lead to unexpected exceptions thrown during ad init. So it sometimes (e.g. when executed in scope of player configuration) breaks the player init sequence and as a result Hola cannot detect it.
+Adblock extensions, which are pretty popular these days, may lead to unexpected exceptions thrown during ad init. So it sometimes (e.g. when executed in scope of player configuration) breaks the player init sequence and as a result HolaCDN cannot detect it.
 
 Here is one of examples: **videojs+ima+adblock**
 ```
