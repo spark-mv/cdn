@@ -136,6 +136,7 @@ function main(){
         if (xhr.readyState!=4 || xhr.status!=200)
             return;
         console.log(xhr);
+        console.log(xhr.getAllResponseHeaders())
         output();
     }
 }
