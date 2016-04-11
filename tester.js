@@ -108,10 +108,11 @@ function detect_player(){
 function main(){
     var player = Player(detect_player());
     l('Player');
+    /*
     l('-------------------------------------');
     l('name          ', player.name);
     l('version       ', player.version);
-    
+    */
     console.log(player);
 }
 main();
