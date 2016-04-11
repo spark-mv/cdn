@@ -109,7 +109,7 @@ function cors(url){
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
     xhr.open('GET', url, true);
-    xgr.onreadystatechange = function(){
+    xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         console.log(xhr.status);
     }
