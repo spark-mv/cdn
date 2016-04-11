@@ -2,6 +2,10 @@
 (function(w, d){
 'use strict'; /*jsling brwoser:true*/
 
+function debug(){
+    console.log.apply(console, arguments);
+}
+
 function Player(mapper){
     if (!(this instanceof Player))
         return new Player(mapper);
@@ -121,7 +125,10 @@ function cors(url, handler){
 }
 
 function main(){
+    debug('start');
     var player = Player(detect_player());
+    debug('player', player);
+    return;
     cors(player.video_src(), done);
     
     function output(){
