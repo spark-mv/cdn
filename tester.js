@@ -1,7 +1,7 @@
 // LICENSE CODE ZON
 (function(w, d){
 'use strict'; /*jsling brwoser:true*/
-function l = console.log;
+var l = console.log;
 
 function Player(mapper){
     if (!(this instanceof Player))
