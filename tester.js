@@ -117,6 +117,10 @@ function cors(url, handler){
     xhr.onreadystatechange = function(){
         handler(xhr);
     }
+    xhr.onload = function(){
+        console.log('on load');
+        console.log(xhr.getAllResponseHeaders());
+    }
     xhr.onerror = function(){
         throw new Error('error requesting '+ url, xhr);
     }
