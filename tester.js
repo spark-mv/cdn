@@ -1,7 +1,7 @@
 // LICENSE CODE ZON
 (function(w, d){
 'use strict'; /*jsling brwoser:true*/
-console.log('checker loaded');
+function l = console.log;
 
 function Player(mapper){
     if (!(this instanceof Player))
@@ -107,6 +107,11 @@ function detect_player(){
 }
 function main(){
     var player = Player(detect_player());
+    l('Player');
+    l('-------------------------------------');
+    l('name          ', player.name);
+    l('version       ', player.version);
+    
     console.log(player);
 }
 main();
