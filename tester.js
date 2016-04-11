@@ -107,7 +107,7 @@ function detect_player(){
 
 function cors(url){
     var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+    //xhr.withCredentials = true;
     xhr.open('GET', url, true);
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
