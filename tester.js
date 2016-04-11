@@ -69,19 +69,14 @@ var players = {
             return ps[Object.keys(ps)[0]];
         }
     },
+    // XXX need impl
     hola: {
         name: 'hola_player',
-        obj: w.hola_player,
-        version: function(){
-            // XXX ziv no impl for version in hola_player
-            return '-';
-        }
+        obj: w.hola_player
     },
     native: {
         name: 'native',
-        version: function(){
-            return '-';
-        }
+        obj: null
     }
 };
 function detect_player(){
