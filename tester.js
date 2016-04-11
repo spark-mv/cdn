@@ -47,6 +47,9 @@ var players = {
         },
         type: function(p){
             return p().engine.engineName;
+        },
+        video_src: function(p){
+            return p().video.src;
         }
     },
     videojs: {
@@ -56,9 +59,13 @@ var players = {
             return p.VERSION;
         },
         type: function(p){
-            return this._getPlayer(p).techName_;
+            return this._player(p).currentType();
+            return this._player(p).techName_;
         },
-        _getPlayer: function(p){ // XXX ziv return first player only
+        video_src: function(p){
+            return this._player(p).currentSrc();
+        },
+        _player: function(p){ // XXX ziv return first player only
             var ps = p.getPlayers();
             return ps[Object.keys(ps)[0]];
         }
