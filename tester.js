@@ -59,8 +59,7 @@ var players = {
             return p.VERSION;
         },
         type: function(p){
-            return this._player(p).currentType();
-            return this._player(p).techName_;
+            return this._player(p).techName_; // XXX find a method
         },
         video_src: function(p){
             return this._player(p).currentSrc();
