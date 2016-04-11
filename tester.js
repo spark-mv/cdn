@@ -5,6 +5,7 @@
 function Player(mapper){
     if (!(this instanceof Player))
         return new Player(mapper);
+    console.log(mapper);
     this.m = mapper;
     this.o = mapper.obj;
 }
