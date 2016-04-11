@@ -126,9 +126,6 @@ function cors(url, handler){
 function main(){
     debug('start');
     var player = Player(detect_player());
-    debug('player', player);
-    debug(player.video_src());
-    return;
     cors(player.video_src(), done);
     
     function output(){
