@@ -5,6 +5,7 @@ function Player(mapper){
     if (!(this instanceof Player))
         return new Player(mapper);
     var p = mapper.obj;
+    this.name = mapper.name;
     this.version = mapper.version(p);
     this.type = mapper.type(p).toLowerCase();
     this.video_src = mapper.video_src(p);
@@ -109,6 +110,8 @@ function main(){
     console.log('-------------------------------------');
     console.log('name          ', player.name);
     console.log('version       ', player.version);
+    console.log('type          ', player.type);
+    console.log('video         ', player.video_src);
     console.log(player);
 }
 main();
