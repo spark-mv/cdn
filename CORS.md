@@ -2,7 +2,7 @@
 
 Instructions for configuring and verifying CORS settings for different web servers are below. 
 
-If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
+If you have any questions, email cdn-help@hola.org, or skype:holacdn
 
 Available guides:
 - [CORS setup for most web servers](#configMostServers)
