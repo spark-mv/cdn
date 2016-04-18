@@ -141,5 +141,5 @@ If you are using Amazon S3 to store videos, you should configure your bucket to 
 
 For step by step instructions regarding how to enable CORS on Amazon S3, see the [Amazon documentation] (http://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
 
-For any questions, please contact cdn-help [at] hola [dot] org.
+For any questions, please contact cdn-help@hola.org.
 
