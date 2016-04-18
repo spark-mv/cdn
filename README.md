@@ -1,6 +1,6 @@
 # [HolaCDN: Speeding up Video Delivery] (https://github.com/hola/cdn/blob/master/install.md)
 
-1. [**Sign up**] (https://holacdn.com) to HolaCDN. Get instant access to your video delivery portal. 
+1. [**Sign up**] (https://holacdn.com/cp) to HolaCDN. Get instant access to your video delivery portal. 
 2. Add the JavaScript to your site. Use the portal to see your user's QoE (start/seek times, % buffering, bitrate, etc.).  
 3. Enable HolaCDN to improve user QOE and save costs. Use the portal to control the deployment and see the benefits.
 
@@ -22,12 +22,12 @@ Hola also offers a commercial CDN service, specifically designed for video deliv
 
 Hola client side code “auctions” each chunk of the video between the existing CDN and  multiple Hola CDN servers worldwide. First chunks are downloaded from the fastest servers and later chunks are downloaded from the lowest cost servers.  
 
-Your video is played using chunks downloaded from multiple CDN servers, at high speed & reliability, with minimal cost. For more details, visit [the website] (http://www.holacdn.com)
+Your video is played using chunks downloaded from multiple CDN servers, at high speed & reliability, with minimal cost. For more details, visit [HolaCDN website] (http://www.holacdn.com).
 
-## [Does your site use progressive video ? Use the bandwidth saver (FREE)](https://github.com/hola/cdn/blob/master/BWsaver_install.md) 
+## [Does your site use progressive video? Use the bandwidth saver (FREE)](https://github.com/hola/cdn/blob/master/BWsaver_install.md) 
 
-Progressive MP4/FLV is an easy way to deliver online video, but also wastes bandiwdth. Simply put, video downloads in full, but most users don't view all the downloaded bytes. 
+Progressive MP4/FLV is an easy way to deliver online video, but also wastes bandwidth. Simply put, video downloads in full, but most users don't view all the downloaded bytes. 
 
-Hola CDN free bandwidth saver will instantly reduce your bandwidth bill by 30-40%. Simply add the JavaScript to your video pages. It's free and extremely easy to [test in under 5 minutes using Chrome] (https://github.com/hola/cdn/blob/master/progressive_download.md#test-hola-cdn-in-less-than-5-minutes). To implement, Follow the step-by-step instructions in [the guide] (https://github.com/hola/cdn/blob/master/BWsaver_install.md)
+Hola CDN free bandwidth saver will instantly reduce your bandwidth bill by 30-40%. Simply add the JavaScript to your video pages. It's free and extremely easy to [test in under 5 minutes using Chrome] (https://github.com/hola/cdn/blob/master/progressive_download.md#test-hola-cdn-in-less-than-5-minutes). To implement, Follow the step-by-step instructions in [the guide] (https://github.com/hola/cdn/blob/master/BWsaver_install.md).
 
 **_These modules are completely free for both non-commercial and commercial use._**
