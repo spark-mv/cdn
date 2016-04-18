@@ -26,4 +26,4 @@ Choose your player and protocol from the list below:
 * To test the HolaCDN hooks with your player without HolaCDN, deploy the modified player to parts of your site and compare its performance to your baseline player. Results should be identical.
 * To test the full HolaCDN solution working with your player, follow the [step by step instructions] (https://github.com/hola/cdn/blob/master/install.md)
 
-If you have any questions, email cdn-help [at] hola [dot] org, or skype:holacdn
+If you have any questions, email cdn-help@hola.org, or skype:holacdn
