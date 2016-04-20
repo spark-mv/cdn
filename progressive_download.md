@@ -72,9 +72,9 @@ hola_cdn.init()
 #### Dynamic loading of client side module loader.js without jQuery
 ```js
 var script = document.createElement('script');
- script.src = '//client.h-cdn.com/loader.js?customer=demo';
- script.type = 'text/javascript';
- document.getElementsByTagName('head')[0].appendChild(script);
+script.src = '//client.h-cdn.com/loader.js?customer=demo';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
  ```
 followed by
 ```js
