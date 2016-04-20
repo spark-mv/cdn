@@ -8,11 +8,11 @@
 * Free [Hola player] (https://github.com/hola/player) (optional)
 
 ## Table of contents
-* [Test Hola CDN in less than 5 minutes] (https://github.com/hola/cdn/blob/master/progressive_download.md#test-hola-cdn-in-less-than-5-minutes)
-* [Integrate free tool for your web-site] (https://github.com/hola/cdn/blob/master/progressive_download.md#integrate-free-tool-for-your-web-site)
-* [Server side configuration] (https://github.com/hola/cdn/blob/master/progressive_download.md#server-side-configuration)
+* [Test Hola CDN in less than 5 minutes](#TestHola)
+* [Integrate free tool for your web-site](#FreeTool)
+* [Server side configuration](#ServerConfig)
 
-## Test Hola CDN in less than 5 minutes
+## <a name="TestHola"></a>Test Hola CDN in less than 5 minutes
 You can locally test the client side module quickly on your site, from the Chrome browser developer console.
 
 #### Prerequisites
@@ -55,7 +55,7 @@ CDN init command varies according to the video player used:
 
 Note: If you navigate to another video, you may need to reload the JS module. When embedding the script into your page, you will require to do so.
 
-## Integrate free tool for your web-site
+## <a name="FreeTool"></a>Integrate free tool for your web-site
 
 #### Static loading of client side module loader.js (preferred)
 ```html
@@ -85,7 +85,7 @@ Notes:
 * It is strongly recommended to NOT to host a local copy of the JS, as this will prevent any updates/bug fixes from reaching you.
 * Only load loader_demo.js once (either static or dynamic)
 
-## Server side configuration
+## <a name="ServerConfig"></a>Server side configuration
 
 In order to allow the client side module to send byte-range requests, please enable CORS on the HTTP server(s) that is serving the video files and verify response headers to MP4/FLV files from this server(s) include the following headers:
 
