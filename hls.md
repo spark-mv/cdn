@@ -1,7 +1,7 @@
 # HLS/ HDS
 
 **_This module is completly free for both non-commercial and commercial use._**
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 ## Hola CDN solution includes
 * Free video analytics tool for your web-site 
 * Free [Hola player] (https://github.com/hola/player) (optional)
