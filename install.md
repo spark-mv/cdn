@@ -101,6 +101,37 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 
 2) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
+### <a name="VJS+Shaka"></a>2.2.1 VideoJS+Shaka (Shaka v1.6.x only)
+If you play MPEG-DASH videos on your site using videojs player with shaka plugin, you need to perform the following steps:
+
+1) Add the script to your page as follows:
+
+```
+<html>
+...
+<video src="//example.org/myVideo.mp4" controls></video>
+<script async crossorigin="anonymous"  src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+...
+<html>
+```
+
+* Replace XXXXX with your HolaCDN customer ID.
+
+2) Replace Shaka player with Hola-enabled version:
+
+* Download (using **right click > save link as**) the Hola-enabled version of [Shaka player][36] and place it on your server.
+* Replace original Shaka player with Hola-enabled version:
+```
+<script type="text/javascript" src="//example.com/static/video.js"></script>
+<script type="text/javascript" src="//example.com/static/hola-shaka-player-compiled.js"></script>
+```
+
+#### Live examples:
+* VideoJS video without HolaCDN: [MPEG-DASH][37]
+* VideoJS video with HolaCDN: [MPEG-DASH][38]
+
+3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+
 ## 2.3 Flash based video players
 
 ### <a name="JWPlayer"></a>2.3.1 JW Player
@@ -171,7 +202,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 * Replace *example.com/static/video.js* and *example.com/static/videojs-flashls.swf* with your own links.
 
 #### Live Examples:
-* VJS5 without HolaCDN: [MP4][25] 
+* VJS5 without HolaCDN: [MP4][25]
 * VJS5 with HolaCDN: [MP4][26]
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
@@ -485,3 +516,6 @@ videojs.players => {my_vjs_player: a}
 [33]: http://hola.github.io/examples/cdn/#jwplayer6_cdn "MP4 example with HolaCDN"
 [34]: http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn "HLS example with HolaCDN"
 [35]: http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn "HDS example with HolaCDN"
+[36]: https://cdn.rawgit.com/hola/shaka-player/v1.6.x/shaka-player.compiled.js "Right click > Save link as > Shaka player v1.6.x"
+[37]: http://hola.github.io/examples/cdn/#vjs5_shaka "MPEG-DASH example without HolaCDN"
+[38]: http://hola.github.io/examples/cdn/#vjs5_shaka "MPEG-DASH example with HolaCDN"
