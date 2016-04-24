@@ -250,7 +250,7 @@ This section is mandatory only if you are using progressive MP4/FLV/WebM video.
 
 If you are using adaptive protocls (e.g. HLS/HDS/Dash), [skip to section 4](#CollectStatsDownloadContent).
 
-## 3.1 CORS settings
+## <a name="CORSSettings"></a>3.1 CORS settings
 
 Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled. [Read more][28] about CORS configuration in HolaCDN.
 
@@ -389,7 +389,7 @@ Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
 ```
 
-In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. Please see the ‘Configuring CORS headers’ section for instructions.
+In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. {Click here](#CORSSettings) for CORS configuration instructions.
 
 # 3. Video platforms
 
