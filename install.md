@@ -389,7 +389,7 @@ Access-Control-Max-Age: 600
 Timing-Allow-Origin: *
 ```
 
-In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. {Click here](#CORSSettings) for CORS configuration instructions.
+In case the response is different from the desired response, configure the missing headers by enabling CORS on the web server(s) that is serving the video files. Go line by line to ensure all headers are configured correctly. [Click here](#CORSSettings) for CORS configuration instructions.
 
 # 3. Video platforms
 
