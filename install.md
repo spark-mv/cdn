@@ -334,7 +334,7 @@ Next step is to [start collecting statistics from real users](#RedirectTraffic).
 
 # 6. <a name="RedirectTraffic"></a>Redirect your user's traffic to use HolaCDN or enable statistics collection
 
-When you are satisfied with local testing, you can gradually enable statsitics collection and/or redirct user's CDN traffic for real users in production. 
+When you are satisfied with local testing, you can gradually enable statsitics collection and/or redirect user's CDN traffic for real users in production. 
 
 1. Login to [your HolaCDN account][1].
 2. Go to the 'configuration' section and find the the 'gen' zone.
