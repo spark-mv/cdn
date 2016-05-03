@@ -4,7 +4,17 @@ Instructions for configuring and verifying CORS settings for different web serve
 
 If you have any questions, email cdn-help@hola.org, or skype:holacdn
 
-Available guides:
+### Test CORS using HolaCDN console command
+
+Load the page which contains the video and the HolaCDN JavaScript, and enter in console:
+
+```
+hola_cdn.test_cors()
+```
+
+The current status of CORS settings will be displayed.
+
+If you see ```CORS status: full support```, your CORS settings are correct. Otherwise, continue following this guide to configure and verify your settings using one of the following guides:
 - [CORS setup for most web servers](#configMostServers)
 - [CORS setup for Amazon AWS S3](#configAWS)
 - [CORS setup for MaxCDN](#configMaxCDN)
