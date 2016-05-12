@@ -306,7 +306,7 @@ Now you will enable HolaCDN for content download as well. Again, this is only fo
 If you receive a console message starting with "Hola cdn skip", the settings on the portal did not take effect yet - try again in a few minutes.
 
 You can enter other console commands, for example:
-* Disable HolaCDN:	```hola_cdn.set_mode_disable()```
+* Disable HolaCDN:	```hola_cdn.set_mode_disabled()```
 * Reset local settings:	```hola_cdn.set_mode_default()```
 * See all commands:	```hola_cdn.help()```
 
