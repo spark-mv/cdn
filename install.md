@@ -321,7 +321,7 @@ In order to verify that the video statistics are recorded into your account:
 You should see a table with your IP address and browser information, which will look like:
 ![Recent events example](/resources/recent_events.png)
 
-If you see ```bwsaver_report``` events, go back to the detailed statistics table. In case HolaCDN is currently in statistics mode,  you will see numbers only in the 'Your CDN' column. 
+If you see ```bwsaver_report``` events, go back to the detailed statistics table. In case HolaCDN is currently in statistics mode,  you will see numbers only in the 'All' column.
 Note that it may take a few minutes for statistics to appear in the table.
 
 To protect you from accidental mass deployment, at this stage HolaCDN is still disabled on the server side. You will see an ```using zone gen mode disabled (no_browser_match)``` error message on any device trying to play a video with HolaCDN. This is by design and expected. Continue to the next step to gradually enable in production.
