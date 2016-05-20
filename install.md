@@ -315,15 +315,11 @@ You can enter other console commands, for example:
 In order to verify that the video statistics are recorded into your account:
 
 1. Login to [your HolaCDN account][1].
-2. Click on 'debug mode'. 
-3. In order to see that your latest CDN events were recorded, click on 'Show recent events'.
+2. Go to 'stats' page.
+3. In order to see that your latest CDN events were recorded, click on 'Recent events'.
 4. 
-You should see a few lines with your IP address and browser information, which will look like:
-```
-ID	            Timestamp               IP	            Zone    Country Browser	    Platform
-bwsaver_report	10-Jan-2016 16:55:25	212.235.66.73	gen	    il      chrome 47   Win32
-video_init      10-Jan-2016 16:53:39	212.235.66.73	gen	    il      chrome 47   Win32
-```
+You should see a table with your IP address and browser information, which will look like:
+![Recent events example](/resources/recent_events.png)
 
 If you see ```bwsaver_report``` events, go back to the detailed statistics table. In case HolaCDN is currently in statistics mode,  you will see numbers only in the 'Your CDN' column. 
 Note that it may take a few minutes for statistics to appear in the table.
