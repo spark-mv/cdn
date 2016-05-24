@@ -152,7 +152,7 @@ If your site uses JW Player with flash technology, follow these steps:
 
 Download (using **right click > save link as**) the Hola-enabled JWPlayer version that matches the version you are using, and place it on your own server. Choose your version from:
 
-* JWPlayer  [V6.12.4xx][17], [V7.1.0xx][18], [V7.1.4xx][19], [V7.2.4xx][20]
+* JWPlayer  [V6.12.4xx][17], [V7.1.0xx][18], [V7.1.4xx][19], [V7.2.4xx][20], [V7.3.4xx][21]
 
 Once you downloaded the file, continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
@@ -497,23 +497,24 @@ videojs.players => {my_vjs_player: a}
 [18]: https://player.h-cdn.com/jwplayer.flash.7_1_0.swf "Right click > Save link as > JW player 7.1.0"
 [19]: https://player.h-cdn.com/jwplayer.flash.7_1_4.swf "Right click > Save link as > JW player 7.1.4"
 [20]: https://player.h-cdn.com/jwplayer.flash.7_2_4.swf "Right click > Save link as > JW player 7.2.4"
-[21]: http://hola.github.io/examples/cdn/#jwplayer6 "MP4 example without HolaCDN"
-[22]: http://hola.github.io/examples/cdn/#jwplayer6_hls "HLS example without HolaCDN"
-[23]: http://hola.github.io/examples/cdn/#jwplayer6_hds "HDS example without HolaCDN"
-[24]: https://client.h-cdn.com/bext/svc/cdn/pub/videojs-flashls.swf "Right click > Save link as > Hola Video JS player"
-[25]: http://hola.github.io/examples/cdn/#vjs5 "MP4 example without HolaCDN"
-[26]: http://hola.github.io/examples/cdn/#vjs5_cdn "MP4 example with HolaCDN"
-[27]: https://holacdn.com/flowplayerhls.6.0.5.hola.swf "Right click > Save link as > Hola enabled Flowplayer"
-[28]: http://holacdn.com/faq#imp-cors "CORS in Hola FAQ"
-[29]: /CORS.md "CORS configuration"
-[30]: http://blog.wmspanel.com/2015/06/cdn-friendly-streaming.html "Nimble configuration"
-[31]: https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5 "Video JS-VAST-VPAID plugin"
-[32]: http://hola.github.io/examples/cdn/#hola_player_vast "Vast example with HolaCDN"
-[33]: http://hola.github.io/examples/cdn/#jwplayer6_cdn "MP4 example with HolaCDN"
-[34]: http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn "HLS example with HolaCDN"
-[35]: http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn "HDS example with HolaCDN"
-[36]: https://cdn.rawgit.com/hola/shaka-player/v1.6.x/shaka-player.compiled.js "Right click > Save link as > Shaka player v1.6.x"
-[37]: http://hola.github.io/examples/cdn/#shaka "Shaka example playing MPEG-DASH video without HolaCDN"
-[38]: http://hola.github.io/examples/cdn/#shaka_cdn "Shaka example playing MPEG-DASH video without HolaCDN"
-[39]: http://hola.github.io/examples/cdn/#vjs5_shaka "VideoJS+Shaka example playing MPEG-DASH video without HolaCDN"
-[40]: http://hola.github.io/examples/cdn/#vjs5_shaka_cdn "VideoJS+Shaka example playing MPEG-DASH video with HolaCDN"
+[21]: https://player.h-cdn.com/jwplayer.flash.7_3_4.swf "Right click > Save link as > JW player 7.3.4"
+[22]: http://hola.github.io/examples/cdn/#jwplayer6 "MP4 example without HolaCDN"
+[23]: http://hola.github.io/examples/cdn/#jwplayer6_hls "HLS example without HolaCDN"
+[24]: http://hola.github.io/examples/cdn/#jwplayer6_hds "HDS example without HolaCDN"
+[25]: https://client.h-cdn.com/bext/svc/cdn/pub/videojs-flashls.swf "Right click > Save link as > Hola Video JS player"
+[26]: http://hola.github.io/examples/cdn/#vjs5 "MP4 example without HolaCDN"
+[27]: http://hola.github.io/examples/cdn/#vjs5_cdn "MP4 example with HolaCDN"
+[28]: https://holacdn.com/flowplayerhls.6.0.5.hola.swf "Right click > Save link as > Hola enabled Flowplayer"
+[29]: http://holacdn.com/faq#imp-cors "CORS in Hola FAQ"
+[30]: /CORS.md "CORS configuration"
+[31]: http://blog.wmspanel.com/2015/06/cdn-friendly-streaming.html "Nimble configuration"
+[32]: https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5 "Video JS-VAST-VPAID plugin"
+[33]: http://hola.github.io/examples/cdn/#hola_player_vast "Vast example with HolaCDN"
+[34]: http://hola.github.io/examples/cdn/#jwplayer6_cdn "MP4 example with HolaCDN"
+[35]: http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn "HLS example with HolaCDN"
+[36]: http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn "HDS example with HolaCDN"
+[37]: https://cdn.rawgit.com/hola/shaka-player/v1.6.x/shaka-player.compiled.js "Right click > Save link as > Shaka player v1.6.x"
+[38]: http://hola.github.io/examples/cdn/#shaka "Shaka example playing MPEG-DASH video without HolaCDN"
+[39]: http://hola.github.io/examples/cdn/#shaka_cdn "Shaka example playing MPEG-DASH video without HolaCDN"
+[40]: http://hola.github.io/examples/cdn/#vjs5_shaka "VideoJS+Shaka example playing MPEG-DASH video without HolaCDN"
+[41]: http://hola.github.io/examples/cdn/#vjs5_shaka_cdn "VideoJS+Shaka example playing MPEG-DASH video with HolaCDN"
