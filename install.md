@@ -9,6 +9,8 @@ Adding HolaCDN to your website is a simple process which can be completed in 15 
 5. [Enable HolaCDN on your machine for local testing](#EnableHolaLocally)
 6. [Redirect your user's traffic to use HolaCDN or enable statistics collection](#RedirectTraffic)
 
+See also: [Best practices for HolaCDN testing & deployment](https://docs.google.com/document/d/1fPRtWV-t1KMIRUGiBDN-KLlSIDsdHGysZEs1rBkJzOE/edit?usp=sharing)
+
 If you have any questions, email us at cdn-help@hola.org, or skype: holacdn
 
 # <a name="signupAccount"></a> 1. Sign up for a new account
