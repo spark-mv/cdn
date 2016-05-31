@@ -167,7 +167,7 @@ jwplayer(‘video-container’).setup({
 });
 ```
 
-* Replace *cdn.example.com/popular_videos/example.mp4* with your own link.
+* Replace *cdn.example.com/popular_videos/example.mp4* with your own link. Changing the SWF does not impact the user interface of the player.
 
 #### Live examples:
 * JWPlayer/Flash without HolaCDN: [MP4][21] | [HLS][22] | [HDS][23]
@@ -201,7 +201,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 </script>
 ```
 
-* Replace *example.com/static/video.js* and *example.com/static/videojs-flashls.swf* with your own links.
+* Replace *example.com/static/video.js* and *example.com/static/videojs-flashls.swf* with your own links. Changing the SWF does not impact the user interface of the player.
 
 #### Live Examples:
 * VJS5 without HolaCDN: [MP4][25]
@@ -242,7 +242,7 @@ var player = flowplayer(container, {
    }
 });
 ```
-Both ```swf``` and ```swfHls``` are changed to the same file. 
+Both ```swf``` and ```swfHls``` are changed to the same file. Changing the SWF does not impact the user interface of the player.
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
