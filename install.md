@@ -418,7 +418,7 @@ As a shortcut, you can also control HolaCDN via the address bar by appending a s
 * Enable stats mode: append ```?hola_mode=stats```
 * Disable HolaCDN: append ```?hola_mode=disabled```
 
-# 5. Handling content protection
+# <a name="HandlingContentProtection"></a>5. Handling content protection
 
 In case your video URLs use content protection scheme, HolaCDN servers will not be able to download videos. There are a few ways of dealing with content protection:
 
