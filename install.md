@@ -13,7 +13,7 @@ See also: [Best practices for HolaCDN testing & deployment](https://docs.google.
 
 If you have any questions, email us at cdn-help@hola.org, or skype: holacdn
 
-# <a name="signupAccount"></a> 1. Sign up for a new account
+# <a name="signupAccount"></a>1. Sign up for a new account
 
 Sign up for [a new HolaCDN account][1], and note your customer ID which will be sent to you following the registration.
 
