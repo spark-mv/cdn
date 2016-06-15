@@ -22,7 +22,7 @@ If you see ```CORS status: full support```, your CORS settings are correct. Othe
 
 ### <a name="configMostServers"></a>CORS configuration for most web servers
 
-For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers, not just '*' referenced in the generic instructions:
+For step by step instructions regarding how to enable CORS on different web servers, see the [[original CORS documentation](http://enable-cors.org/server.html)] (http://enable-cors.org/server.html). Make sure you add all the required headers (**header fields are comma separated**), not just '*' referenced in the generic instructions:
 
 - Access-Control-Allow-Origin: * 
 - Access-Control-Allow-Methods: HEAD, GET, OPTIONS
