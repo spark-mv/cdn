@@ -21,7 +21,7 @@ On the HolaCDN portal, you can configure your HolaCDN system and see user experi
 
 # <a name="AddHolaJS"></a>2. Add Hola JS to your website
 
-HolaCDN requires a client-side JavaScript in order to collect video statistics. The JavaScript is loaded asynchronously, and will not affect your page load time. 
+HolaCDN requires a client-side JavaScript in order to collect video statistics. The JavaScript is loaded asynchronously, and will not affect your page load time. For best results, HolaCDN recommends that the script be added to the 'head' element of the video HTML page.
 
 Choose the correct implementation for your existing player. You can enable HolaCDN on:
 
