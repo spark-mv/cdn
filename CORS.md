@@ -5,9 +5,9 @@ Instructions for configuring and verifying CORS settings for different web serve
 If you have any questions, email cdn-help@hola.org, or skype:holacdn
 
 ### Test CORS using HolaCDN console command
+First enable hola_debug. Either by adding url param `?hola_debug=true` when accessing the page,  or type in console `hola_cdn.set_debug()`.
 
-Load the page which contains the video and the HolaCDN JavaScript, and enter in console:
-
+Now enter in console:
 ```
 hola_cdn.test_cors()
 ```
