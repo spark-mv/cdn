@@ -28,7 +28,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 ## disabled browser_unsupported
 #### Possible causes
-1. HolaCDN requires Media Source Extensions (MSE) to be enabled on the web browsr. Older versions of browsers which do not support MSE are not supported by HolaCDN. Here is the [full list of supported platforms] (http://holacdn.com/faq#in_platforms).  
+1. HolaCDN requires Media Source Extensions (MSE) to be enabled on the web browsr. Older versions of browsers which do not support MSE are not supported by HolaCDN. Here is the [full list of supported platforms] (http://holacdn.com/faq#compat-platforms).  
 
 #### Solutions
 1. Use a supported browser
