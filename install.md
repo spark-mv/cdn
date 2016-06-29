@@ -146,7 +146,7 @@ If your site uses JW Player with flash technology, follow these steps:
 ```
 <head>
 ...
-<script type="text/javascript" async src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
 ...
 </head>
 ```
@@ -185,7 +185,7 @@ If your site uses a videoJS based player with flash technology, follow these ste
 ```
 <head>
 ...
-<script type="text/javascript" async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXXX"></script>
+<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
 ...
 </head>
 ```
@@ -219,7 +219,7 @@ If your site plays HLS video using Flowplayer with flash technology, follow thes
 ```
 <head>
 ...
-<script type="text/javascript" async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
 ...
 </head>
 ```
