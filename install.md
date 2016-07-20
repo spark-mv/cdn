@@ -409,7 +409,31 @@ There is no need to specify any parameters. Simply include HolaCDN loader at the
 
 * Replace XXXXX with your HolaCDN customer ID.
 
-## 3.1 Nimble live streaming
+## 3.2 Kaltura
+
+HolaCDN offers a 'plug and play' integration with the Kaltura video platform if the Kaltura HTML5 player is used. 
+
+To add hola script into Kaltura player iframe:
+
+1. Use kaltura dynamic embed if it's not already dynamic: http://player.kaltura.com/docs/kwidget
+2. in the 'readyCallback' callback function, add the following block:
+
+```kWidget.embed({
+    // ... other params
+    'readyCallback': function( playerId ){
+        // ... your code
+        // inject hola script
+        var kiframe = document.getElementById(playerId).getElementById(playerId + '_ifp');
+        var hola_script = document.createElement('script');
+        hola_script.src = '//client.h-cdn.com/loader.js?customer=XXXX';
+        hola_script.type = 'text/javascript';
+        kiframe.contentWindow.document.head.appendChild(hola_script);
+    }
+})
+```
+* Replace XXXXX with your HolaCDN customer ID.
+
+## 3.3 Nimble live streaming
 
 Nimble is supported out of the box, but needs to be configured to allow HolaCDN servers to download content - [instructions here][30].
 # 4. Shortcut: controlling HolaCDN via the address bar
