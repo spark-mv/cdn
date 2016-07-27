@@ -413,9 +413,11 @@ There is no need to specify any parameters. Simply include HolaCDN loader at the
 
 HolaCDN offers a 'plug and play' integration with the Kaltura video platform if the Kaltura HTML5 player is used. 
 
+Note that integration steps below are applied only on your page, under your control. There is no need to seek assistance from Kaltura support.
+
 To add hola script into Kaltura player iframe:
 
-1. Use kaltura dynamic embed if it's not already dynamic: http://player.kaltura.com/docs/kwidget
+1. Use Kaltura 'Dynamic embed' if it is not already enabled - see http://player.kaltura.com/docs/kwidget
 2. in the 'readyCallback' callback function, add the following block:
 
 ```kWidget.embed({
