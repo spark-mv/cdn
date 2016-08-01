@@ -434,6 +434,7 @@ To add hola script into Kaltura player iframe:
 })
 ```
 * Replace XXXXX with your HolaCDN customer ID.
+* In monetization plugin DoubleClick settings, untick LeadWithFlash option if it's ticked
 
 ## 3.3 Nimble live streaming
 
