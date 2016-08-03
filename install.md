@@ -293,7 +293,7 @@ Console commands must be entered in the frame containing the video player. If yo
 1. Enable statistics by entering ```hola_cdn.set_mode_stats()```. You should get the response: ```cdn/loader: enable mode stats, need refresh```.
 2. Refresh the page.
 3. Check that HolaCDN is in statistics mode by entering ```hola_cdn.get_mode()```. You should get the response: ```"stats"```.
-4. To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```
+4. To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()``` (if you enabled multiplayer mode, use ```hola_cdn.get_stats({idx: 0})``` to see stats of first player and so on)
 5. You should see printouts from HolaCDN with video timelime information.
 
 ## 5.2 Enable HolaCDN on your browser
@@ -303,7 +303,7 @@ Now you will enable HolaCDN for content download as well. Again, this is only fo
 1. Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```. You should get the response: ```cdn/loader: enable mode cdn, need refresh```.
 2. Refresh the page.
 3. Check that HolaCDN is in CDN mode by entering ```hola_cdn.get_mode()```. You should get the response: ```"cdn"```.
-4. To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()```.
+4. To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()``` (if you enabled multiplayer mode, use ```hola_cdn.get_stats({idx: 0})``` to see stats of first player and so on)
 5. Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). 
 6. While the video is playing, you can also look at the network tab of the developer console. You will see some video chunks coming from your own server, and some from HolaCDN servers.
 
