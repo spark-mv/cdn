@@ -425,7 +425,7 @@ To add hola script into Kaltura player iframe:
     'readyCallback': function( playerId ){
         // ... your code
         // inject hola script
-        var kiframe = document.getElementById(playerId).getElementById(playerId + '_ifp');
+        var kiframe = document.getElementById(playerId + '_ifp');
         var hola_script = document.createElement('script');
         hola_script.src = '//client.h-cdn.com/loader.js?customer=XXXX';
         hola_script.type = 'text/javascript';
