@@ -156,7 +156,7 @@ If your site uses JW Player with flash technology, follow these steps:
 
 Download (using **right click > save link as**) the Hola-enabled JWPlayer version that matches the version you are using, and place it on your own server. Choose your version from:
 
-* JWPlayer  [V6.12.4xx][17], [V7.1.0xx][18], [V7.1.4xx][19], [V7.2.4xx][20], [V7.3.4xx][41], [V7.4.4xx][42]
+* JWPlayer  [V6.12.4xx][17], [V7.1.0xx][18], [V7.1.4xx][19], [V7.2.4xx][20], [V7.3.4xx][41], [V7.4.4xx][42] [V7.6.0xx][43]
 
 Once you downloaded the file, continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
@@ -533,3 +533,4 @@ videojs.players => {my_vjs_player: a}
 [40]: http://hola.github.io/examples/cdn/#vjs5_shaka_cdn "VideoJS+Shaka example playing MPEG-DASH video with HolaCDN"
 [41]: https://player.h-cdn.com/jwplayer.flash.7_3_4.swf "Right click > Save link as > JW player 7.3.4"
 [42]: https://player.h-cdn.com/jwplayer.flash.7_4_4.swf "Right click > Save link as > JW player 7.4.4"
+[43]: https://player.h-cdn.com/jwplayer.flash.7_6_0.swf "Right click > Save link as > JW player 7.6.0"
