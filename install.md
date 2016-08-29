@@ -9,11 +9,7 @@ Adding HolaCDN to your website is a simple process which can be completed in 15 
 5. [Enable HolaCDN on your machine for local testing](#EnableHolaLocally)
 6. [Redirect your user's traffic to use HolaCDN or enable statistics collection](#RedirectTraffic)
 
-See also: [Best practices for HolaCDN testing & deployment](http://bit.ly/HolaCDN_TestingGuidePDF)
-
-To enable HolaCDN on your native apps, see the [Android] (https://github.com/hola/android_sdk) and/or [iOS] (https://github.com/hola/ios_sdk) github pages.
-
-If you have any questions, email us at cdn-help@hola.org, or skype: holacdn
+Use the [Google Doc] (http://bit.ly/HolaCDN_ImplementationGuide) or [PDF](http://bit.ly/HolaCDN_ImplementationGuidePDF) version of this guide for additional screenshots and information.
 
 # <a name="signupAccount"></a>1. Sign up for a new account
 
@@ -22,6 +18,8 @@ Sign up for [a new HolaCDN account][1], and note your customer ID which will be 
 On the HolaCDN portal, you can configure your HolaCDN system and see user experience statistics such as video start time, buffering, video quality and more. Curious? Visit the [demo account][2].
 
 # <a name="AddHolaJS"></a>2. Add Hola JS to your website
+
+Note: This guide is for desktop browsers. To enable HolaCDN on your native apps, see the [Android] (https://github.com/hola/android_sdk) and/or [iOS] (https://github.com/hola/ios_sdk) github pages.
 
 HolaCDN requires a client-side JavaScript in order to collect video statistics. The JavaScript is loaded asynchronously, and will not affect your page load time. For best results, HolaCDN recommends that the script be added to the 'head' element of the video HTML page.
 
