@@ -43,7 +43,7 @@ HolaCDN can work with your existing player, but we recommend using the Hola play
 ```
 <head>
 ...
-    <script src="//player.h-cdn.com/player_vjs5.js"></script>
+    <script src="//http://player.h-cdn.com/player_vjs5_10.js"></script>
     <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
 ...
 </head>
