@@ -35,6 +35,18 @@ After committing the configuration changes, [verify it works](https://docs.googl
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
+### <a name="configAWS"></a>CORS configuration for Nginx
+A sample conf statements is given below. Not that they have to be in the same nested level
+```
+  add_header 'Access-Control-Allow-Origin' '*';
+  add_header 'Access-Control-Allow-Methods' 'HEAD, POST, GET, OPTIONS';
+  add_header 'Access-Control-Expose-Headers' 'Content-Range, Date, Etag, Cache-Control, Last-Modified';
+  add_header 'Access-Control-Allow-Headers' 'Content-Type, Origin, Accept, Range, Cache-Control';
+  add_header 'Access-Control-Max-Age' '600';
+  add_header 'Timing-Allow-Origin' '*';
+```
+
+
 ### <a name="configAWS"></a>CORS configuration for Amazon AWS
 
 Please refer to [these instructions](https://docs.google.com/document/d/1RrWA7gfCLDXcjgCQOQRGs0A3IRSlvn3Ktu9zHp9j-po/edit?usp=sharing) for a step-by-step guide on how to configure and verify CORS for Amazon AWS S3.
