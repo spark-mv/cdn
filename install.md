@@ -434,9 +434,9 @@ To add hola script into Kaltura player iframe:
 * Replace XXXXX with your HolaCDN customer ID.
 * In monetization plugin DoubleClick settings, untick LeadWithFlash option if it's ticked
 
-## 3.3 Nimble live streaming
+## 3.3 Nimble Streamer live streaming
 
-Nimble is supported out of the box, but needs to be configured to allow HolaCDN servers to download content - [instructions here][30].
+[Nimble Streamer] (https://wmspanel.com/nimble) is supported out of the box, but needs to be configured to allow HolaCDN servers to download content - [instructions here][30].
 # 4. Shortcut: controlling HolaCDN via the address bar
 
 As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
