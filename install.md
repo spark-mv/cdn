@@ -468,7 +468,10 @@ Contact HolaCDN team in order to determine the best way to address this issue.
 ## 6.1 HolaCDN player + VAST
 HolaCDN player supports [video.js vast plugin][31]. An example on how to setup the player for serving ads can be found [here][32].
 
-## 6.2 Adblock issues
+## 6.2 HolaCDN player + IMA SDK
+HolaCDN player supports [video.js IMA plugin][44]. An example on how to setup the player for serving ads can be found [here][45].
+
+## 6.3 Adblock issues
 
 Adblock extensions, which are pretty popular these days, may lead to unexpected exceptions thrown during ad init. So it sometimes (e.g. when executed in scope of player configuration) breaks the player init sequence and as a result HolaCDN cannot detect it.
 
@@ -532,3 +535,5 @@ videojs.players => {my_vjs_player: a}
 [41]: https://player.h-cdn.com/jwplayer.flash.7_3_4.swf "Right click > Save link as > JW player 7.3.4"
 [42]: https://player.h-cdn.com/jwplayer.flash.7_4_4.swf "Right click > Save link as > JW player 7.4.4"
 [43]: https://player.h-cdn.com/jwplayer.flash.7_6_0.swf "Right click > Save link as > JW player 7.6.0"
+[44]: https://github.com/googleads/videojs-ima "videojs-ima"
+[45]: http://hola.github.io/examples/cdn/#hola_player_preroll_midroll_postroll "Hola player + IMA + preroll midroll postroll"
