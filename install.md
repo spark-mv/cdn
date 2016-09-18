@@ -523,7 +523,7 @@ videojs.players => {my_vjs_player: a}
 [29]: /CORS.md "CORS configuration"
 [30]: http://blog.wmspanel.com/2015/06/cdn-friendly-streaming.html "Nimble configuration"
 [31]: https://github.com/hola/videojs-vast-vpaid/tree/feature/videojs-v5 "Video JS-VAST-VPAID plugin"
-[32]: http://hola.github.io/examples/cdn/#hola_player_vast "Vast example with HolaCDN"
+[32]: http://hola.github.io/examples/cdn/#hola_player_cdn_vast "Vast example with HolaCDN"
 [33]: http://hola.github.io/examples/cdn/#jwplayer6_cdn "MP4 example with HolaCDN"
 [34]: http://hola.github.io/examples/cdn/#jwplayer6_hls_cdn "HLS example with HolaCDN"
 [35]: http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn "HDS example with HolaCDN"
