@@ -168,6 +168,7 @@ jwplayer(‘video-container’).setup({
 ```
 
 * Replace *cdn.example.com/popular_videos/example.mp4* with your own link. Changing the SWF does not impact the user interface of the player.
+* Note: if you have multiple jwplayers playing on the same page, make sure they use the same version of hola-enabled swf file
 
 #### Live examples:
 * JWPlayer/Flash without HolaCDN: [MP4][21] | [HLS][22] | [HDS][23]
