@@ -134,6 +134,33 @@ If you play MPEG-DASH videos over HTML5 tech with Shaka player, you need to perf
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
+### <a name="JWPlayer+HolaHLS"></a>2.2.2 HTML5/HLS played by JWPlayer with HolaHLS provider
+In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPlayer, you need to perform the following steps:
+
+1) Add relevant scripts to your page and register HolaHLS provider as follows:
+
+```
+<html>
+  ...
+  <script src="//content.jwplatform.com/path/to/jwplayer.js"></script>
+  <script>jwplayer.key="XXXxxxXXXxxxXXXxxxXXX==";</script>
+  <script src="//client.h-cdn.com/svc/cdn/pub/hls.js"></script>
+  <script src="//client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js"></script>
+  <script type="text/javascript">
+    window.jwplayer.api.registerProvider(window.jwplayer_hls_provider);
+  </script>
+  ...
+</html>
+```
+
+2) Verify everything works right as expected.
+
+3) Move **hls.js** and **jwplayer_hls_provider.js** to be hosted by your server instead of **client.h-cdn.com**. You can download (using **right click > save link as**) the scripts from here:
+  - [hls.js][46]
+  - [jwplayer_hls_provider.js][47]
+
+4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+
 ## 2.3 Flash based video players
 
 ### <a name="JWPlayer"></a>2.3.1 JW Player
@@ -538,3 +565,5 @@ videojs.players => {my_vjs_player: a}
 [43]: https://player.h-cdn.com/jwplayer.flash.7_6_0.swf "Right click > Save link as > JW player 7.6.0"
 [44]: https://github.com/googleads/videojs-ima "videojs-ima"
 [45]: http://hola.github.io/examples/cdn/#hola_player_preroll_midroll_postroll "Hola player + IMA + preroll midroll postroll"
+[46]: https://client.h-cdn.com/svc/cdn/pub/hls.js "Right click > Save link as > Dailymotion (hls.js)"
+[47]: https://client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js "Right click > Save link as > JWPlayer HLS provider"
