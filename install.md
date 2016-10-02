@@ -274,6 +274,30 @@ Both ```swf``` and ```swfHls``` are changed to the same file. Changing the SWF d
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
+### <a name="JWPlayer+HolaHLS"></a>2.3.4 HTML5/HLS played by Flowplayer with HolaHLS provider
+In order to play HLS videos using HTML5 technology with HolaHLS provider in flowplayer, you need to perform the following steps:
+
+1) Add relevant scripts to your page and register HolaHLS provider as follows:
+
+```
+<html>
+  ...
+  <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
+  + <script src="https://rawgit.com/hola/hls.js/v0.6.1-20/dist/hls.js"></script>
+  + <script src="//client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js"></script>
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=xxx"></script>
+  ...
+</html>
+```
+
+2) Verify everything works right as expected.
+
+3) Move **hls.js** and **flowplayer_hls_engine.js** to be hosted by your server. You can download (using **right click > save link as**) the scripts from here:
+  - [hls.js][46]
+  - [flowplayer_hls_engine][48]
+
+4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+
 # <a name="ConfigureVideoServer"></a>3. Configure your video server 
 
 This section is mandatory only if you are using progressive MP4/FLV/WebM video. 
@@ -567,3 +591,4 @@ videojs.players => {my_vjs_player: a}
 [45]: http://hola.github.io/examples/cdn/#hola_player_preroll_midroll_postroll "Hola player + IMA + preroll midroll postroll"
 [46]: https://client.h-cdn.com/svc/cdn/pub/hls.js "Right click > Save link as > Dailymotion (hls.js)"
 [47]: https://client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js "Right click > Save link as > JWPlayer HLS provider"
+[48]: https://client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js "Right click > Save link as > Flowplayer HLS Engine"
