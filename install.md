@@ -161,7 +161,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
 
 4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
-### <a name="JWPlayer+HolaHLS"></a>2.2.3 HTML5/HLS played by Flowplayer with HolaHLS provider
+### <a name="FlowPlayer+HolaHLS"></a>2.2.3 HTML5/HLS played by Flowplayer with HolaHLS provider
 In order to play HLS videos using HTML5 technology with HolaHLS provider in flowplayer, you need to perform the following steps:
 
 1) Add relevant scripts to your page and register HolaHLS provider as follows:
@@ -170,7 +170,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 <html>
   ...
   <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
-  + <script src="https://rawgit.com/hola/hls.js/v0.6.1-20/dist/hls.js"></script>
+  + <script src="//client.h-cdn.com/bext/svc/cdn/pub/hls.js"></script>
   + <script src="//client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js"></script>
   <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=xxx"></script>
   ...
