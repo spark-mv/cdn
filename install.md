@@ -300,13 +300,9 @@ Both ```swf``` and ```swfHls``` are changed to the same file. Changing the SWF d
 
 # <a name="ConfigureVideoServer"></a>3. Configure your video server 
 
-This section is mandatory only if you are using progressive MP4/FLV/WebM video. 
-
-If you are using adaptive protocls (e.g. HLS/HDS/Dash), [skip to section 4](#CollectStatsDownloadContent).
-
 ## <a name="CORSSettings"></a>3.1 CORS settings
 
-Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM files from the video server in chunks. For this to work, certain HTTP headers need to be enabled. [Read more][28] about CORS configuration in HolaCDN.
+Hola free bandwidth saver and CDN work by requesting your MP4/FLV/WEBM/TS files from the video server in chunks. For this to work, certain HTTP headers need to be enabled. [Read more][28] about CORS configuration in HolaCDN.
 
 If you do not implement these settings, HolaCDN will still work but performance will be degraded. As such, see [how to verify and configure CORS][29].
 
@@ -417,7 +413,7 @@ Each zone can have its own set of video sources and activation rules. You can us
 
 'Gen' is a the default zone. It is applied when it is not overridden by another zone. The gen zone cannot be removed.
 
-# 2. Optional - CORS settings for HLS/HDS video
+# 2. CORS settings for HLS/HDS video
 
 HolaCDN works with modern, chunked video protocols by requesting video segments from multiple servers in parallel. Basic operation does not require any changes to CORS settings.
 
