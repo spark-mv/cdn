@@ -1,4 +1,4 @@
-# Server side configuration for MP4/FLV/WebM progressive download
+# Server side configuration for video download
 
 Instructions for configuring and verifying CORS settings for different web servers are below. 
 
