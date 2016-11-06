@@ -8,13 +8,7 @@ Hola video analytics provide you with detailed statistics regarding what *really
 - Is seeking smooth and reliable?
 - And many other metrics...
 
-###Curious? Login to the demo account for live data:
-
-```
-http://bit.ly/HolaCDNPortalDemo
-user: portal_demo@hola.org
-password: holacdn
-```
+###Curious? Check out the [demo live dashboard] (https://holacdn.com/#dashboard) on our website.
 
 Implementation should take only a few minutes. Follow the [step by step guide] (https://github.com/hola/cdn/blob/master/install.md)
 
