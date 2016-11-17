@@ -205,7 +205,7 @@ If your site uses JW Player with flash technology, follow these steps:
 
 Download (using **right click > save link as**) the Hola-enabled JWPlayer version that matches the version you are using, and place it on your own server. Choose your version from:
 
-* JWPlayer  [V6.12.4xx][17], [V7.1.0xx][18], [V7.1.4xx][19], [V7.2.4xx][20], [V7.3.4xx][41], [V7.4.4xx][42] [V7.6.0xx][43]
+* JWPlayer  [V6.12.4xx][17], [V7.1.0xx][18], [V7.1.4xx][19], [V7.2.4xx][20], [V7.3.4xx][41], [V7.4.4xx][42] [V7.6.0xx][43] [V7.7.0xx][49] [V7.7.1xx][50]
 
 Once you downloaded the file, continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
@@ -588,3 +588,5 @@ videojs.players => {my_vjs_player: a}
 [46]: https://client.h-cdn.com/svc/cdn/pub/hls.js "Right click > Save link as > Dailymotion (hls.js)"
 [47]: https://client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js "Right click > Save link as > JWPlayer HLS provider"
 [48]: https://client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js "Right click > Save link as > Flowplayer HLS Engine"
+[49]: https://player.h-cdn.com/jwplayer.flash.7_7_0.swf "Right click > Save link as > JW player 7.7.0"
+[50]: https://player.h-cdn.com/jwplayer.flash.7_7_1.swf "Right click > Save link as > JW player 7.7.1"
