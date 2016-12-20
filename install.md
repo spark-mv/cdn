@@ -257,16 +257,15 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 2) [Flash/HLS only] If you play HLS videos with flash technology on your site, you also need to replace videojs SWF with the Hola-enabled version.
 
-* Download (using **right click > save link as**) the [Hola-enabled version][24] and place it on your own server.
 * Configure videojs to use the new version.
 ```
 <script type="text/javascript" src="//example.com/static/video.js"></script>
 <script type="text/javascript">
-  videojs.options.flash.swf = "//example.com/static/videojs-flashls.swf";
+  videojs.options.flash.swf = "//client.h-cdn.com/bext/svc/cdn/pub/videojs-flashls.swf";
 </script>
 ```
 
-* Replace *example.com/static/video.js* and *example.com/static/videojs-flashls.swf* with your own links. Changing the SWF does not impact the user interface of the player.
+* Replace *example.com/static/video.js* with your own link. Changing the SWF does not impact the user interface of the player.
 
 #### Live Examples:
 * VJS5 without HolaCDN: [MP4][25]
@@ -291,14 +290,11 @@ If your site plays HLS video using Flowplayer with flash technology, follow thes
 
 2) Replace your Flowplayer SWF with the Hola-enabled version. 
 
-Download (using **right click > save link as**) the [Hola-enabled version][27] and place it on your own server.
-
-Once you have downloaded the SWF, continue by configuring ```{swf: <url>, swfHls: <url>}``` option in ```flowplayer(‘video-container’, opt)``` call:
 ```
 var container = document.getElementById('video-container');
 var player = flowplayer(container, {
-   swf: '//example.com/static/<new-version-flashplayer>.swf',
-   swfHls: '//example.com/static/<new-version-flashplayer>.swf',
+   swf: '//client.h-cdn.com/flowplayerhls.6.0.5.hola.swf',
+   swfHls: '//client.h-cdn.com/flowplayerhls.6.0.5.hola.swf',
    clip: {
        sources: [{
            type: "application/x-mpegurl",
@@ -572,10 +568,8 @@ videojs.players => {my_vjs_player: a}
 [21]: http://hola.github.io/examples/cdn/#jwplayer6 "MP4 example without HolaCDN"
 [22]: http://hola.github.io/examples/cdn/#jwplayer6_hls "HLS example without HolaCDN"
 [23]: http://hola.github.io/examples/cdn/#jwplayer6_hds "HDS example without HolaCDN"
-[24]: https://client.h-cdn.com/bext/svc/cdn/pub/videojs-flashls.swf "Right click > Save link as > Hola Video JS player"
 [25]: http://hola.github.io/examples/cdn/#vjs5 "MP4 example without HolaCDN"
 [26]: http://hola.github.io/examples/cdn/#vjs5_cdn "MP4 example with HolaCDN"
-[27]: https://holacdn.com/flowplayerhls.6.0.5.hola.swf "Right click > Save link as > Hola enabled Flowplayer"
 [28]: http://holacdn.com/faq#imp-cors "CORS in Hola FAQ"
 [29]: /CORS.md "CORS configuration"
 [30]: http://blog.wmspanel.com/2015/06/cdn-friendly-streaming.html "Nimble configuration"
