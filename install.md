@@ -204,8 +204,21 @@ If your site uses JW Player with flash technology, follow these steps:
 
 Select the URL for your version of JWPlayer:
 
-* For HTTP pages: [V6.12.4xx][55], [V7.1.0xx][56], [V7.1.4xx][57], [V7.2.4xx][58], [V7.3.3xx][59], [V7.3.4xx][60], [V7.4.3xx][61], [V7.4.4xx][62], [V7.5.0xx][63], [V7.6.0xx][64], [V7.7.0xx][65], [V7.7.1xx][66], [V7.8.1xx][67]
-* For HTTPS pages: [V6.12.4xx][17], [V7.1.0xx][18], [V7.1.4xx][19], [V7.2.4xx][20], [V7.3.3xx][51], [V7.3.4xx][41], [V7.4.3xx][52], [V7.4.4xx][42], [V7.5.0xx][53], [V7.6.0xx][43], [V7.7.0xx][49], [V7.7.1xx][50], [V7.8.1xx][54]
+| Version | URL |
+| ------- | --- |
+| V6.12.4xx | `//player.h-cdn.com/jwplayer.flash.6_12_4956.swf` |
+| V7.1.0xx | `//player.h-cdn.com/jwplayer.flash.7_1_0.swf` |
+| V7.1.4xx | `//player.h-cdn.com/jwplayer.flash.7_1_4.swf` |
+| V7.2.4xx | `//player.h-cdn.com/jwplayer.flash.7_2_4.swf` |
+| V7.3.3xx | `//player.h-cdn.com/jwplayer.flash.7_3_3.swf` |
+| V7.3.4xx | `//player.h-cdn.com/jwplayer.flash.7_3_4.swf` |
+| V7.4.3xx | `//player.h-cdn.com/jwplayer.flash.7_4_3.swf` |
+| V7.4.4xx | `//player.h-cdn.com/jwplayer.flash.7_4_4.swf` |
+| V7.5.0xx | `//player.h-cdn.com/jwplayer.flash.7_5_0.swf` |
+| V7.6.0xx | `//player.h-cdn.com/jwplayer.flash.7_6_0.swf` |
+| V7.7.0xx | `//player.h-cdn.com/jwplayer.flash.7_7_0.swf` |
+| V7.7.1xx | `//player.h-cdn.com/jwplayer.flash.7_7_1.swf` |
+| V7.8.1xx | `//player.h-cdn.com/jwplayer.flash.7_8_1.swf` |
 
 Continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
@@ -581,30 +594,3 @@ videojs.players => {my_vjs_player: a}
 [46]: https://client.h-cdn.com/svc/cdn/pub/hls.js "Right click > Save link as > Dailymotion (hls.js)"
 [47]: https://client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js "Right click > Save link as > JWPlayer HLS provider"
 [48]: https://client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js "Right click > Save link as > Flowplayer HLS Engine"
-[17]: https://player.h-cdn.com/jwplayer.flash.6_12_4956.swf "Right click > Save link as > JW player 6.12.4"
-[18]: https://player.h-cdn.com/jwplayer.flash.7_1_0.swf "Right click > Save link as > JW player 7.1.0"
-[19]: https://player.h-cdn.com/jwplayer.flash.7_1_4.swf "Right click > Save link as > JW player 7.1.4"
-[20]: https://player.h-cdn.com/jwplayer.flash.7_2_4.swf "Right click > Save link as > JW player 7.2.4"
-[41]: https://player.h-cdn.com/jwplayer.flash.7_3_4.swf "Right click > Save link as > JW player 7.3.4"
-[42]: https://player.h-cdn.com/jwplayer.flash.7_4_4.swf "Right click > Save link as > JW player 7.4.4"
-[43]: https://player.h-cdn.com/jwplayer.flash.7_6_0.swf "Right click > Save link as > JW player 7.6.0"
-[49]: https://player.h-cdn.com/jwplayer.flash.7_7_0.swf "Right click > Save link as > JW player 7.7.0"
-[50]: https://player.h-cdn.com/jwplayer.flash.7_7_1.swf "Right click > Save link as > JW player 7.7.1"
-[51]: https://player.h-cdn.com/jwplayer.flash.7_3_3.swf "Right click > Save link as > JW player 7.3.3"
-[52]: https://player.h-cdn.com/jwplayer.flash.7_4_3.swf "Right click > Save link as > JW player 7.4.3"
-[53]: https://player.h-cdn.com/jwplayer.flash.7_5_0.swf "Right click > Save link as > JW player 7.5.0"
-[54]: https://player.h-cdn.com/jwplayer.flash.7_8_1.swf "Right click > Save link as > JW player 7.8.1"
-[17]: https://player.h-cdn.com/jwplayer.flash.6_12_4956.swf "Right click > Save link as > JW player 6.12.4"
-[56]: http://player.h-cdn.com/jwplayer.flash.7_1_0.swf "Right click > Save link as > JW player 7.1.0"
-[57]: http://player.h-cdn.com/jwplayer.flash.7_1_4.swf "Right click > Save link as > JW player 7.1.4"
-[58]: http://player.h-cdn.com/jwplayer.flash.7_2_4.swf "Right click > Save link as > JW player 7.2.4"
-[60]: http://player.h-cdn.com/jwplayer.flash.7_3_4.swf "Right click > Save link as > JW player 7.3.4"
-[62]: http://player.h-cdn.com/jwplayer.flash.7_4_4.swf "Right click > Save link as > JW player 7.4.4"
-[64]: http://player.h-cdn.com/jwplayer.flash.7_6_0.swf "Right click > Save link as > JW player 7.6.0"
-[65]: http://player.h-cdn.com/jwplayer.flash.7_7_0.swf "Right click > Save link as > JW player 7.7.0"
-[66]: http://player.h-cdn.com/jwplayer.flash.7_7_1.swf "Right click > Save link as > JW player 7.7.1"
-[59]: http://player.h-cdn.com/jwplayer.flash.7_3_3.swf "Right click > Save link as > JW player 7.3.3"
-[61]: http://player.h-cdn.com/jwplayer.flash.7_4_3.swf "Right click > Save link as > JW player 7.4.3"
-[63]: http://player.h-cdn.com/jwplayer.flash.7_5_0.swf "Right click > Save link as > JW player 7.5.0"
-[67]: http://player.h-cdn.com/jwplayer.flash.7_8_1.swf "Right click > Save link as > JW player 7.8.1"
-[55]: http://player.h-cdn.com/jwplayer.flash.6_12_4956.swf "Right click > Save link as > JW player 6.12.4"
