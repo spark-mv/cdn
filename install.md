@@ -184,6 +184,23 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 
 4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
+### <a name="ClapprPlayer"></a>2.2.3 HTML5/HLS played by Clappr Player
+On top of including the script as shown in the begining, you also need to do the following step:
+
+1) Save clappr player instance to a location, by default `window.hola_cdn.clappr`
+
+```
+var player = new Clappr.Player({source: "http://your.video/here.mp4", parentId: "#player"});
+if (window.hola_cdn)
+	window.hola_cdn.clappr = player;
+else
+	window.hola_cdn = {clapper: player};
+```	
+
+2) Verify everything works right as expected.
+
+3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+
 ## 2.3 Flash based video players
 
 ### <a name="JWPlayer"></a>2.3.1 JW Player
