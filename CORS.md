@@ -2,7 +2,7 @@
 
 Instructions for configuring and verifying CORS settings for different web servers are below. 
 
-If you have any questions, email cdn-help@hola.org, or skype:holacdn
+The HolaCDN FAQ includes a [section dedicated to CORS] (http://holacdn.com/faq#imp-cors). If you have additional questions, email cdn-help@hola.org, or skype:holacdn
 
 ### Test CORS using HolaCDN console command
 First enable hola_debug. Either by adding url param `?hola_debug=true` when accessing the page,  or type in console `hola_cdn.debug_mode()`.
