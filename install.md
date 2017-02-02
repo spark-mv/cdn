@@ -365,9 +365,9 @@ Console commands must be entered in the frame containing the video player. If yo
 
 ## 5.1 Enable HolaCDN for statisics purpose only
 
-1. Enable statistics by entering ```hola_cdn.set_mode_stats()```. You should get the response: ```cdn/loader: enable mode stats, need refresh```.
+1. Enable statistics by entering ```hola_cdn.set_mode_origin_cdn()```. You should get the response: ```cdn/loader: enable mode origin_cdn, need refresh```.
 2. Refresh the page.
-3. Check that HolaCDN is in statistics mode by entering ```hola_cdn.get_mode()```. You should get the response: ```"stats"```.
+3. Check that HolaCDN is in statistics mode by entering ```hola_cdn.get_mode()```. You should get the response: ```"origin_cdn"```.
 4. To instantly see if HolaCDN attached itself to your player and is sending statistics, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()``` (if you enabled multiplayer mode, use ```hola_cdn.get_stats(N)``` to see stats of Nth player and so on)
 5. You should see printouts from HolaCDN with video timelime information.
 
@@ -375,9 +375,9 @@ Console commands must be entered in the frame containing the video player. If yo
 
 Now you will enable HolaCDN for content download as well. Again, this is only for testing purposes on your browser locally.
 
-1. Enable CDN mode by entering ```hola_cdn.set_mode_cdn()```. You should get the response: ```cdn/loader: enable mode cdn, need refresh```.
+1. Enable CDN mode by entering ```hola_cdn.set_mode_hola_cdn()```. You should get the response: ```cdn/loader: enable mode hola_cdn, need refresh```.
 2. Refresh the page.
-3. Check that HolaCDN is in CDN mode by entering ```hola_cdn.get_mode()```. You should get the response: ```"cdn"```.
+3. Check that HolaCDN is in CDN mode by entering ```hola_cdn.get_mode()```. You should get the response: ```"hola_cdn"```.
 4. To instantly see if HolaCDN attached itself to your player and HolaCDN servers are sending traffic, play the video and while it is playing, print HolaCDN statistics by entering ```hola_cdn.get_stats()``` (if you enabled multiplayer mode, use ```hola_cdn.get_stats(N)``` to see stats of Nth player and so on)
 5. Look at the developer console for printouts from HolaCDN reporting how many bytes were downloaded from HolaCDN servers (zagent###.h-cdn.com). 
 6. While the video is playing, you can also look at the network tab of the developer console. You will see some video chunks coming from your own server, and some from HolaCDN servers.
@@ -518,8 +518,8 @@ To add hola script into Kaltura player iframe:
 
 As a shortcut, you can also control HolaCDN via the address bar by appending a string to the URL of the video page.
 
-* Enable CDN mode: append ```?hola_mode=cdn```
-* Enable stats mode: append ```?hola_mode=stats```
+* Enable HolaCDN mode: append ```?hola_mode=hola_cdn```
+* Enable Origin CDN mode: append ```?hola_mode=origin_cdn```
 * Disable HolaCDN: append ```?hola_mode=disabled```
 
 # <a name="HandlingContentProtection"></a>5. Handling content protection
