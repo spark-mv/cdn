@@ -4,7 +4,7 @@ Instructions for configuring and verifying CORS settings for different web serve
 
 The HolaCDN FAQ includes a [section dedicated to CORS] (http://holacdn.com/faq#imp-cors). If you have additional questions, email cdn-help@hola.org, or skype:holacdn
 
-### Test CORS using HolaCDN console command
+### CORS test method #1: using develeopr console commands
 First enable hola_debug. Either by adding url param `?hola_debug=true` when accessing the page,  or type in console `hola_cdn.debug_mode()`.
 
 Now enter in console:
@@ -14,11 +14,21 @@ hola_cdn.test_cors()
 
 The current status of CORS settings will be displayed.
 
-If you see ```CORS status: full support```, your CORS settings are correct. Otherwise, continue following this guide to configure and verify your settings using one of the following guides:
+### CORS test method #2: using HolaCDN Control Panel 'Integration' tool
+The HolaCDN Control Panel features an easy way to check your HolaCDN deployment, including CORS status. Simply go to the [Integration tool] (http://holacdn.com/cp/tools/integration), enter the URL of page that contains the video, select 'CDN mode' from the drop down box and start the test.
+
+The current status of CORS settings will be displayed in the test results. You can click on the summary to see detailed test results.
+
+### Interpreting the CORS test results
+
+If you see ```CORS status: full support```, your CORS settings are correct.
+
+Otherwise, continue following this guide to configure and verify your settings using one of the following guides:
 - [CORS setup for most web servers](#configMostServers)
 - [CORS setup for Amazon AWS S3](#configAWS)
 - [CORS setup for MaxCDN](#configMaxCDN)
 - [CORS setup for Fastly](#configFastly)
+- [CORS setup for LeaseWeb](#configLeaseweb)
 
 ### <a name="configMostServers"></a>CORS configuration for most web servers
 
@@ -55,19 +65,13 @@ For Amazon's official document on setting CORS on S3, see [here](http://docs.aws
 
 If you're using CloudFront, please refer to [Amazon's documentation](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/header-caching.html#header-caching-web-cors) for to how to configure CloudFront to respect cross-origin resource sharing (CORS).
 
-**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
-
 ### <a name="configMaxCDN"></a>CORS configuration for MaxCDN
 
 Please refer to [these instructions] (https://docs.google.com/document/d/12wQr79BXaTJ4WF9_-oueEW9Cx0FMvsNOCcMBifzfzIE/edit?usp=sharing) for a step-by-step guide on how to setup CORS on MaxCDN.
 
-**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
-
 ### <a name="configFastly"></a>CORS configuration for Fastly
 
 Please refer to [these instructions] (https://docs.google.com/document/d/1zIMMQe4lSy7ubcWv9FDxzsWw6acjv9_o6yZrhgoyit0/edit?usp=sharing) for a step-by-step guide on how to setup CORS on Fastly.
-
-**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
 ### <a name="configLeaseweb"></a>CORS configuration for LeaseWeb
 
