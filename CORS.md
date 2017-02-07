@@ -68,3 +68,10 @@ Please refer to [these instructions] (https://docs.google.com/document/d/12wQr79
 Please refer to [these instructions] (https://docs.google.com/document/d/1zIMMQe4lSy7ubcWv9FDxzsWw6acjv9_o6yZrhgoyit0/edit?usp=sharing) for a step-by-step guide on how to setup CORS on Fastly.
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
+
+### <a name="configLeaseweb"></a>CORS configuration for LeaseWeb
+
+Please refer to [these instructions] (https://docs.google.com/document/d/16jw0ORZr7i1ZfumzVcnGF1mua8J48IuVPCNm_7jhoAE/edit?usp=sharing) for a step-by-step guide on how to setup CORS on LeaseWeb.
+
+**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
+
