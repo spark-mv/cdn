@@ -184,7 +184,33 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 
 4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
-### <a name="ClapprPlayer"></a>2.2.3 HTML5/HLS played by Clappr Player
+### <a name="JWPlayer+HolaHLS"></a>2.2.4 HTML5/HLS played by VideoJS with HolaHLS provider
+In order to play HLS videos using HTML5 technology with HolaHLS provider in VideoJS, you need to perform the following steps:
+
+1) Add relevant scripts to your page and register HolaHLS provider as follows:
+
+```
+<html>
+  ...
+  <script src="//../path/to/video.js"></script>
+  <script src="//client.h-cdn.com/svc/cdn/pub/hls.js"></script>
+  <script src="//client.h-cdn.com/svc/cdn/pub/vjs_hls_provider.js"></script>
+  <script type="text/javascript">
+    window.HolaProviderHLS.attach(window, videojs, window.Hls);
+  </script>
+  ...
+</html>
+```
+
+2) Verify everything works right as expected.
+
+3) Move **hls.js** and **vjs_hls_provider.js** to be hosted by your server instead of **client.h-cdn.com**. You can download (using **right click > save link as**) the scripts from here:
+  - [hls.js][46]
+  - [vjs_hls_provider.js][49]
+
+4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+
+### <a name="ClapprPlayer"></a>2.2.5 HTML5/HLS played by Clappr Player
 On top of including the script as shown in the begining, you also need to do the following step:
 
 1) Save clappr player instance to a location, by default `window.hola_cdn.clappr`
@@ -609,3 +635,4 @@ videojs.players => {my_vjs_player: a}
 [46]: https://client.h-cdn.com/svc/cdn/pub/hls.js "Right click > Save link as > Dailymotion (hls.js)"
 [47]: https://client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js "Right click > Save link as > JWPlayer HLS provider"
 [48]: https://client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js "Right click > Save link as > Flowplayer HLS Engine"
+[49]: https://client.h-cdn.com/svc/cdn/pub/vjs_hls_provider.js "Right click > Save link as > VideoJS HLS provider"
