@@ -192,7 +192,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 ```
 <html>
   ...
-  <script src="//../path/to/video.js"></script>
+  <script src="//your.cdn/path/to/video.min.js"></script>
   <script src="//client.h-cdn.com/svc/cdn/pub/hls.js"></script>
   <script src="//client.h-cdn.com/svc/cdn/pub/vjs_hls_provider.js"></script>
   <script type="text/javascript">
