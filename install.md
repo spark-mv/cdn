@@ -266,6 +266,7 @@ Select the URL for your version of JWPlayer:
 | V7.8.4xx | `//player.h-cdn.com/jwplayer.flash.7_8_4.swf` |
 | V7.8.6xx | `//player.h-cdn.com/jwplayer.flash.7_8_6.swf` |
 | V7.8.7xx | `//player.h-cdn.com/jwplayer.flash.7_8_7.swf` |
+| V7.9.0xx | `//player.h-cdn.com/jwplayer.flash.7_9_0.swf` |
 
 Continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
 ```
