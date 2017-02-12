@@ -27,15 +27,14 @@ Choose the correct implementation for your existing player. You can enable HolaC
 
 * Any HTML5 based video player - [Native, JW player, Flowplayer](#HTML5Players) and others.
 * Flash based players such as [JWPlayer](#JWPlayer), [FlowPlayer](#Flowplayer) or [VideoJS](#VideoJS).
-* The [Hola VideoJS-based player][7].
+* The [Hola VideoJS-based player](#HolaPlayer).
 * [Your own Flash based player][3].
 
 Add the JS code to your web page. It is safe to add this code because it is disabled by default on the server side to protect from accidental mass deployment. After the code is on your web pages, you will enable HolaCDN on your machine for [local testing](#EnableHolaLocally) and then gradually deploy to [real users](#RedirectTraffic).
 
 Examples provided below use MP4 video, but same syntax is used for HLS (M3U8) or HDS (F4M) videos.
 
-## 2.1 Using Hola VideoJS player
-
+## <a name="HolaPlayer"></a>2.1 Using Hola VideoJS player
 HolaCDN can work with your existing player, but we recommend using the Hola player. It is a VideoJS based video player with [additional features][4]. It is completely free to use and offers best performance and compatibility with HolaCDN. Again, this is totally optional.
 
 1) Add Hola scripts to your page as follows:
@@ -601,7 +600,7 @@ videojs.players => {my_vjs_player: a}
 [1]: https://holacdn.com/cp "HolaCDN account"
 [2]: https://github.com/hola/cdn/blob/master/stats_install.md#curious-login-to-the-demo-account-for-live-data "Demo account"
 [3]: /hooks.md "FLASH-based players"
-[4]: https://github.com/hola/video.js#features "Hola VideoJS player features"
+[4]: https://github.com/hola/hola_player#features "Hola VideoJS player features"
 [5]: http://hola.github.io/examples/cdn/#hola_player "MP4 example without HolaCDN"
 [6]: http://hola.github.io/examples/cdn/#hola_player_hls "HLS example without HolaCDN"
 [7]: http://hola.github.io/examples/cdn/#hola_player_hds "HDS example without HolaCDN"
