@@ -42,7 +42,7 @@ HolaCDN can work with your existing player, but we recommend using the Hola play
 ```
 <head>
 ...
-    <script src="//cdn.jsdelivr.net/hola_player/0.0.33/hola_player.js?customer=XXXXX"></script>
+    <script src="//cdn.jsdelivr.net/hola_player/1.0.0/hola_player.js?customer=XXXXX"></script>
 ...
 </head>
 ```
@@ -64,7 +64,7 @@ HolaCDN can work with your existing player, but we recommend using the Hola play
 ```
   <script>
     (function(){
-        window.hola_player(function(player){ player.init(); });
+        window.hola_player();
     })();
   </script>
   .
