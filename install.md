@@ -183,7 +183,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 
 4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
-### <a name="JWPlayer+HolaHLS"></a>2.2.4 HTML5/HLS played by VideoJS with HolaHLS provider
+### <a name="VideoJS+HolaHLS"></a>2.2.4 HTML5/HLS played by VideoJS with HolaHLS provider
 In order to play HLS videos using HTML5 technology with HolaHLS provider in VideoJS, you need to perform the following steps:
 
 1) Add relevant scripts to your page and register HolaHLS provider as follows:
