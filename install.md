@@ -145,7 +145,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
   <script src="//client.h-cdn.com/svc/cdn/pub/hls.js"></script>
   <script src="//client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js"></script>
   <script type="text/javascript">
-    window.jwplayer.api.registerProvider(window.jwplayer_hls_provider);
+    window.jwplayer_hls_provider.attach();
   </script>
   ...
 </html>
