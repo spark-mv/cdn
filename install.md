@@ -251,6 +251,7 @@ Select the URL for your version of JWPlayer:
 | V6.12.4xx | `//player.h-cdn.com/jwplayer.flash.6_12_4956.swf` |
 | V7.1.0xx | `//player.h-cdn.com/jwplayer.flash.7_1_0.swf` |
 | V7.1.4xx | `//player.h-cdn.com/jwplayer.flash.7_1_4.swf` |
+| V7.2.3xx | `//player.h-cdn.com/jwplayer.flash.7_2_3.swf` |
 | V7.2.4xx | `//player.h-cdn.com/jwplayer.flash.7_2_4.swf` |
 | V7.3.3xx | `//player.h-cdn.com/jwplayer.flash.7_3_3.swf` |
 | V7.3.4xx | `//player.h-cdn.com/jwplayer.flash.7_3_4.swf` |
