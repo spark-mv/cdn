@@ -142,10 +142,9 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
   ...
   <script src="//content.jwplatform.com/path/to/jwplayer.js"></script>
   <script>jwplayer.key="XXXxxxXXXxxxXXXxxxXXX==";</script>
-  <script src="//client.h-cdn.com/svc/cdn/pub/hls.js"></script>
-  <script src="//client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js"></script>
+  <script src="//cdn.jsdelivr.net/hola_hap/1.0.3/hola_jwplayer_hls.min.js"></script>
   <script type="text/javascript">
-    window.jwplayer_hls_provider.attach();
+    window.hola_jwplayer_hls.attach();
   </script>
   ...
 </html>
@@ -153,9 +152,8 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
 
 2) Verify everything works right as expected.
 
-3) Move **hls.js** and **jwplayer_hls_provider.js** to be hosted by your server instead of **client.h-cdn.com**. You can download (using **right click > save link as**) the scripts from here:
-  - [hls.js][46]
-  - [jwplayer_hls_provider.js][47]
+3) Move **hola_jwplayer_hls.min.js** to be hosted by your server instead of **cdn.jsdelivr.net**. You can download (using **right click > save link as**) the scripts from here:
+  - [hola_jwplayer_hls.min.js][47]
 
 4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
@@ -168,18 +166,18 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 <html>
   ...
   <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
-  + <script src="//client.h-cdn.com/bext/svc/cdn/pub/hls.js"></script>
-  + <script src="//client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js"></script>
-  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=xxx"></script>
+  <script src="//cdn.jsdelivr.net/hola_hap/1.0.3/hola_flowplayer_hls.min.js"></script>
+  <script type="text/javascript">
+    window.hola_flowplayer_hls.attach();
+  </script>
   ...
 </html>
 ```
 
 2) Verify everything works right as expected.
 
-3) Move **hls.js** and **flowplayer_hls_engine.js** to be hosted by your server. You can download (using **right click > save link as**) the scripts from here:
-  - [hls.js][46]
-  - [flowplayer_hls_engine][48]
+3) Move **hola_flowplayer_hls.min.js** and to be hosted by your server. You can download (using **right click > save link as**) the scripts from here:
+  - [hola_flowplayer_hls.min.js][48]
 
 4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
@@ -192,10 +190,9 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 <html>
   ...
   <script src="//your.cdn/path/to/video.min.js"></script>
-  <script src="//client.h-cdn.com/svc/cdn/pub/hls.js"></script>
-  <script src="//client.h-cdn.com/svc/cdn/pub/vjs_hls_provider.js"></script>
+  <script src="//cdn.jsdelivr.net/hola_hap/1.0.3/hola_videojs_hls.min.js"></script>
   <script type="text/javascript">
-    window.HolaProviderHLS.attach(window, videojs, window.Hls);
+    window.hola_videojs_hls.attach();
   </script>
   ...
 </html>
@@ -203,9 +200,8 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 
 2) Verify everything works right as expected.
 
-3) Move **hls.js** and **vjs_hls_provider.js** to be hosted by your server instead of **client.h-cdn.com**. You can download (using **right click > save link as**) the scripts from here:
-  - [hls.js][46]
-  - [vjs_hls_provider.js][49]
+3) Move **hola_videojs_hls.min.js** to be hosted by your server instead of **cdn.jsdelivr.net**. You can download (using **right click > save link as**) the scripts from here:
+  - [hola_videojs_hls.min.js][49]
 
 4) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
@@ -637,7 +633,6 @@ videojs.players => {my_vjs_player: a}
 [40]: http://hola.github.io/examples/cdn/#vjs5_shaka_cdn "VideoJS+Shaka example playing MPEG-DASH video with HolaCDN"
 [44]: https://github.com/googleads/videojs-ima "videojs-ima"
 [45]: http://hola.github.io/examples/cdn/#hola_player_ima "Hola player + IMA + preroll midroll postroll"
-[46]: https://client.h-cdn.com/svc/cdn/pub/hls.js "Right click > Save link as > Dailymotion (hls.js)"
-[47]: https://client.h-cdn.com/svc/cdn/pub/jwplayer_hls_provider.js "Right click > Save link as > JWPlayer HLS provider"
-[48]: https://client.h-cdn.com/bext/svc/cdn/pub/flowplayer_hls_engine.js "Right click > Save link as > Flowplayer HLS Engine"
-[49]: https://client.h-cdn.com/svc/cdn/pub/vjs_hls_provider.js "Right click > Save link as > VideoJS HLS provider"
+[47]: https://cdn.jsdelivr.net/hola_hap/1.0.3/hola_jwplayer_hls.min.js "Right click > Save link as > JWPlayer HLS provider"
+[48]: https://cdn.jsdelivr.net/hola_hap/1.0.3/hola_flowplayer_hls.min.js "Right click > Save link as > Flowplayer HLS Engine"
+[49]: https://cdn.jsdelivr.net/hola_hap/1.0.3/hola_videojs_hls.min.js "Right click > Save link as > VideoJS HLS provider"
