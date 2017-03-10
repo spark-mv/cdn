@@ -215,7 +215,7 @@ var player = new Clappr.Player({source: "http://your.video/here.mp4", parentId: 
 if (window.hola_cdn)
 	window.hola_cdn.clappr = player;
 else
-	window.hola_cdn = {clapper: player};
+	window.hola_cdn = {clappr: player};
 ```	
 
 2) Verify everything works right as expected.
