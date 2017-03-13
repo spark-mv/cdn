@@ -41,11 +41,15 @@ For step by step instructions regarding how to enable CORS on different web serv
 - Access-Control-Max-Age: 600
 - Timing-Allow-Origin: *
 
+It is also recommended to add Cache-Control header with max-age directive, otherwise the default of 600 seconds will be used:
+
+- Cache-Control: max-age=86400
+
 After committing the configuration changes, [verify it works](https://docs.google.com/document/d/1aLFKeQIbs3EnSMXKjXQrseVf_XkeOlDNMDYbxnbH2N8/edit?usp=sharing)
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
-### <a name="configAWS"></a>CORS configuration for Nginx
+### <a name="configNginx"></a>CORS configuration for Nginx
 A sample conf statements is given below. Not that they have to be in the same nested level
 ```
   add_header 'Access-Control-Allow-Origin' '*';
@@ -54,6 +58,7 @@ A sample conf statements is given below. Not that they have to be in the same ne
   add_header 'Access-Control-Allow-Headers' 'Content-Type, Origin, Accept, Range, Cache-Control';
   add_header 'Access-Control-Max-Age' '600';
   add_header 'Timing-Allow-Origin' '*';
+  add_header 'Cache-Control' 'max-age=86400';
 ```
 
 
