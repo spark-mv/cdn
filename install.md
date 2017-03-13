@@ -304,23 +304,11 @@ If your site uses a videoJS based player with flash technology, follow these ste
 
 * Replace XXXXX with your HolaCDN customer ID.
 
-2) [Flash/HLS only] If you play HLS videos with flash technology on your site, you also need to replace videojs SWF with the Hola-enabled version.
-
-* Configure videojs to use the new version.
-```
-<script type="text/javascript" src="//example.com/static/video.js"></script>
-<script type="text/javascript">
-  videojs.options.flash.swf = "//client.h-cdn.com/bext/svc/cdn/pub/videojs-flashls.swf";
-</script>
-```
-
-* Replace *example.com/static/video.js* with your own link. Changing the SWF does not impact the user interface of the player.
-
 #### Live Examples:
 * VJS5 without HolaCDN: [MP4][25]
 * VJS5 with HolaCDN: [MP4][26]
 
-3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+2) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
 ### <a name="Flowplayer"></a>2.3.3 Flowplayer (HLS only; HDS, MP4 coming soon)
 
