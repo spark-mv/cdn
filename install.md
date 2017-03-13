@@ -42,7 +42,7 @@ HolaCDN can work with your existing player, but we recommend using the Hola play
 ```
 <head>
 ...
-    <script src="//cdn.jsdelivr.net/hola_player/1.0.9/hola_player.js?customer=XXXXX"></script>
+    <script src="//cdn.jsdelivr.net/hola_player/1.0.10/hola_player.js?customer=XXXXX"></script>
 ...
 </head>
 ```
@@ -142,7 +142,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
   ...
   <script src="//content.jwplatform.com/path/to/jwplayer.js"></script>
   <script>jwplayer.key="XXXxxxXXXxxxXXXxxxXXX==";</script>
-  <script src="//cdn.jsdelivr.net/hola_hap/1.0.4/hola_jwplayer_hls.min.js"></script>
+  <script src="//cdn.jsdelivr.net/hola_hap/1.0.7/hola_jwplayer_hls.min.js"></script>
   <script type="text/javascript">
     window.hola_jwplayer_hls.attach();
   </script>
@@ -166,7 +166,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 <html>
   ...
   <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
-  <script src="//cdn.jsdelivr.net/hola_hap/1.0.4/hola_flowplayer_hls.min.js"></script>
+  <script src="//cdn.jsdelivr.net/hola_hap/1.0.7/hola_flowplayer_hls.min.js"></script>
   <script type="text/javascript">
     window.hola_flowplayer_hls.attach();
   </script>
@@ -190,7 +190,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 <html>
   ...
   <script src="//your.cdn/path/to/video.min.js"></script>
-  <script src="//cdn.jsdelivr.net/hola_hap/1.0.4/hola_videojs_hls.min.js"></script>
+  <script src="//cdn.jsdelivr.net/hola_hap/1.0.7/hola_videojs_hls.min.js"></script>
   <script type="text/javascript">
     window.hola_videojs_hls.attach();
   </script>
@@ -634,6 +634,6 @@ videojs.players => {my_vjs_player: a}
 [40]: http://hola.github.io/examples/cdn/#vjs5_shaka_cdn "VideoJS+Shaka example playing MPEG-DASH video with HolaCDN"
 [44]: https://github.com/googleads/videojs-ima "videojs-ima"
 [45]: http://hola.github.io/examples/cdn/#hola_player_ima "Hola player + IMA + preroll midroll postroll"
-[47]: https://cdn.jsdelivr.net/hola_hap/1.0.4/hola_jwplayer_hls.min.js "Right click > Save link as > JWPlayer HLS provider"
-[48]: https://cdn.jsdelivr.net/hola_hap/1.0.4/hola_flowplayer_hls.min.js "Right click > Save link as > Flowplayer HLS Engine"
-[49]: https://cdn.jsdelivr.net/hola_hap/1.0.4/hola_videojs_hls.min.js "Right click > Save link as > VideoJS HLS provider"
+[47]: https://cdn.jsdelivr.net/hola_hap/1.0.7/hola_jwplayer_hls.min.js "Right click > Save link as > JWPlayer HLS provider"
+[48]: https://cdn.jsdelivr.net/hola_hap/1.0.7/hola_flowplayer_hls.min.js "Right click > Save link as > Flowplayer HLS Engine"
+[49]: https://cdn.jsdelivr.net/hola_hap/1.0.7/hola_videojs_hls.min.js "Right click > Save link as > VideoJS HLS provider"
