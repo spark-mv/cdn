@@ -50,7 +50,7 @@ After committing the configuration changes, [verify it works](https://docs.googl
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
 ### <a name="configNginx"></a>CORS configuration for Nginx
-A sample conf statements is given below. Not that they have to be in the same nested level
+A sample conf statements is given below. Note that they have to be in the same nested level
 ```
   add_header 'Access-Control-Allow-Origin' '*';
   add_header 'Access-Control-Allow-Methods' 'HEAD, POST, GET, OPTIONS';
