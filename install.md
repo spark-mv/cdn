@@ -585,7 +585,8 @@ videojs(element, {}, function(){
 });
 videojs.players => {my_vjs_player: a}
 ```
-.
+
+
 [1]: https://holacdn.com/cp "HolaCDN account"
 [2]: https://github.com/hola/cdn/blob/master/stats_install.md#curious-login-to-the-demo-account-for-live-data "Demo account"
 [3]: /hooks.md "FLASH-based players"
