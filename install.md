@@ -121,14 +121,15 @@ If you play MPEG-DASH videos over HTML5 tech with Shaka player, you need to perf
 
 * Download (using **right click > save link as**) the Hola-enabled version of Shaka player and place it on your server:
   - [Shaka 1.6.x][36]
+  - [Shaka 2.0.6][50]
 * Replace original Shaka player with Hola-enabled version:
 ```
 <script type="text/javascript" src="//example.com/static/hola-shaka-player-compiled.js"></script>
 ```
 
 #### Live examples:
-* MPEG-DASH without HolaCDN: [Shaka][37], [VideoJS+Shaka][39]
-* MPEG-DASH with HolaCDN: [Shaka][38], [VideoJS+Shaka][40]
+* MPEG-DASH without HolaCDN: [Shaka v2][51], [VideoJS+Shaka v2][53], [Shaka v1][37], [VideoJS+Shaka v1][39]
+* MPEG-DASH with HolaCDN: [Shaka v2][52], [VideoJS+Shaka v2][54], [Shaka v1][38], [VideoJS+Shaka v1][40]
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
@@ -618,7 +619,7 @@ videojs.players => {my_vjs_player: a}
 [35]: http://hola.github.io/examples/cdn/#jwplayer6_hds_cdn "HDS example with HolaCDN"
 [36]: https://cdn.rawgit.com/hola/shaka-player/v1.6.x/shaka-player.compiled.js "Right click > Save link as > Shaka player v1.6.x"
 [37]: http://hola.github.io/examples/cdn/#shaka "Shaka example playing MPEG-DASH video without HolaCDN"
-[38]: http://hola.github.io/examples/cdn/#shaka_cdn "Shaka example playing MPEG-DASH video without HolaCDN"
+[38]: http://hola.github.io/examples/cdn/#shaka_cdn "Shaka example playing MPEG-DASH video with HolaCDN"
 [39]: http://hola.github.io/examples/cdn/#vjs5_shaka "VideoJS+Shaka example playing MPEG-DASH video without HolaCDN"
 [40]: http://hola.github.io/examples/cdn/#vjs5_shaka_cdn "VideoJS+Shaka example playing MPEG-DASH video with HolaCDN"
 [44]: https://github.com/googleads/videojs-ima "videojs-ima"
@@ -626,3 +627,8 @@ videojs.players => {my_vjs_player: a}
 [47]: https://cdn.jsdelivr.net/hola_hap/1.0.14/hola_jwplayer_hls.min.js "Right click > Save link as > JWPlayer HLS provider"
 [48]: https://cdn.jsdelivr.net/hola_hap/1.0.14/hola_flowplayer_hls.min.js "Right click > Save link as > Flowplayer HLS Engine"
 [49]: https://cdn.jsdelivr.net/hola_hap/1.0.14/hola_videojs_hls.min.js "Right click > Save link as > VideoJS HLS provider"
+[50]: https://github.com/hola/shaka-player/releases/download/v2.0.6-hola-1/shaka-player.compiled.js "Right click > Save link as > Shaka player v2.0.6"
+[51]: http://hola.github.io/examples/cdn/#shaka2 "Shaka v2 example playing MPEG-DASH video without HolaCDN"
+[52]: http://hola.github.io/examples/cdn/#shaka2_cdn "Shaka v2 example playing MPEG-DASH video with HolaCDN"
+[53]: http://hola.github.io/examples/cdn/#vjs5_shaka2 "VideoJS+Shaka v2 example playing MPEG-DASH video without HolaCDN"
+[54]: http://hola.github.io/examples/cdn/#vjs5_shaka2_cdn "VideoJS+Shaka v2 example playing MPEG-DASH video with HolaCDN"
