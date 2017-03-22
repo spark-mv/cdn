@@ -143,10 +143,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
   ...
   <script src="//content.jwplatform.com/path/to/jwplayer.js"></script>
   <script>jwplayer.key="XXXxxxXXXxxxXXXxxxXXX==";</script>
-  <script src="//cdn.jsdelivr.net/hola_hap/1.0.17/hola_jwplayer_hls.min.js"></script>
-  <script type="text/javascript">
-    window.hola_jwplayer_hls.attach();
-  </script>
+  <script id=hola_jwplayer_hls_provider register-percent=50 src="//cdn.jsdelivr.net/hola_hap/1.0.17/hola_jwplayer_hls.min.js"></script>
   ...
 </html>
 ```
@@ -167,10 +164,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 <html>
   ...
   <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
-  <script src="//cdn.jsdelivr.net/hola_hap/1.0.17/hola_flowplayer_hls.min.js"></script>
-  <script type="text/javascript">
-    window.hola_flowplayer_hls.attach();
-  </script>
+  <script id=hola_flowplayer_hls_provider register-percent=50 src="//cdn.jsdelivr.net/hola_hap/1.0.17/hola_flowplayer_hls.min.js"></script>
   ...
 </html>
 ```
@@ -191,10 +185,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 <html>
   ...
   <script src="//your.cdn/path/to/video.min.js"></script>
-  <script src="//cdn.jsdelivr.net/hola_hap/1.0.17/hola_videojs_hls.min.js"></script>
-  <script type="text/javascript">
-    window.hola_videojs_hls.attach();
-  </script>
+  <script id=hola_videojs_hls_provider register-percent=50 src="//cdn.jsdelivr.net/hola_hap/1.0.17/hola_videojs_hls.min.js"></script>
   ...
 </html>
 ```
