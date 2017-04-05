@@ -49,6 +49,26 @@ After committing the configuration changes, [verify it works](https://docs.googl
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
+### <a name="configApache"></a>CORS configuration for Apache
+To add the CORS authorization to the header using Apache, simply add the following line inside either the <Directory>, <Location>, <Files> or <VirtualHost> sections of your server config (usually located in a *.conf file, such as httpd.conf or apache.conf), or within a .htaccess file:
+
+```
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "HEAD, GET, OPTIONS"
+Header set Access-Control-Expose-Headers "Content-Range, Date, Etag, Cache-Control, Last-Modified"
+Header set Access-Control-Allow-Headers "Content-Type, Origin, Accept, Range, Cache-Control"
+Header set Access-Control-Max-Age "600"
+Header set Timing-Allow-Origin "*"
+```
+
+After this passes, you may need to reload Apache to make sure your changes are applied by running the command
+
+`sudo service apache2 reload`
+
+Altering headers requires the use of mod_headers. Mod_headers is enabled by default in Apache, however, you may want to ensure it's enabled by run
+
+`a2enmod headers`
+
 ### <a name="configNginx"></a>CORS configuration for Nginx
 A sample conf statements is given below. Note that they have to be in the same nested level
 ```
@@ -60,7 +80,6 @@ A sample conf statements is given below. Note that they have to be in the same n
   add_header 'Timing-Allow-Origin' '*';
   add_header 'Cache-Control' 'max-age=86400';
 ```
-
 
 ### <a name="configAWS"></a>CORS configuration for Amazon AWS
 
