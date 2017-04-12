@@ -214,6 +214,32 @@ else
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
+### <a name="dash_js"></a>2.2.6 HTML5/MPEG-DASH played with dash.js player
+If you play MPEG-DASH videos over HTML5 tech with dash.js player, you need to perform the following steps:
+
+1) Add the script to your page as follows:
+
+```
+<html>
+...
+<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+</body>
+</html>
+```
+
+* Replace XXXXX with your HolaCDN customer ID.
+
+2) Replace dash.js player with Hola-enabled version:
+
+* Download (using **right click > save link as**) the Hola-enabled version of dash.js player and place it on your server:
+  - [dash.js 2.1.0-2.1.3][55]
+* Replace original dash.js player with Hola-enabled version:
+```
+<script type="text/javascript" src="//example.com/static/dash.all.min.js"></script>
+```
+
+3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+
 ## 2.3 Flash based video players
 
 ### <a name="JWPlayer"></a>2.3.1 JW Player
@@ -626,3 +652,4 @@ videojs.players => {my_vjs_player: a}
 [52]: http://hola.github.io/examples/cdn/#shaka2_cdn "Shaka v2 example playing MPEG-DASH video with HolaCDN"
 [53]: http://hola.github.io/examples/cdn/#vjs5_shaka2 "VideoJS+Shaka v2 example playing MPEG-DASH video without HolaCDN"
 [54]: http://hola.github.io/examples/cdn/#vjs5_shaka2_cdn "VideoJS+Shaka v2 example playing MPEG-DASH video with HolaCDN"
+[55]: https://cdn.jsdelivr.net/hola_dash/2.1.0-3/dash.all.min.js "Right click > Save link as > dash.js"
