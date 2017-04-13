@@ -29,6 +29,7 @@ Otherwise, continue following this guide to configure and verify your settings u
 - [CORS setup for MaxCDN](#configMaxCDN)
 - [CORS setup for Fastly](#configFastly)
 - [CORS setup for LeaseWeb](#configLeaseweb)
+- [CORS setup for Wowza](#configWowza)
 
 ### <a name="configMostServers"></a>CORS configuration for most web servers
 
@@ -100,6 +101,10 @@ Please refer to [these instructions] (https://docs.google.com/document/d/1zIMMQe
 ### <a name="configLeaseweb"></a>CORS configuration for LeaseWeb
 
 Please refer to [these instructions] (https://docs.google.com/document/d/16jw0ORZr7i1ZfumzVcnGF1mua8J48IuVPCNm_7jhoAE/edit?usp=sharing) for a step-by-step guide on how to setup CORS on LeaseWeb.
+
+### <a name="configWowza"></a>CORS configuration for Wowza
+
+Please refer to [these instructions] (https://www.wowza.com/docs/how-to-enable-cross-origin-resource-sharing-cors-for-http-based-streams) for a step-by-step guide on how to setup CORS on Wowza.
 
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
