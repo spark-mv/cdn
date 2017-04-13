@@ -50,7 +50,7 @@ After committing the configuration changes, [verify it works](https://docs.googl
 **Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
 ### <a name="configApache"></a>CORS configuration for Apache
-To add the CORS authorization to the header using Apache, simply add the following line inside either the <Directory>, <Location>, <Files> or <VirtualHost> sections of your server config (usually located in a *.conf file, such as httpd.conf or apache.conf), or within a .htaccess file:
+To add the CORS authorization to the header using Apache, simply add the following line inside either the `<Directory>`, `<Location>`, `<Files>` or `<VirtualHost>` sections of your server config (usually located in a *.conf file, such as httpd.conf or apache.conf), or within a .htaccess file:
 
 ```
 Header set Access-Control-Allow-Origin "*"
