@@ -123,6 +123,7 @@ If you play MPEG-DASH videos over HTML5 tech with Shaka player, you need to perf
 * Download (using **right click > save link as**) the Hola-enabled version of Shaka player and place it on your server:
   - [Shaka 1.6.x][36]
   - [Shaka 2.0.6][50]
+  - [Shaka 2.0.8][56]
 * Replace original Shaka player with Hola-enabled version:
 ```
 <script type="text/javascript" src="//example.com/static/hola-shaka-player-compiled.js"></script>
@@ -654,3 +655,5 @@ videojs.players => {my_vjs_player: a}
 [53]: http://hola.github.io/examples/cdn/#vjs5_shaka2 "VideoJS+Shaka v2 example playing MPEG-DASH video without HolaCDN"
 [54]: http://hola.github.io/examples/cdn/#vjs5_shaka2_cdn "VideoJS+Shaka v2 example playing MPEG-DASH video with HolaCDN"
 [55]: https://cdn.jsdelivr.net/hola_dash/2.1.0-3/dash.all.min.js "Right click > Save link as > dash.js"
+[56]: https://github.com/hola/shaka-player/releases/download/v2.0.8-hola-1/shaka-player.compiled.js "Right click > Save link as > Shaka player v2.0.8"
+
