@@ -39,37 +39,37 @@ HolaCDN can work with your existing player, but we recommend using the Hola play
 
 1) Add Hola scripts to your page as follows:
 
-```
+```html
 <head>
-...
-    <script src="//cdn.
-    .net/hola_player/1.0.23/hola_player.js?customer=XXXXX"></script>
-...
+  ...
+  <script src="//cdn.jsdelivr.net/hola_player/1.0.23/hola_player.js?customer=XXXXX"></script>
+  ...
 </head>
 ```
+
 * Replace XXXXX with your HolaCDN customer ID.
 
 2) Create a video tag with the following classes: ```video-js vjs-default-skin```
 
-```
-  <video class="video-js vjs-default-skin" poster="//example.org/poster.jpg" 
-  width="640" height="360" controls>
+```html
+<video class="video-js vjs-default-skin" poster="//example.org/poster.jpg" width="640" height="360" controls>
   <source src="//example.org/video.mp4" type="video/mp4">
-  </video>
+</video>
 ```
 
 * Replace *example.org/poster.jpg* and *example.org/video.mp4* with your own links.
 
 3) Add the following script after video tag to initialize Hola player:
 
-```
+```html
+<body>
+  ...
   <script>
     (function(){
         window.hola_player();
     })();
   </script>
-  .
-  .
+  ...
 </body>
 ```
 
@@ -85,13 +85,13 @@ When integrating with an HTML5 source, HolaCDN attaches itself to a <video> tag.
 
 1) Add the script to your page as follows:
 
-```
-<html>
-...
-<video src="//example.org/myVideo.mp4" controls></video>
-<script async crossorigin="anonymous"  src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
-...
-<html>
+```html
+<body>
+  ...
+  <video src="//example.org/myVideo.mp4" controls></video>
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+  ...
+</body>
 ```
 
 * Replace XXXXX with your HolaCDN customer ID.
@@ -107,13 +107,13 @@ If you play MPEG-DASH videos over HTML5 tech with Shaka player, you need to perf
 
 1) Add the script to your page as follows:
 
-```
-<html>
-...
-<video src="//example.org/myVideo.mp4" controls></video>
-<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
-...
-<html>
+```html
+<body>
+  ...
+  <video src="//example.org/myVideo.mp4" controls></video>
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+  ...
+</body>
 ```
 
 * Replace XXXXX with your HolaCDN customer ID.
@@ -125,7 +125,8 @@ If you play MPEG-DASH videos over HTML5 tech with Shaka player, you need to perf
   - [Shaka 2.0.6][50]
   - [Shaka 2.0.8][56]
 * Replace original Shaka player with Hola-enabled version:
-```
+
+```html
 <script type="text/javascript" src="//example.com/static/hola-shaka-player-compiled.js"></script>
 ```
 
@@ -140,7 +141,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
 
 1) Add relevant scripts to your page and register HolaHLS provider as follows:
 
-```
+```html
 <html>
   ...
   <script src="//content.jwplatform.com/path/to/jwplayer.js"></script>
@@ -162,7 +163,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 
 1) Add relevant scripts to your page and register HolaHLS provider as follows:
 
-```
+```html
 <html>
   ...
   <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
@@ -183,7 +184,7 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 
 1) Add relevant scripts to your page and register HolaHLS provider as follows:
 
-```
+```html
 <html>
   ...
   <script src="//your.cdn/path/to/video.min.js"></script>
@@ -204,13 +205,13 @@ On top of including the script as shown in the begining, you also need to do the
 
 1) Save clappr player instance to a location, by default `window.hola_cdn.clappr`
 
-```
+```js
 var player = new Clappr.Player({source: "http://your.video/here.mp4", parentId: "#player"});
 if (window.hola_cdn)
-	window.hola_cdn.clappr = player;
+    window.hola_cdn.clappr = player;
 else
-	window.hola_cdn = {clappr: player};
-```	
+    window.hola_cdn = {clappr: player};
+```
 
 2) Verify everything works right as expected.
 
@@ -221,12 +222,11 @@ If you play MPEG-DASH videos over HTML5 tech with dash.js player, you need to pe
 
 1) Add the script to your page as follows:
 
-```
-<html>
-...
-<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+```html
+<body>
+  ...
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
 </body>
-</html>
 ```
 
 * Replace XXXXX with your HolaCDN customer ID.
@@ -236,7 +236,8 @@ If you play MPEG-DASH videos over HTML5 tech with dash.js player, you need to pe
 * Download (using **right click > save link as**) the Hola-enabled version of dash.js player and place it on your server:
   - [dash.js 2.1.0-2.1.3][55]
 * Replace original dash.js player with Hola-enabled version:
-```
+
+```html
 <script type="text/javascript" src="//example.com/static/dash.all.min.js"></script>
 ```
 
@@ -249,13 +250,15 @@ If you play MPEG-DASH videos over HTML5 tech with dash.js player, you need to pe
 If your site uses JW Player with flash technology, follow these steps:
 
 1) Add Hola loader to the 'head' element of the video HTML page, along with your customerID:
-```
+
+```html
 <head>
-...
-<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
-...
+  ...
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+  ...
 </head>
 ```
+
 * Replace XXXXX with your HolaCDN customer ID.
 
 2) Replace your JW player SWF with the Hola-enabled version.
@@ -292,12 +295,13 @@ Select the URL for your version of JWPlayer:
 | V7.10.0xx | `//player.h-cdn.com/jwplayer.flash.7_10_0.swf` |
 | V7.10.1xx | `//player.h-cdn.com/jwplayer.flash.7_10_1.swf` |
 
-Continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer(‘video-container’).setup(opt)``` call:
-```
-jwplayer(‘video-container’).setup({
-    file: ‘//cdn.example.com/popular_videos/example.mp4’,
-    flashplayer: ‘//player.h-cdn.com/<new-version-flashplayer>.swf’,
-    primary: ‘flash’,
+Continue by configuring ```{flashplayer: <url>}``` option in ```jwplayer('video-container').setup(opt)``` call:
+
+```js
+jwplayer('video-container').setup({
+    file: '//cdn.example.com/popular_videos/example.mp4',
+    flashplayer: '//player.h-cdn.com/<new-version-flashplayer>.swf',
+    primary: 'flash',
     width: 640,
     height: 360
 });
@@ -317,11 +321,12 @@ jwplayer(‘video-container’).setup({
 If your site uses a videoJS based player with flash technology, follow these steps:
 
 1) Add Hola loader to the 'head' element of the video HTML page, along with your customerID:
-```
+
+```html
 <head>
-...
-<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
-...
+  ...
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+  ...
 </head>
 ```
 
@@ -338,11 +343,12 @@ If your site uses a videoJS based player with flash technology, follow these ste
 If your site plays HLS video using Flowplayer with flash technology, follow these steps:
 
 1) Add Hola loader to the 'head' element of the video HTML page, along with your customerID:
-```
+
+```html
 <head>
-...
-<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
-...
+  ...
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
+  ...
 </head>
 ```
 
@@ -350,19 +356,20 @@ If your site plays HLS video using Flowplayer with flash technology, follow thes
 
 2) Replace your Flowplayer SWF with the Hola-enabled version. 
 
-```
+```js
 var container = document.getElementById('video-container');
 var player = flowplayer(container, {
-   swf: '//client.h-cdn.com/flowplayerhls.6.0.5.hola.swf',
-   swfHls: '//client.h-cdn.com/flowplayerhls.6.0.5.hola.swf',
-   clip: {
-       sources: [{
-           type: "application/x-mpegurl",
-           src:  "//cdn.example.com/popular_videos/example.m3u8",
-       }]
-   }
+    swf: '//client.h-cdn.com/flowplayerhls.6.0.5.hola.swf',
+    swfHls: '//client.h-cdn.com/flowplayerhls.6.0.5.hola.swf',
+    clip: {
+        sources: [{
+            type: 'application/x-mpegurl',
+            src:  '//cdn.example.com/popular_videos/example.m3u8',
+        }]
+    }
 });
 ```
+
 Both ```swf``` and ```swfHls``` are changed to the same file. Changing the SWF does not impact the user interface of the player.
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
@@ -490,11 +497,13 @@ HolaCDN recommends configuring certain HTTP headers. This allows HolaCDN to calc
 
 Test to see if your HTTP server is configured correctly by using:
 
-```curl -v -H "Origin: <site origin link>" -X OPTIONS <link to m3u8/f4m manifest file>```
+```sh
+curl -v -H "Origin: <site origin link>" -X OPTIONS "link to m3u8/f4m manifest file"
+```
 
 The desired response is:
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Length: 0
 Access-Control-Allow-Origin: *
@@ -514,11 +523,11 @@ HolaCDN offers a 'plug and play' integration with the Brightcove video platform.
 
 There is no need to specify any parameters. Simply include HolaCDN loader at the END of the body, just before the closing </body> tag:
 
-```
-.
-.
-<script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX" ></script>
-.
+```html
+<body>
+  ...
+  ...
+  <script async crossorigin="anonymous" src="//player.h-cdn.com/loader.js?customer=XXXXX"></script>
 </body>
 ```
 
@@ -535,9 +544,10 @@ To add hola script into Kaltura player iframe:
 1. Use Kaltura 'Dynamic embed' if it is not already enabled - see http://player.kaltura.com/docs/kwidget
 2. in the 'readyCallback' callback function, add the following block:
 
-```kWidget.embed({
+```js
+kWidget.embed({
     // ... other params
-    'readyCallback': function( playerId ){
+    'readyCallback': function(playerId){
         // ... your code
         // inject hola script
         var kiframe = document.getElementById(playerId + '_ifp');
@@ -546,8 +556,9 @@ To add hola script into Kaltura player iframe:
         hola_script.type = 'text/javascript';
         kiframe.contentWindow.document.head.appendChild(hola_script);
     }
-})
+});
 ```
+
 * Replace XXXXX with your HolaCDN customer ID.
 * In monetization plugin DoubleClick settings, untick LeadWithFlash option if it's ticked
 
@@ -593,7 +604,8 @@ HolaCDN player supports [video.js IMA plugin][44]. An example on how to setup th
 Adblock extensions, which are pretty popular these days, may lead to unexpected exceptions thrown during ad init. So it sometimes (e.g. when executed in scope of player configuration) breaks the player init sequence and as a result HolaCDN cannot detect it.
 
 Here is one of examples: **videojs+ima+adblock**
-```
+
+```js
 videojs(element, {}, function(){
     this.ima({id: this.id(), adTagUrl: '<ad_tag_url>'});
 });
@@ -601,7 +613,8 @@ videojs.players => {} // no player instance detected, even though videojs succes
 ```
 
 The solution to the problem is to wrap ad init to be exception-safe. Thus the example above could be fixed to:
-```
+
+```js
 videojs(element, {}, function(){
     try { this.ima({id: this.id(), adTagUrl: '<ad_tag_url>'}); }
     catch(e){ console.log('failed to initialize ad plugin, running with adblock?'); }
