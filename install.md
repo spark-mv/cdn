@@ -146,10 +146,11 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in JWPl
   ...
   <script src="//content.jwplatform.com/path/to/jwplayer.js"></script>
   <script>jwplayer.key="XXXxxxXXXxxxXXXxxxXXX==";</script>
-  <script id=hola_jwplayer_hls_provider register-percent=50 src="//cdn.jsdelivr.net/hola_hap/1.0.35/hola_jwplayer_hls.min.js"></script>
+  <script id=hola_jwplayer_hls_provider src="//hap.h-cdn.com/hola_jwplayer_hls.min.js?customer=XXXXX"></script>
   ...
 </html>
 ```
+* Replace XXXXX with your HolaCDN customer ID.
 
 2) Verify everything works right as expected.
 
@@ -167,10 +168,11 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in flow
 <html>
   ...
   <script src="//releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
-  <script id=hola_flowplayer_hls_provider register-percent=50 src="//cdn.jsdelivr.net/hola_hap/1.0.35/hola_flowplayer_hls.min.js"></script>
+  <script id=hola_flowplayer_hls_provider src="//hap.h-cdn.com/hola_flowplayer_hls.min.js?customer=XXXXX"></script>
   ...
 </html>
 ```
+* Replace XXXXX with your HolaCDN customer ID.
 
 2) Verify everything works right as expected.
 
@@ -188,10 +190,11 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 <html>
   ...
   <script src="//your.cdn/path/to/video.min.js"></script>
-  <script id=hola_videojs_hls_provider register-percent=50 src="//cdn.jsdelivr.net/hola_hap/1.0.35/hola_videojs_hls.min.js"></script>
+  <script id=hola_videojs_hls_provider src="//hap.h-cdn.com/hola_videojs_hls.min.js?customer=XXXXX"></script>
   ...
 </html>
 ```
+* Replace XXXXX with your HolaCDN customer ID.
 
 2) Verify everything works right as expected.
 
@@ -659,9 +662,9 @@ videojs.players => {my_vjs_player: a}
 [40]: http://hola.github.io/examples/cdn/#vjs5_shaka_cdn "VideoJS+Shaka example playing MPEG-DASH video with HolaCDN"
 [44]: https://github.com/googleads/videojs-ima "videojs-ima"
 [45]: http://hola.github.io/examples/cdn/#hola_player_ima "Hola player + IMA + preroll midroll postroll"
-[47]: https://cdn.jsdelivr.net/hola_hap/1.0.35/hola_jwplayer_hls.min.js "Right click > Save link as > JWPlayer HLS provider"
-[48]: https://cdn.jsdelivr.net/hola_hap/1.0.35/hola_flowplayer_hls.min.js "Right click > Save link as > Flowplayer HLS Engine"
-[49]: https://cdn.jsdelivr.net/hola_hap/1.0.35/hola_videojs_hls.min.js "Right click > Save link as > VideoJS HLS provider"
+[47]: https://hap.h-cdn.com/hola_jwplayer_hls.min.js "Right click > Save link as > JWPlayer HLS provider"
+[48]: https://hap.h-cdn.com/hola_flowplayer_hls.min.js "Right click > Save link as > Flowplayer HLS Engine"
+[49]: https://hap.h-cdn.com/hola_videojs_hls.min.js "Right click > Save link as > VideoJS HLS provider"
 [50]: https://github.com/hola/shaka-player/releases/download/v2.0.6-hola-1/shaka-player.compiled.js "Right click > Save link as > Shaka player v2.0.6"
 [51]: http://hola.github.io/examples/cdn/#shaka2 "Shaka v2 example playing MPEG-DASH video without HolaCDN"
 [52]: http://hola.github.io/examples/cdn/#shaka2_cdn "Shaka v2 example playing MPEG-DASH video with HolaCDN"
