@@ -198,7 +198,27 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Vide
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
-### <a name="ClapprPlayer"></a>2.2.5 HTML5/HLS played by Clappr Player
+### <a name="Brightcove+HolaHLS"></a>2.2.5 HTML5/HLS played by Brightcove with HolaHLS provider
+In order to play HLS videos using HTML5 technology with HolaHLS provider in Brightcove, you need to perform the following steps:
+
+1) Add relevant scripts to your page and register HolaHLS provider before brightcove player:
+
+```html
+<html>
+  ...
+  <script id=hola_videojs_hls_provider src="//hap.h-cdn.com/hola_videojs_hls.min.js?customer=XXXXX">
+  <script src="//players.brightcove.net/12345567890/1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a_default/index.min.js"></script>
+  </script>
+  ...
+</html>
+```
+* Replace XXXXX with your HolaCDN customer ID.
+
+2) Verify everything works right as expected.
+
+3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
+
+### <a name="ClapprPlayer"></a>2.2.6 HTML5/HLS played by Clappr Player
 On top of including the script as shown in the begining, you also need to do the following step:
 
 1) Save clappr player instance to a location, by default `window.hola_cdn.clappr`
@@ -215,7 +235,7 @@ else
 
 3) Done adding the code? You can [test it locally on your browser](#EnableHolaLocally) or continue to [configuring the server side](#ConfigureVideoServer).
 
-### <a name="dash_js"></a>2.2.6 HTML5/MPEG-DASH played with dash.js player
+### <a name="dash_js"></a>2.2.7 HTML5/MPEG-DASH played with dash.js player
 If you play MPEG-DASH videos over HTML5 tech with dash.js player, you need to perform the following steps:
 
 1) Add the script to your page as follows:
