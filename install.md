@@ -206,9 +206,8 @@ In order to play HLS videos using HTML5 technology with HolaHLS provider in Brig
 ```html
 <html>
   ...
-  <script id=hola_videojs_hls_provider src="//hap.h-cdn.com/hola_videojs_hls.min.js?customer=XXXXX">
+  <script id=hola_videojs_hls_provider src="//hap.h-cdn.com/hola_videojs_hls.min.js?customer=XXXXX"></script>
   <script src="//players.brightcove.net/12345567890/1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a_default/index.min.js"></script>
-  </script>
   ...
 </html>
 ```
