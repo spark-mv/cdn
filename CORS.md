@@ -80,6 +80,9 @@ A sample conf statements is given below. Note that they have to be in the same n
   add_header 'Access-Control-Max-Age' '600';
   add_header 'Timing-Allow-Origin' '*';
   add_header 'Cache-Control' 'max-age=86400';
+  if ($request_method = 'OPTIONS') {
+      return 204;
+  }
 ```
 
 ### <a name="configAWS"></a>CORS configuration for Amazon AWS
