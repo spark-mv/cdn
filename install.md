@@ -125,6 +125,7 @@ If you play MPEG-DASH videos over HTML5 tech with Shaka player, you need to perf
   - [Shaka 2.0.6][50]
   - [Shaka 2.0.8][56]
   - [Shaka 2.1.1][57]
+  - [Shaka 2.3.3][58]
 * Replace original Shaka player with Hola-enabled version:
 
 ```html
@@ -686,4 +687,5 @@ videojs.players => {my_vjs_player: a}
 [55]: https://cdn.jsdelivr.net/hola_dash/2.1.0-3/dash.all.min.js "Right click > Save link as > dash.js"
 [56]: https://rawgit.com/hola/shaka-player/v2.0.8-hola/release/shaka-player.compiled.js "Right click > Save link as > Shaka player v2.0.8"
 [57]: https://rawgit.com/hola/shaka-player/v2.1.1-hola/release/shaka-player.compiled.js "Right click > Save link as > Shaka player v2.1.1"
+[58]: https://rawgit.com/hola/shaka-player/v2.3.3-hola/release/shaka-player.compiled.js "Right click > Save link as > Shaka player v2.3.3"
 
