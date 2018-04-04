@@ -48,7 +48,7 @@ It is also recommended to add Cache-Control header with max-age directive, other
 
 After committing the configuration changes, [verify it works](https://docs.google.com/document/d/1aLFKeQIbs3EnSMXKjXQrseVf_XkeOlDNMDYbxnbH2N8/edit?usp=sharing)
 
-**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
+**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/spark-mv/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 
 ### <a name="configApache"></a>CORS configuration for Apache
 To add the CORS authorization to the header using Apache, simply add the following line inside either the `<Directory>`, `<Location>`, `<Files>` or `<VirtualHost>` sections of your server config (usually located in a *.conf file, such as httpd.conf or apache.conf), or within a .htaccess file:
@@ -109,5 +109,5 @@ Please refer to [these instructions] (https://docs.google.com/document/d/16jw0OR
 
 Please refer to [these instructions] (https://www.wowza.com/docs/how-to-enable-cross-origin-resource-sharing-cors-for-http-based-streams) for a step-by-step guide on how to setup CORS on Wowza.
 
-**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/hola/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
+**Finished with CORS configuration? You can [go back to enabling HolaCDN] (https://github.com/spark-mv/cdn/blob/master/install.md#4-allow-holacdn-to-download-content)**
 

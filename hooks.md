@@ -1,6 +1,6 @@
 # Adding HolaCDN hooks to your own player
 
-HolaCDN hooks are required for use with HolaCDN's JavaScript component. HolaCDN supports [most commercial players] (https://github.com/hola/cdn/blob/master/install.md#2-add-hola-js-to-your-website).
+HolaCDN hooks are required for use with HolaCDN's JavaScript component. HolaCDN supports [most commercial players] (https://github.com/spark-mv/cdn/blob/master/install.md#2-add-hola-js-to-your-website).
 
 If you use your own Flash based player, you can use the code below to enable HolaCDN on your player. 
 
@@ -24,6 +24,6 @@ Choose your player and protocol from the list below:
 # Testing
 
 * To test the HolaCDN hooks with your player without HolaCDN, deploy the modified player to parts of your site and compare its performance to your baseline player. Results should be identical.
-* To test the full HolaCDN solution working with your player, follow the [step by step instructions] (https://github.com/hola/cdn/blob/master/install.md)
+* To test the full HolaCDN solution working with your player, follow the [step by step instructions] (https://github.com/spark-mv/cdn/blob/master/install.md)
 
 If you have any questions, email cdn-help@hola.org, or skype:holacdn

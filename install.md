@@ -644,7 +644,7 @@ videojs.players => {my_vjs_player: a}
 
 
 [1]: https://holacdn.com/cp "HolaCDN account"
-[2]: https://github.com/hola/cdn/blob/master/stats_install.md#curious-login-to-the-demo-account-for-live-data "Demo account"
+[2]: https://github.com/spark-mv/cdn/blob/master/stats_install.md#curious-login-to-the-demo-account-for-live-data "Demo account"
 [3]: /hooks.md "FLASH-based players"
 [4]: https://github.com/hola/hola_player#features "Hola VideoJS player features"
 [5]: http://hola.github.io/examples/cdn/#hola_player "MP4 example without HolaCDN"

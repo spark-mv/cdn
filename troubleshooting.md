@@ -54,7 +54,7 @@ HolaCDN may generate warnings and errors to the browser's developer console. Sea
 
 #### Solutions
 1. Allow HolaCDN servers access to your CDN or origin servers. 
-  * See additional information in the [setup instructions] (https://github.com/hola/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
+  * See additional information in the [setup instructions] (https://github.com/spark-mv/cdn/blob/master/install.md#2-allow-holacdn-to-download-content)
   * Go to the configuration section and scroll down to the video zone source
   * Add one or more video sources
 

@@ -10,7 +10,7 @@ Hola video analytics provide you with detailed statistics regarding what *really
 
 ###Curious? Check out the [demo live dashboard] (https://holacdn.com/#dashboard) on our website.
 
-Implementation should take only a few minutes. Follow the [step by step guide] (https://github.com/hola/cdn/blob/master/install.md)
+Implementation should take only a few minutes. Follow the [step by step guide] (https://github.com/spark-mv/cdn/blob/master/install.md)
 
 If you have any questions during implementation, please email cdn-help@hola.org or skype:holacdn.com
 
